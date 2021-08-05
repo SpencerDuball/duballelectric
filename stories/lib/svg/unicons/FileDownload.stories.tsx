@@ -1,0 +1,23 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { FileDownload, FileDownloadPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/FileDownload",
+  component: FileDownload,
+} as ComponentMeta<typeof FileDownload>;
+
+const Template: ComponentStory<typeof FileDownload> = (
+  args: FileDownloadPropsI
+) => (
+  <x.div display="flex" gap="20px">
+    <FileDownload {...args} />
+    <FileDownload {...args} fill="red.500" />
+    <FileDownload {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

@@ -1,0 +1,23 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { CameraChange, CameraChangePropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/CameraChange",
+  component: CameraChange,
+} as ComponentMeta<typeof CameraChange>;
+
+const Template: ComponentStory<typeof CameraChange> = (
+  args: CameraChangePropsI
+) => (
+  <x.div display="flex" gap="20px">
+    <CameraChange {...args} />
+    <CameraChange {...args} fill="red.500" />
+    <CameraChange {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

@@ -1,0 +1,21 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { Import, ImportPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/Import",
+  component: Import,
+} as ComponentMeta<typeof Import>;
+
+const Template: ComponentStory<typeof Import> = (args: ImportPropsI) => (
+  <x.div display="flex" gap="20px">
+    <Import {...args} />
+    <Import {...args} fill="red.500" />
+    <Import {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

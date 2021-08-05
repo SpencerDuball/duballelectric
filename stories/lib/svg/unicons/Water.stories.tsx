@@ -1,0 +1,21 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { Water, WaterPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/Water",
+  component: Water,
+} as ComponentMeta<typeof Water>;
+
+const Template: ComponentStory<typeof Water> = (args: WaterPropsI) => (
+  <x.div display="flex" gap="20px">
+    <Water {...args} />
+    <Water {...args} fill="red.500" />
+    <Water {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

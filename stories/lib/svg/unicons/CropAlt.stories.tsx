@@ -1,0 +1,21 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { CropAlt, CropAltPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/CropAlt",
+  component: CropAlt,
+} as ComponentMeta<typeof CropAlt>;
+
+const Template: ComponentStory<typeof CropAlt> = (args: CropAltPropsI) => (
+  <x.div display="flex" gap="20px">
+    <CropAlt {...args} />
+    <CropAlt {...args} fill="red.500" />
+    <CropAlt {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

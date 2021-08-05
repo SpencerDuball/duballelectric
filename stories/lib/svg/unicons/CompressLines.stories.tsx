@@ -1,0 +1,23 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { CompressLines, CompressLinesPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/CompressLines",
+  component: CompressLines,
+} as ComponentMeta<typeof CompressLines>;
+
+const Template: ComponentStory<typeof CompressLines> = (
+  args: CompressLinesPropsI
+) => (
+  <x.div display="flex" gap="20px">
+    <CompressLines {...args} />
+    <CompressLines {...args} fill="red.500" />
+    <CompressLines {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

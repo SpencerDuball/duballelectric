@@ -1,0 +1,21 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { DollarAlt, DollarAltPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/DollarAlt",
+  component: DollarAlt,
+} as ComponentMeta<typeof DollarAlt>;
+
+const Template: ComponentStory<typeof DollarAlt> = (args: DollarAltPropsI) => (
+  <x.div display="flex" gap="20px">
+    <DollarAlt {...args} />
+    <DollarAlt {...args} fill="red.500" />
+    <DollarAlt {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };

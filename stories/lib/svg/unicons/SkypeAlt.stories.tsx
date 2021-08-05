@@ -1,0 +1,21 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { x } from "@xstyled/emotion";
+
+import { SkypeAlt, SkypeAltPropsI } from "lib/svg";
+
+export default {
+  title: "lib/svg/unicons/SkypeAlt",
+  component: SkypeAlt,
+} as ComponentMeta<typeof SkypeAlt>;
+
+const Template: ComponentStory<typeof SkypeAlt> = (args: SkypeAltPropsI) => (
+  <x.div display="flex" gap="20px">
+    <SkypeAlt {...args} />
+    <SkypeAlt {...args} fill="red.500" />
+    <SkypeAlt {...args} fill="gray.900" />
+  </x.div>
+);
+
+export const Primary = Template.bind({});
+Primary.args = { w: "50px", h: "50px", fill: "gray.200" };
