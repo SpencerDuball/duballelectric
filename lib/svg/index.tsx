@@ -1,3 +1,4 @@
+// unicons/
 import { N0Plus, N0PlusPropsI } from "./unicons/N0Plus";
 import { N10Plus, N10PlusPropsI } from "./unicons/N10Plus";
 import { N12Plus, N12PlusPropsI } from "./unicons/N12Plus";
@@ -1722,7 +1723,15 @@ import { Yen, YenPropsI } from "./unicons/Yen";
 import { YinYang, YinYangPropsI } from "./unicons/YinYang";
 import { Youtube, YoutubePropsI } from "./unicons/Youtube";
 
+// duball/
+import {
+  DuballElectricSquare,
+  DuballElectricSquarePropsI,
+} from "./duball/DuballElectricSquare";
+import { DuballElectric, DuballElectricPropsI } from "./duball/DuballElectric";
+
 export {
+  // unicons/
   N0Plus,
   N10Plus,
   N12Plus,
@@ -2927,8 +2936,12 @@ export {
   Yen,
   YinYang,
   Youtube,
+  // duball/
+  DuballElectricSquare,
+  DuballElectric,
 };
 export type {
+  // unicons/
   N0PlusPropsI,
   N10PlusPropsI,
   N12PlusPropsI,
@@ -4133,4 +4146,7 @@ export type {
   YenPropsI,
   YinYangPropsI,
   YoutubePropsI,
+  // duball/
+  DuballElectricSquarePropsI,
+  DuballElectricPropsI,
 };
