@@ -1729,6 +1729,11 @@ import {
   DuballElectricSquarePropsI,
 } from "./duball/DuballElectricSquare";
 import { DuballElectric, DuballElectricPropsI } from "./duball/DuballElectric";
+import {
+  FindUsOnFacebook,
+  FindUsOnFacebookPropsI,
+} from "./duball/FindUsOnFacebook";
+import { FreeEstimates, FreeEstimatesPropsI } from "./duball/FreeEstimates";
 
 export {
   // unicons/
@@ -2939,7 +2944,10 @@ export {
   // duball/
   DuballElectricSquare,
   DuballElectric,
+  FindUsOnFacebook,
+  FreeEstimates,
 };
+
 export type {
   // unicons/
   N0PlusPropsI,
@@ -4149,4 +4157,6 @@ export type {
   // duball/
   DuballElectricSquarePropsI,
   DuballElectricPropsI,
+  FindUsOnFacebookPropsI,
+  FreeEstimatesPropsI,
 };
