@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { CeilingLight, CeilingLightPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/CeilingLight",
+  title: "lib/svg/electrical/CeilingLight",
   component: CeilingLight,
 } as ComponentMeta<typeof CeilingLight>;
 

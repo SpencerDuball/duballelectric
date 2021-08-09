@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Multimeter, MultimeterPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Multimeter",
+  title: "lib/svg/electrical/Multimeter",
   component: Multimeter,
 } as ComponentMeta<typeof Multimeter>;
 

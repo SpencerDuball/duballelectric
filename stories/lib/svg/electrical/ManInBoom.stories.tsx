@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { ManInBoom, ManInBoomPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/ManInBoom",
+  title: "lib/svg/electrical/ManInBoom",
   component: ManInBoom,
 } as ComponentMeta<typeof ManInBoom>;
 

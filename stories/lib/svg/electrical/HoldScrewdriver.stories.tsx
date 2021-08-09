@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { HoldScrewdriver, HoldScrewdriverPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/HoldScrewdriver",
+  title: "lib/svg/electrical/HoldScrewdriver",
   component: HoldScrewdriver,
 } as ComponentMeta<typeof HoldScrewdriver>;
 

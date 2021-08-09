@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Boomtruck, BoomtruckPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Boomtruck",
+  title: "lib/svg/electrical/Boomtruck",
   component: Boomtruck,
 } as ComponentMeta<typeof Boomtruck>;
 

@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Meter, MeterPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Meter",
+  title: "lib/svg/electrical/Meter",
   component: Meter,
 } as ComponentMeta<typeof Meter>;
 

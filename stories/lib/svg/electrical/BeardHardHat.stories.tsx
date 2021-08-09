@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { BeardHardHat, BeardHardHatPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/BeardHardHat",
+  title: "lib/svg/electrical/BeardHardHat",
   component: BeardHardHat,
 } as ComponentMeta<typeof BeardHardHat>;
 

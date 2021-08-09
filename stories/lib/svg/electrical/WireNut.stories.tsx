@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { WireNut, WireNutPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/WireNut",
+  title: "lib/svg/electrical/WireNut",
   component: WireNut,
 } as ComponentMeta<typeof WireNut>;
 

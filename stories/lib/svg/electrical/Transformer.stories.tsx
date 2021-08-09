@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Transformer, TransformerPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Transformer",
+  title: "lib/svg/electrical/Transformer",
   component: Transformer,
 } as ComponentMeta<typeof Transformer>;
 

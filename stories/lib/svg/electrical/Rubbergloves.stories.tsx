@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Rubbergloves, RubberglovesPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Rubbergloves",
+  title: "lib/svg/electrical/Rubbergloves",
   component: Rubbergloves,
 } as ComponentMeta<typeof Rubbergloves>;
 

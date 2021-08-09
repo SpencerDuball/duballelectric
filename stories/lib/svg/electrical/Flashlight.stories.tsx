@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Flashlight, FlashlightPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Flashlight",
+  title: "lib/svg/electrical/Flashlight",
   component: Flashlight,
 } as ComponentMeta<typeof Flashlight>;
 

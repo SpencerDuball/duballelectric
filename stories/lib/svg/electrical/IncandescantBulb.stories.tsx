@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { IncandescantBulb, IncandescantBulbPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/IncandescantBulb",
+  title: "lib/svg/electrical/IncandescantBulb",
   component: IncandescantBulb,
 } as ComponentMeta<typeof IncandescantBulb>;
 

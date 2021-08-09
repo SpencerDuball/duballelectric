@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Batteries, BatteriesPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Batteries",
+  title: "lib/svg/electrical/Batteries",
   component: Batteries,
 } as ComponentMeta<typeof Batteries>;
 

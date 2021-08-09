@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Coilplug, CoilplugPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Coilplug",
+  title: "lib/svg/electrical/Coilplug",
   component: Coilplug,
 } as ComponentMeta<typeof Coilplug>;
 

@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Toolbox, ToolboxPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Toolbox",
+  title: "lib/svg/electrical/Toolbox",
   component: Toolbox,
 } as ComponentMeta<typeof Toolbox>;
 

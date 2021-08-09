@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Lightbulbs, LightbulbsPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Lightbulbs",
+  title: "lib/svg/electrical/Lightbulbs",
   component: Lightbulbs,
 } as ComponentMeta<typeof Lightbulbs>;
 

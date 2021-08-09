@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { OpenCircuit, OpenCircuitPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/OpenCircuit",
+  title: "lib/svg/electrical/OpenCircuit",
   component: OpenCircuit,
 } as ComponentMeta<typeof OpenCircuit>;
 

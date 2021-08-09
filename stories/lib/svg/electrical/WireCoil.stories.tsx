@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { WireCoil, WireCoilPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/WireCoil",
+  title: "lib/svg/electrical/WireCoil",
   component: WireCoil,
 } as ComponentMeta<typeof WireCoil>;
 

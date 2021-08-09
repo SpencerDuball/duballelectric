@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { HardhatMan, HardhatManPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/HardhatMan",
+  title: "lib/svg/electrical/HardhatMan",
   component: HardhatMan,
 } as ComponentMeta<typeof HardhatMan>;
 

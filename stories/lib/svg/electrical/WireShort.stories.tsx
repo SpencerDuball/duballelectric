@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { WireShort, WireShortPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/WireShort",
+  title: "lib/svg/electrical/WireShort",
   component: WireShort,
 } as ComponentMeta<typeof WireShort>;
 

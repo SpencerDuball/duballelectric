@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { HighVoltage, HighVoltagePropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/HighVoltage",
+  title: "lib/svg/electrical/HighVoltage",
   component: HighVoltage,
 } as ComponentMeta<typeof HighVoltage>;
 

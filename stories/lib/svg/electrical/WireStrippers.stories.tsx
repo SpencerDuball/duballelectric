@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { WireStrippers, WireStrippersPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/WireStrippers",
+  title: "lib/svg/electrical/WireStrippers",
   component: WireStrippers,
 } as ComponentMeta<typeof WireStrippers>;
 

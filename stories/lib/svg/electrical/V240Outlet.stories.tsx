@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { V240Outlet, V240OutletPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/V240Outlet",
+  title: "lib/svg/electrical/V240Outlet",
   component: V240Outlet,
 } as ComponentMeta<typeof V240Outlet>;
 

@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { EnergyFlow, EnergyFlowPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/EnergyFlow",
+  title: "lib/svg/electrical/EnergyFlow",
   component: EnergyFlow,
 } as ComponentMeta<typeof EnergyFlow>;
 

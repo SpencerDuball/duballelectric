@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Switch, SwitchPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Switch",
+  title: "lib/svg/electrical/Switch",
   component: Switch,
 } as ComponentMeta<typeof Switch>;
 

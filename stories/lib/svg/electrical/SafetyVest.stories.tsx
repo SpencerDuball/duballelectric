@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { SafetyVest, SafetyVestPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/SafetyVest",
+  title: "lib/svg/electrical/SafetyVest",
   component: SafetyVest,
 } as ComponentMeta<typeof SafetyVest>;
 

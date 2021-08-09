@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Van, VanPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Van",
+  title: "lib/svg/electrical/Van",
   component: Van,
 } as ComponentMeta<typeof Van>;
 

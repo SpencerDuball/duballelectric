@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Tools, ToolsPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Tools",
+  title: "lib/svg/electrical/Tools",
   component: Tools,
 } as ComponentMeta<typeof Tools>;
 

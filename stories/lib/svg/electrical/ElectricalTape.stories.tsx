@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { ElectricalTape, ElectricalTapePropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/ElectricalTape",
+  title: "lib/svg/electrical/ElectricalTape",
   component: ElectricalTape,
 } as ComponentMeta<typeof ElectricalTape>;
 

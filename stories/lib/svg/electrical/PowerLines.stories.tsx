@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { PowerLines, PowerLinesPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/PowerLines",
+  title: "lib/svg/electrical/PowerLines",
   component: PowerLines,
 } as ComponentMeta<typeof PowerLines>;
 

@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import { Pliers, PliersPropsI } from "lib/svg/electrical";
 
 export default {
-  title: "lib/svg/unicons/Pliers",
+  title: "lib/svg/electrical/Pliers",
   component: Pliers,
 } as ComponentMeta<typeof Pliers>;
 
