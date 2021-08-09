@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CloudRedo, CloudRedoPropsI } from "lib/svg";
+import { CloudRedo, CloudRedoPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CloudRedo",

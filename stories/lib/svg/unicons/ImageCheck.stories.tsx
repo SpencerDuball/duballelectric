@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ImageCheck, ImageCheckPropsI } from "lib/svg";
+import { ImageCheck, ImageCheckPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ImageCheck",

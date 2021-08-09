@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Save, SavePropsI } from "lib/svg";
+import { Save, SavePropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Save",

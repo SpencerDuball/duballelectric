@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { FindUsOnFacebook, FindUsOnFacebookPropsI } from "lib/svg";
+import { FindUsOnFacebook, FindUsOnFacebookPropsI } from "lib/svg/duball";
 
 export default {
   title: "lib/svg/duball/FindUsOnFacebook",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { BorderInner, BorderInnerPropsI } from "lib/svg";
+import { BorderInner, BorderInnerPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/BorderInner",

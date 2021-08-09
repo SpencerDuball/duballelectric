@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Times, TimesPropsI } from "lib/svg";
+import { Times, TimesPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Times",

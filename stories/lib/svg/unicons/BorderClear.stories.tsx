@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { BorderClear, BorderClearPropsI } from "lib/svg";
+import { BorderClear, BorderClearPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/BorderClear",

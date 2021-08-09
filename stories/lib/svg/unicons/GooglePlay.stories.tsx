@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { GooglePlay, GooglePlayPropsI } from "lib/svg";
+import { GooglePlay, GooglePlayPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/GooglePlay",

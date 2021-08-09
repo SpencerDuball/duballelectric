@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CarSlash, CarSlashPropsI } from "lib/svg";
+import { CarSlash, CarSlashPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CarSlash",

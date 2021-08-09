@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Sick, SickPropsI } from "lib/svg";
+import { Sick, SickPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Sick",

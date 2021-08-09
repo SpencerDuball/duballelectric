@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { MapMarkerAlt, MapMarkerAltPropsI } from "lib/svg";
+import { MapMarkerAlt, MapMarkerAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/MapMarkerAlt",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { BrightnessMinus, BrightnessMinusPropsI } from "lib/svg";
+import { BrightnessMinus, BrightnessMinusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/BrightnessMinus",

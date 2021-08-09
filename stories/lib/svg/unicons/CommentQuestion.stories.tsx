@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CommentQuestion, CommentQuestionPropsI } from "lib/svg";
+import { CommentQuestion, CommentQuestionPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CommentQuestion",

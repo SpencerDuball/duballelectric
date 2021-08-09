@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { HeadSideCough, HeadSideCoughPropsI } from "lib/svg";
+import { HeadSideCough, HeadSideCoughPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/HeadSideCough",

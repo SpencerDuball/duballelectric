@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import {
   HorizontalDistributionRight,
   HorizontalDistributionRightPropsI,
-} from "lib/svg";
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/HorizontalDistributionRight",

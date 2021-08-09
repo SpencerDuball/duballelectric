@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Pagerduty, PagerdutyPropsI } from "lib/svg";
+import { Pagerduty, PagerdutyPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Pagerduty",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { HardHat, HardHatPropsI } from "lib/svg";
+import { HardHat, HardHatPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/HardHat",

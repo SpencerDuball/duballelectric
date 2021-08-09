@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { FreeEstimates, FreeEstimatesPropsI } from "lib/svg";
+import { FreeEstimates, FreeEstimatesPropsI } from "lib/svg/duball";
 
 export default {
   title: "lib/svg/duball/FreeEstimates",

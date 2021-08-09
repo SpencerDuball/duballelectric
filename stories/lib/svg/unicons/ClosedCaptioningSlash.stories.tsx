@@ -2,7 +2,10 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ClosedCaptioningSlash, ClosedCaptioningSlashPropsI } from "lib/svg";
+import {
+  ClosedCaptioningSlash,
+  ClosedCaptioningSlashPropsI,
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ClosedCaptioningSlash",

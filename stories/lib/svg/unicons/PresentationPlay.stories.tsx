@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { PresentationPlay, PresentationPlayPropsI } from "lib/svg";
+import { PresentationPlay, PresentationPlayPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/PresentationPlay",

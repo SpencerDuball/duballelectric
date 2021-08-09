@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { N0Plus, N0PlusPropsI } from "lib/svg";
+import { N0Plus, N0PlusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/N0Plus",

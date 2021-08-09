@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { PanoramaHAlt, PanoramaHAltPropsI } from "lib/svg";
+import { PanoramaHAlt, PanoramaHAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/PanoramaHAlt",

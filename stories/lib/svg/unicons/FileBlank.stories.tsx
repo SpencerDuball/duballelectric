@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { FileBlank, FileBlankPropsI } from "lib/svg";
+import { FileBlank, FileBlankPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/FileBlank",

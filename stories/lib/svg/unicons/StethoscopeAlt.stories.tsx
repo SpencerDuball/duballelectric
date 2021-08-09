@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { StethoscopeAlt, StethoscopeAltPropsI } from "lib/svg";
+import { StethoscopeAlt, StethoscopeAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/StethoscopeAlt",

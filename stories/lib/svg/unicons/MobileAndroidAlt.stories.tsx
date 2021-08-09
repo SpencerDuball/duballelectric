@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { MobileAndroidAlt, MobileAndroidAltPropsI } from "lib/svg";
+import { MobileAndroidAlt, MobileAndroidAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/MobileAndroidAlt",

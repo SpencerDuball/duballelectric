@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { VideoQuestion, VideoQuestionPropsI } from "lib/svg";
+import { VideoQuestion, VideoQuestionPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/VideoQuestion",

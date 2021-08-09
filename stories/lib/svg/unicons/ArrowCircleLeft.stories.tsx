@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ArrowCircleLeft, ArrowCircleLeftPropsI } from "lib/svg";
+import { ArrowCircleLeft, ArrowCircleLeftPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ArrowCircleLeft",

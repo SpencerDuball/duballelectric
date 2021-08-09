@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { DiceFour, DiceFourPropsI } from "lib/svg";
+import { DiceFour, DiceFourPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/DiceFour",

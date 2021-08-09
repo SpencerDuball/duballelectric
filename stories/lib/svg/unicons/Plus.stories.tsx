@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Plus, PlusPropsI } from "lib/svg";
+import { Plus, PlusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Plus",

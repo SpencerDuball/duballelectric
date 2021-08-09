@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Bath, BathPropsI } from "lib/svg";
+import { Bath, BathPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Bath",

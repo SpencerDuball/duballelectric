@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Music, MusicPropsI } from "lib/svg";
+import { Music, MusicPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Music",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Rotate360, Rotate360PropsI } from "lib/svg";
+import { Rotate360, Rotate360PropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Rotate360",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ShieldQuestion, ShieldQuestionPropsI } from "lib/svg";
+import { ShieldQuestion, ShieldQuestionPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ShieldQuestion",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Html3Alt, Html3AltPropsI } from "lib/svg";
+import { Html3Alt, Html3AltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Html3Alt",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CloudQuestion, CloudQuestionPropsI } from "lib/svg";
+import { CloudQuestion, CloudQuestionPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CloudQuestion",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { N500px, N500pxPropsI } from "lib/svg";
+import { N500px, N500pxPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/N500px",

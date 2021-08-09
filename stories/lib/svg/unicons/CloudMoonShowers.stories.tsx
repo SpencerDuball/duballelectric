@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CloudMoonShowers, CloudMoonShowersPropsI } from "lib/svg";
+import { CloudMoonShowers, CloudMoonShowersPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CloudMoonShowers",

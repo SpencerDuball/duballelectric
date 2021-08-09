@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { BlackBerry, BlackBerryPropsI } from "lib/svg";
+import { BlackBerry, BlackBerryPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/BlackBerry",

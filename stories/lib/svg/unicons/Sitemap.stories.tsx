@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Sitemap, SitemapPropsI } from "lib/svg";
+import { Sitemap, SitemapPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Sitemap",

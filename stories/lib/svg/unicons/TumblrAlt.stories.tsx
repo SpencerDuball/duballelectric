@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { TumblrAlt, TumblrAltPropsI } from "lib/svg";
+import { TumblrAlt, TumblrAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/TumblrAlt",

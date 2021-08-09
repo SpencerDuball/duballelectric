@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Metro, MetroPropsI } from "lib/svg";
+import { Metro, MetroPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Metro",

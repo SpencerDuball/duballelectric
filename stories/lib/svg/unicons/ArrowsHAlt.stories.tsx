@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ArrowsHAlt, ArrowsHAltPropsI } from "lib/svg";
+import { ArrowsHAlt, ArrowsHAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ArrowsHAlt",

@@ -2,7 +2,10 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { VerticalAlignCenter, VerticalAlignCenterPropsI } from "lib/svg";
+import {
+  VerticalAlignCenter,
+  VerticalAlignCenterPropsI,
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/VerticalAlignCenter",

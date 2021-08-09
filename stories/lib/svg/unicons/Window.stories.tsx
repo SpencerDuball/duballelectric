@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Window, WindowPropsI } from "lib/svg";
+import { Window, WindowPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Window",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Calender, CalenderPropsI } from "lib/svg";
+import { Calender, CalenderPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Calender",

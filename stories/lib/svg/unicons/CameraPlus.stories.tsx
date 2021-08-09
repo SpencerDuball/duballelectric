@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CameraPlus, CameraPlusPropsI } from "lib/svg";
+import { CameraPlus, CameraPlusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CameraPlus",

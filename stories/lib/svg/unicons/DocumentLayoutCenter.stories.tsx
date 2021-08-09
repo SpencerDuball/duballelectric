@@ -2,7 +2,10 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { DocumentLayoutCenter, DocumentLayoutCenterPropsI } from "lib/svg";
+import {
+  DocumentLayoutCenter,
+  DocumentLayoutCenterPropsI,
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/DocumentLayoutCenter",

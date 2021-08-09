@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { VolumeOff, VolumeOffPropsI } from "lib/svg";
+import { VolumeOff, VolumeOffPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/VolumeOff",

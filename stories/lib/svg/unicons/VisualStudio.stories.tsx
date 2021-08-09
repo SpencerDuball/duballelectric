@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { VisualStudio, VisualStudioPropsI } from "lib/svg";
+import { VisualStudio, VisualStudioPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/VisualStudio",

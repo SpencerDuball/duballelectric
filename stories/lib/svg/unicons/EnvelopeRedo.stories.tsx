@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { EnvelopeRedo, EnvelopeRedoPropsI } from "lib/svg";
+import { EnvelopeRedo, EnvelopeRedoPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/EnvelopeRedo",

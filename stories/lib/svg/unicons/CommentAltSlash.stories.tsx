@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CommentAltSlash, CommentAltSlashPropsI } from "lib/svg";
+import { CommentAltSlash, CommentAltSlashPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CommentAltSlash",

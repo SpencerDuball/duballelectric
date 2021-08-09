@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Telegram, TelegramPropsI } from "lib/svg";
+import { Telegram, TelegramPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Telegram",

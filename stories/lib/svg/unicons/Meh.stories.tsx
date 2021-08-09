@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Meh, MehPropsI } from "lib/svg";
+import { Meh, MehPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Meh",

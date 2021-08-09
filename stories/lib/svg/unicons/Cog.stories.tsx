@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Cog, CogPropsI } from "lib/svg";
+import { Cog, CogPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Cog",

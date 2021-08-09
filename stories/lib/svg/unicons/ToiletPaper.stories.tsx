@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ToiletPaper, ToiletPaperPropsI } from "lib/svg";
+import { ToiletPaper, ToiletPaperPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ToiletPaper",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { AndroidPhoneSlash, AndroidPhoneSlashPropsI } from "lib/svg";
+import { AndroidPhoneSlash, AndroidPhoneSlashPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/AndroidPhoneSlash",

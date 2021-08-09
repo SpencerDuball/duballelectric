@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Hdd, HddPropsI } from "lib/svg";
+import { Hdd, HddPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Hdd",

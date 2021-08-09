@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { DesktopAltSlash, DesktopAltSlashPropsI } from "lib/svg";
+import { DesktopAltSlash, DesktopAltSlashPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/DesktopAltSlash",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { TimesSquare, TimesSquarePropsI } from "lib/svg";
+import { TimesSquare, TimesSquarePropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/TimesSquare",

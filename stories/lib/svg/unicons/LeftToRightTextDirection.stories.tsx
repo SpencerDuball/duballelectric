@@ -5,7 +5,7 @@ import { x } from "@xstyled/emotion";
 import {
   LeftToRightTextDirection,
   LeftToRightTextDirectionPropsI,
-} from "lib/svg";
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/LeftToRightTextDirection",

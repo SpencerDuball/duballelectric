@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CommentAltPlus, CommentAltPlusPropsI } from "lib/svg";
+import { CommentAltPlus, CommentAltPlusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CommentAltPlus",

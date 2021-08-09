@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { FlaskPotion, FlaskPotionPropsI } from "lib/svg";
+import { FlaskPotion, FlaskPotionPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/FlaskPotion",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CornerRightDown, CornerRightDownPropsI } from "lib/svg";
+import { CornerRightDown, CornerRightDownPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CornerRightDown",

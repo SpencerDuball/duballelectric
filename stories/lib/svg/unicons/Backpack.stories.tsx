@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Backpack, BackpackPropsI } from "lib/svg";
+import { Backpack, BackpackPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Backpack",

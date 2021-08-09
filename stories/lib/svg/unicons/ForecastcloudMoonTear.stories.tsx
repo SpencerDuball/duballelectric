@@ -2,7 +2,10 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ForecastcloudMoonTear, ForecastcloudMoonTearPropsI } from "lib/svg";
+import {
+  ForecastcloudMoonTear,
+  ForecastcloudMoonTearPropsI,
+} from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ForecastcloudMoonTear",

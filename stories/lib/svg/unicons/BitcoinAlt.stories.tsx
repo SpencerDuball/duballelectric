@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { BitcoinAlt, BitcoinAltPropsI } from "lib/svg";
+import { BitcoinAlt, BitcoinAltPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/BitcoinAlt",

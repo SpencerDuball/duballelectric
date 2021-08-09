@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { TemperatureHalf, TemperatureHalfPropsI } from "lib/svg";
+import { TemperatureHalf, TemperatureHalfPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/TemperatureHalf",

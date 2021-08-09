@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ClockTen, ClockTenPropsI } from "lib/svg";
+import { ClockTen, ClockTenPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ClockTen",

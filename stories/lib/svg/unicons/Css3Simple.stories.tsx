@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Css3Simple, Css3SimplePropsI } from "lib/svg";
+import { Css3Simple, Css3SimplePropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Css3Simple",

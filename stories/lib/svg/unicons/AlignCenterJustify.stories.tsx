@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { AlignCenterJustify, AlignCenterJustifyPropsI } from "lib/svg";
+import { AlignCenterJustify, AlignCenterJustifyPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/AlignCenterJustify",

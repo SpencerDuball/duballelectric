@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { UserCheck, UserCheckPropsI } from "lib/svg";
+import { UserCheck, UserCheckPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/UserCheck",

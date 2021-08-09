@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { MouseAlt2, MouseAlt2PropsI } from "lib/svg";
+import { MouseAlt2, MouseAlt2PropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/MouseAlt2",

@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ShoppingCart, ShoppingCartPropsI } from "lib/svg";
+import { ShoppingCart, ShoppingCartPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ShoppingCart",

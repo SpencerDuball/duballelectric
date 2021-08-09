@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { ImageShield, ImageShieldPropsI } from "lib/svg";
+import { ImageShield, ImageShieldPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/ImageShield",

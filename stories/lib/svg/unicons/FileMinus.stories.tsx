@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { FileMinus, FileMinusPropsI } from "lib/svg";
+import { FileMinus, FileMinusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/FileMinus",

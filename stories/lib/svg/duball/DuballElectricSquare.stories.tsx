@@ -2,7 +2,10 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { DuballElectricSquare, DuballElectricSquarePropsI } from "lib/svg";
+import {
+  DuballElectricSquare,
+  DuballElectricSquarePropsI,
+} from "lib/svg/duball";
 
 export default {
   title: "lib/svg/duball/DuballElectricSquare",

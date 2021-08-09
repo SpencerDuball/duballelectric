@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { Fire, FirePropsI } from "lib/svg";
+import { Fire, FirePropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Fire",

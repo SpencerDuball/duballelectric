@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { N10Plus, N10PlusPropsI } from "lib/svg";
+import { N10Plus, N10PlusPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/N10Plus",

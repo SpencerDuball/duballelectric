@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { x } from "@xstyled/emotion";
 
-import { CloudHeart, CloudHeartPropsI } from "lib/svg";
+import { CloudHeart, CloudHeartPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/CloudHeart",
