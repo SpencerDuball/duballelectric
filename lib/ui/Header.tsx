@@ -4,10 +4,10 @@ import { x, SystemProps } from "@xstyled/emotion";
 import { filterProps } from "utility";
 import { AngleDown } from "lib/svg/unicons";
 import { DuballElectric } from "lib/svg/duball";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { motion, AnimateSharedLayout } from "framer-motion";
 
-const MotionHeader = motion(x.header, { forwardMotionProps: true });
-const MotionDiv = motion(x.div, { forwardMotionProps: true });
+const MotionHeader = motion(x.header);
+const MotionDiv = motion(x.div);
 
 const NavButton = forwardRef<ButtonProps, "button">((props, ref) => (
   <Button
@@ -39,8 +39,8 @@ export interface HeaderPropsI extends SystemProps {}
 
 export const Header = (props: HeaderPropsI) => {
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
-  const [isServicesVisible, setIsServicesVisible] = useState(false);
-  const [isOn, setIsOn] = useState(false);
+  const [areServicesDisplayed, setAreServicesDisplayed] = useState(false);
+  const [areServicesVisible, setAreServicesVisible] = useState(false);
 
   return (
     <AnimateSharedLayout>
@@ -50,9 +50,10 @@ export const Header = (props: HeaderPropsI) => {
         display="grid"
         justifyItems="center"
         layoutId="header_header"
+        onAnimationStart={() => console.log("animation started")}
         onLayoutAnimationComplete={() => {
-          setIsOn(isServicesVisible);
-          console.log(isOn);
+          setAreServicesVisible(areServicesDisplayed);
+          console.log("Animation complete...");
         }}
         {...filterProps({ props, filterOut: ["transition"] })}
       >
@@ -73,7 +74,7 @@ export const Header = (props: HeaderPropsI) => {
               <NavButton
                 ref={servicesButtonRef}
                 rightIcon={<AngleDown h="1em" w="1em" />}
-                onClick={() => setIsServicesVisible(!isServicesVisible)}
+                onClick={() => setAreServicesDisplayed(!areServicesDisplayed)}
               >
                 Services
               </NavButton>
@@ -96,14 +97,21 @@ export const Header = (props: HeaderPropsI) => {
             </Button>
           </MotionDiv>
           {/* Header Row 2 */}
-          {isServicesVisible ? (
+          {areServicesDisplayed ? (
             <MotionDiv
-              opacity={isOn ? "1" : "0"}
+              initial="hidden"
+              animate={areServicesVisible ? "visible" : "hidden"}
+              variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0, transitionDuration: "0s" },
+              }}
               w="100%"
               h="3em"
               bg="red.300"
               layoutId="header_row_2"
-            ></MotionDiv>
+            >
+              Spencer HEre
+            </MotionDiv>
           ) : null}
         </MotionDiv>
       </MotionHeader>
