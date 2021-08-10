@@ -47,6 +47,7 @@ export const Header = (props: HeaderPropsI) => {
       <MotionHeader
         w="100%"
         bg="gray.700"
+        boxShadow="lg"
         display="grid"
         justifyItems="center"
         layoutId="header_header"
@@ -74,7 +75,10 @@ export const Header = (props: HeaderPropsI) => {
               <NavButton
                 ref={servicesButtonRef}
                 rightIcon={<AngleDown h="1em" w="1em" />}
-                onClick={() => setAreServicesDisplayed(!areServicesDisplayed)}
+                onClick={() => {
+                  setAreServicesDisplayed(!areServicesDisplayed);
+                  if (areServicesDisplayed) setAreServicesVisible(false);
+                }}
               >
                 Services
               </NavButton>
@@ -103,7 +107,7 @@ export const Header = (props: HeaderPropsI) => {
               animate={areServicesVisible ? "visible" : "hidden"}
               variants={{
                 visible: { opacity: 1 },
-                hidden: { opacity: 0, transitionDuration: "0s" },
+                hidden: { opacity: 0 },
               }}
               w="100%"
               h="3em"
