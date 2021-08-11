@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LayersAlt>;
 
 const Template: ComponentStory<typeof LayersAlt> = (args: LayersAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LayersAlt {...args} />
     <LayersAlt {...args} fill="red.500" />
     <LayersAlt {...args} fill="gray.900" />

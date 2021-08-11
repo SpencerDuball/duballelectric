@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ObjectUngroup> = (
   args: ObjectUngroupPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ObjectUngroup {...args} />
     <ObjectUngroup {...args} fill="red.500" />
     <ObjectUngroup {...args} fill="gray.900" />

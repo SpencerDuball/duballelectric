@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExpandArrowsAlt> = (
   args: ExpandArrowsAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExpandArrowsAlt {...args} />
     <ExpandArrowsAlt {...args} fill="red.500" />
     <ExpandArrowsAlt {...args} fill="gray.900" />

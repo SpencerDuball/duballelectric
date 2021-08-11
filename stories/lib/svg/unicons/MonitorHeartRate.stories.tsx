@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MonitorHeartRate> = (
   args: MonitorHeartRatePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MonitorHeartRate {...args} />
     <MonitorHeartRate {...args} fill="red.500" />
     <MonitorHeartRate {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentVerify> = (
   args: CommentVerifyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentVerify {...args} />
     <CommentVerify {...args} fill="red.500" />
     <CommentVerify {...args} fill="gray.900" />

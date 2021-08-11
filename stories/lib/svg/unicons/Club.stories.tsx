@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Club>;
 
 const Template: ComponentStory<typeof Club> = (args: ClubPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Club {...args} />
     <Club {...args} fill="red.500" />
     <Club {...args} fill="gray.900" />

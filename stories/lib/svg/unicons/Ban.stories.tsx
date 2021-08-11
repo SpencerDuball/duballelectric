@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ban>;
 
 const Template: ComponentStory<typeof Ban> = (args: BanPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ban {...args} />
     <Ban {...args} fill="red.500" />
     <Ban {...args} fill="gray.900" />

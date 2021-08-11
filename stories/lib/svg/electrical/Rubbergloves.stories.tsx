@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Rubbergloves> = (
   args: RubberglovesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Rubbergloves {...args} />
     <Rubbergloves {...args} fill="red.500" />
     <Rubbergloves {...args} fill="gray.900" />

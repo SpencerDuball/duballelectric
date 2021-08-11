@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltLines> = (
   args: CommentAltLinesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltLines {...args} />
     <CommentAltLines {...args} fill="red.500" />
     <CommentAltLines {...args} fill="gray.900" />

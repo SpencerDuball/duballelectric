@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SliderHRange> = (
   args: SliderHRangePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SliderHRange {...args} />
     <SliderHRange {...args} fill="red.500" />
     <SliderHRange {...args} fill="gray.900" />

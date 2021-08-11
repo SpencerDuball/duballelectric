@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AndroidPhoneSlash> = (
   args: AndroidPhoneSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AndroidPhoneSlash {...args} />
     <AndroidPhoneSlash {...args} fill="red.500" />
     <AndroidPhoneSlash {...args} fill="gray.900" />

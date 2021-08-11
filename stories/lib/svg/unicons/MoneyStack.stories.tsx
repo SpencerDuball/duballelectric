@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MoneyStack> = (
   args: MoneyStackPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoneyStack {...args} />
     <MoneyStack {...args} fill="red.500" />
     <MoneyStack {...args} fill="gray.900" />

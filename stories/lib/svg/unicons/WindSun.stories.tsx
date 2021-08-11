@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WindSun>;
 
 const Template: ComponentStory<typeof WindSun> = (args: WindSunPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WindSun {...args} />
     <WindSun {...args} fill="red.500" />
     <WindSun {...args} fill="gray.900" />

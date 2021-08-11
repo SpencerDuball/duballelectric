@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof RupeeSign>;
 
 const Template: ComponentStory<typeof RupeeSign> = (args: RupeeSignPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RupeeSign {...args} />
     <RupeeSign {...args} fill="red.500" />
     <RupeeSign {...args} fill="gray.900" />

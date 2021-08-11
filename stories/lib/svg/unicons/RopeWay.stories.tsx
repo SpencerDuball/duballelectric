@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof RopeWay>;
 
 const Template: ComponentStory<typeof RopeWay> = (args: RopeWayPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RopeWay {...args} />
     <RopeWay {...args} fill="red.500" />
     <RopeWay {...args} fill="gray.900" />

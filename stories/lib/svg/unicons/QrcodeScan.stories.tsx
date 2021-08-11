@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof QrcodeScan> = (
   args: QrcodeScanPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <QrcodeScan {...args} />
     <QrcodeScan {...args} fill="red.500" />
     <QrcodeScan {...args} fill="gray.900" />

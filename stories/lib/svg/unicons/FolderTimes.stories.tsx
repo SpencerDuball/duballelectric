@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderTimes> = (
   args: FolderTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderTimes {...args} />
     <FolderTimes {...args} fill="red.500" />
     <FolderTimes {...args} fill="gray.900" />

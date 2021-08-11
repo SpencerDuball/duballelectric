@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ParkingCircle> = (
   args: ParkingCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ParkingCircle {...args} />
     <ParkingCircle {...args} fill="red.500" />
     <ParkingCircle {...args} fill="gray.900" />

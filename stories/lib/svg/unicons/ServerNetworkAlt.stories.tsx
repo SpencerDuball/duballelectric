@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ServerNetworkAlt> = (
   args: ServerNetworkAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ServerNetworkAlt {...args} />
     <ServerNetworkAlt {...args} fill="red.500" />
     <ServerNetworkAlt {...args} fill="gray.900" />

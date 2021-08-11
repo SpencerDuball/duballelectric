@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageTimes> = (
   args: ImageTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageTimes {...args} />
     <ImageTimes {...args} fill="red.500" />
     <ImageTimes {...args} fill="gray.900" />

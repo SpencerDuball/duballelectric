@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof DiceFive>;
 
 const Template: ComponentStory<typeof DiceFive> = (args: DiceFivePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DiceFive {...args} />
     <DiceFive {...args} fill="red.500" />
     <DiceFive {...args} fill="gray.900" />

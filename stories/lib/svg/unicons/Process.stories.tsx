@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Process>;
 
 const Template: ComponentStory<typeof Process> = (args: ProcessPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Process {...args} />
     <Process {...args} fill="red.500" />
     <Process {...args} fill="gray.900" />

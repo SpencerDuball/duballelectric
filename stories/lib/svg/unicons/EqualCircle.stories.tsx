@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EqualCircle> = (
   args: EqualCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EqualCircle {...args} />
     <EqualCircle {...args} fill="red.500" />
     <EqualCircle {...args} fill="gray.900" />

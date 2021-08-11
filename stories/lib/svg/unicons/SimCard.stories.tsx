@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SimCard>;
 
 const Template: ComponentStory<typeof SimCard> = (args: SimCardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SimCard {...args} />
     <SimCard {...args} fill="red.500" />
     <SimCard {...args} fill="gray.900" />

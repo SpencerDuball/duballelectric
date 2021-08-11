@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Capture>;
 
 const Template: ComponentStory<typeof Capture> = (args: CapturePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Capture {...args} />
     <Capture {...args} fill="red.500" />
     <Capture {...args} fill="gray.900" />

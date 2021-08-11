@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Twitter>;
 
 const Template: ComponentStory<typeof Twitter> = (args: TwitterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Twitter {...args} />
     <Twitter {...args} fill="red.500" />
     <Twitter {...args} fill="gray.900" />

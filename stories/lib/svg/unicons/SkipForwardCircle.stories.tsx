@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SkipForwardCircle> = (
   args: SkipForwardCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SkipForwardCircle {...args} />
     <SkipForwardCircle {...args} fill="red.500" />
     <SkipForwardCircle {...args} fill="gray.900" />

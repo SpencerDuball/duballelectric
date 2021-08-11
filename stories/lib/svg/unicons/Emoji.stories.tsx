@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Emoji>;
 
 const Template: ComponentStory<typeof Emoji> = (args: EmojiPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Emoji {...args} />
     <Emoji {...args} fill="red.500" />
     <Emoji {...args} fill="gray.900" />

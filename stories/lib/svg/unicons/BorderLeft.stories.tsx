@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BorderLeft> = (
   args: BorderLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderLeft {...args} />
     <BorderLeft {...args} fill="red.500" />
     <BorderLeft {...args} fill="gray.900" />

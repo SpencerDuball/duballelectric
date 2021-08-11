@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudSunRainAlt> = (
   args: CloudSunRainAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudSunRainAlt {...args} />
     <CloudSunRainAlt {...args} fill="red.500" />
     <CloudSunRainAlt {...args} fill="gray.900" />

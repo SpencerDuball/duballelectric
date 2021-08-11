@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Envelope>;
 
 const Template: ComponentStory<typeof Envelope> = (args: EnvelopePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Envelope {...args} />
     <Envelope {...args} fill="red.500" />
     <Envelope {...args} fill="gray.900" />

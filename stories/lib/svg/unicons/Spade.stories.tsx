@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Spade>;
 
 const Template: ComponentStory<typeof Spade> = (args: SpadePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Spade {...args} />
     <Spade {...args} fill="red.500" />
     <Spade {...args} fill="gray.900" />

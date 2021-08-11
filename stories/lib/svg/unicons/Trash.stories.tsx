@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Trash>;
 
 const Template: ComponentStory<typeof Trash> = (args: TrashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Trash {...args} />
     <Trash {...args} fill="red.500" />
     <Trash {...args} fill="gray.900" />

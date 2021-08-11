@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Phone>;
 
 const Template: ComponentStory<typeof Phone> = (args: PhonePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Phone {...args} />
     <Phone {...args} fill="red.500" />
     <Phone {...args} fill="gray.900" />

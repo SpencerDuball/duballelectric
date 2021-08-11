@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sigma>;
 
 const Template: ComponentStory<typeof Sigma> = (args: SigmaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sigma {...args} />
     <Sigma {...args} fill="red.500" />
     <Sigma {...args} fill="gray.900" />

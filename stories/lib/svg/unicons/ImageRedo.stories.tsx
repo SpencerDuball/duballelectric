@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ImageRedo>;
 
 const Template: ComponentStory<typeof ImageRedo> = (args: ImageRedoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageRedo {...args} />
     <ImageRedo {...args} fill="red.500" />
     <ImageRedo {...args} fill="gray.900" />

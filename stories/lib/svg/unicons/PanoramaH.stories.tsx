@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof PanoramaH>;
 
 const Template: ComponentStory<typeof PanoramaH> = (args: PanoramaHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PanoramaH {...args} />
     <PanoramaH {...args} fill="red.500" />
     <PanoramaH {...args} fill="gray.900" />

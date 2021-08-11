@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Award>;
 
 const Template: ComponentStory<typeof Award> = (args: AwardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Award {...args} />
     <Award {...args} fill="red.500" />
     <Award {...args} fill="gray.900" />

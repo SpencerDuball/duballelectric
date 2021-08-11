@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LineSpacing> = (
   args: LineSpacingPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LineSpacing {...args} />
     <LineSpacing {...args} fill="red.500" />
     <LineSpacing {...args} fill="gray.900" />

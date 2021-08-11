@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LockOpenAlt> = (
   args: LockOpenAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LockOpenAlt {...args} />
     <LockOpenAlt {...args} fill="red.500" />
     <LockOpenAlt {...args} fill="gray.900" />

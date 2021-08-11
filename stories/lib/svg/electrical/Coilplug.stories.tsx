@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Coilplug>;
 
 const Template: ComponentStory<typeof Coilplug> = (args: CoilplugPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Coilplug {...args} />
     <Coilplug {...args} fill="red.500" />
     <Coilplug {...args} fill="gray.900" />

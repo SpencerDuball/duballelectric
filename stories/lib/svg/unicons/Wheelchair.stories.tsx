@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Wheelchair> = (
   args: WheelchairPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wheelchair {...args} />
     <Wheelchair {...args} fill="red.500" />
     <Wheelchair {...args} fill="gray.900" />

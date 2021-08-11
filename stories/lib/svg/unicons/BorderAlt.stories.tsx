@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BorderAlt>;
 
 const Template: ComponentStory<typeof BorderAlt> = (args: BorderAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderAlt {...args} />
     <BorderAlt {...args} fill="red.500" />
     <BorderAlt {...args} fill="gray.900" />

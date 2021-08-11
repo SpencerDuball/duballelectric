@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Circuit>;
 
 const Template: ComponentStory<typeof Circuit> = (args: CircuitPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Circuit {...args} />
     <Circuit {...args} fill="red.500" />
     <Circuit {...args} fill="gray.900" />

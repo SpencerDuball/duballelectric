@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeReceive> = (
   args: EnvelopeReceivePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeReceive {...args} />
     <EnvelopeReceive {...args} fill="red.500" />
     <EnvelopeReceive {...args} fill="gray.900" />

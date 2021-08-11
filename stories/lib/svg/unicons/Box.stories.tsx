@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BoxIcon>;
 
 const Template: ComponentStory<typeof BoxIcon> = (args: BoxIconPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BoxIcon {...args} />
     <BoxIcon {...args} fill="red.500" />
     <BoxIcon {...args} fill="gray.900" />

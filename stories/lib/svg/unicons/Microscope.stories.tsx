@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Microscope> = (
   args: MicroscopePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Microscope {...args} />
     <Microscope {...args} fill="red.500" />
     <Microscope {...args} fill="gray.900" />

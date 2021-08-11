@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BringFront> = (
   args: BringFrontPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BringFront {...args} />
     <BringFront {...args} fill="red.500" />
     <BringFront {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Telegram>;
 
 const Template: ComponentStory<typeof Telegram> = (args: TelegramPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Telegram {...args} />
     <Telegram {...args} fill="red.500" />
     <Telegram {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof VuejsAlt>;
 
 const Template: ComponentStory<typeof VuejsAlt> = (args: VuejsAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VuejsAlt {...args} />
     <VuejsAlt {...args} fill="red.500" />
     <VuejsAlt {...args} fill="gray.900" />

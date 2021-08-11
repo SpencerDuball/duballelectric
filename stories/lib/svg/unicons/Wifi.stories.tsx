@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wifi>;
 
 const Template: ComponentStory<typeof Wifi> = (args: WifiPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wifi {...args} />
     <Wifi {...args} fill="red.500" />
     <Wifi {...args} fill="gray.900" />

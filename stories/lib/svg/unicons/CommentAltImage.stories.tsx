@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltImage> = (
   args: CommentAltImagePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltImage {...args} />
     <CommentAltImage {...args} fill="red.500" />
     <CommentAltImage {...args} fill="gray.900" />

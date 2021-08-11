@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Diamond>;
 
 const Template: ComponentStory<typeof Diamond> = (args: DiamondPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Diamond {...args} />
     <Diamond {...args} fill="red.500" />
     <Diamond {...args} fill="gray.900" />

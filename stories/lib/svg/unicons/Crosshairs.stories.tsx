@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Crosshairs> = (
   args: CrosshairsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Crosshairs {...args} />
     <Crosshairs {...args} fill="red.500" />
     <Crosshairs {...args} fill="gray.900" />

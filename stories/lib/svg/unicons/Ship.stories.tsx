@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ship>;
 
 const Template: ComponentStory<typeof Ship> = (args: ShipPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ship {...args} />
     <Ship {...args} fill="red.500" />
     <Ship {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileImport> = (
   args: FileImportPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileImport {...args} />
     <FileImport {...args} fill="red.500" />
     <FileImport {...args} fill="gray.900" />

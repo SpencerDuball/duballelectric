@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Subway>;
 
 const Template: ComponentStory<typeof Subway> = (args: SubwayPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Subway {...args} />
     <Subway {...args} fill="red.500" />
     <Subway {...args} fill="gray.900" />

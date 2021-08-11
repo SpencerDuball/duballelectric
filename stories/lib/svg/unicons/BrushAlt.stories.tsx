@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BrushAlt>;
 
 const Template: ComponentStory<typeof BrushAlt> = (args: BrushAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BrushAlt {...args} />
     <BrushAlt {...args} fill="red.500" />
     <BrushAlt {...args} fill="gray.900" />

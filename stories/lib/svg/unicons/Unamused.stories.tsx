@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Unamused>;
 
 const Template: ComponentStory<typeof Unamused> = (args: UnamusedPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Unamused {...args} />
     <Unamused {...args} fill="red.500" />
     <Unamused {...args} fill="gray.900" />

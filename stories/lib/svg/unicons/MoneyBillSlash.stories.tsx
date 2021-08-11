@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MoneyBillSlash> = (
   args: MoneyBillSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoneyBillSlash {...args} />
     <MoneyBillSlash {...args} fill="red.500" />
     <MoneyBillSlash {...args} fill="gray.900" />

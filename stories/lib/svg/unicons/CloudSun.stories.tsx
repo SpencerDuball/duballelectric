@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudSun>;
 
 const Template: ComponentStory<typeof CloudSun> = (args: CloudSunPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudSun {...args} />
     <CloudSun {...args} fill="red.500" />
     <CloudSun {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShieldSlash> = (
   args: ShieldSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShieldSlash {...args} />
     <ShieldSlash {...args} fill="red.500" />
     <ShieldSlash {...args} fill="gray.900" />

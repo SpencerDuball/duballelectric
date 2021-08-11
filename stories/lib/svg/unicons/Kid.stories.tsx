@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Kid>;
 
 const Template: ComponentStory<typeof Kid> = (args: KidPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Kid {...args} />
     <Kid {...args} fill="red.500" />
     <Kid {...args} fill="gray.900" />

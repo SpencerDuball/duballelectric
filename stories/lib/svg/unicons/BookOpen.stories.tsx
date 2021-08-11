@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BookOpen>;
 
 const Template: ComponentStory<typeof BookOpen> = (args: BookOpenPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BookOpen {...args} />
     <BookOpen {...args} fill="red.500" />
     <BookOpen {...args} fill="gray.900" />

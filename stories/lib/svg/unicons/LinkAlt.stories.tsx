@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LinkAlt>;
 
 const Template: ComponentStory<typeof LinkAlt> = (args: LinkAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LinkAlt {...args} />
     <LinkAlt {...args} fill="red.500" />
     <LinkAlt {...args} fill="gray.900" />

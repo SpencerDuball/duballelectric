@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MapMarker>;
 
 const Template: ComponentStory<typeof MapMarker> = (args: MapMarkerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarker {...args} />
     <MapMarker {...args} fill="red.500" />
     <MapMarker {...args} fill="gray.900" />

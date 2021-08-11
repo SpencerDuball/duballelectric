@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Browser>;
 
 const Template: ComponentStory<typeof Browser> = (args: BrowserPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Browser {...args} />
     <Browser {...args} fill="red.500" />
     <Browser {...args} fill="gray.900" />

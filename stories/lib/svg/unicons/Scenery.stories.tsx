@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Scenery>;
 
 const Template: ComponentStory<typeof Scenery> = (args: SceneryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Scenery {...args} />
     <Scenery {...args} fill="red.500" />
     <Scenery {...args} fill="gray.900" />

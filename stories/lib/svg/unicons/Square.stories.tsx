@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Square>;
 
 const Template: ComponentStory<typeof Square> = (args: SquarePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Square {...args} />
     <Square {...args} fill="red.500" />
     <Square {...args} fill="gray.900" />

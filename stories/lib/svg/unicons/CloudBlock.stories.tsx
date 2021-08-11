@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudBlock> = (
   args: CloudBlockPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudBlock {...args} />
     <CloudBlock {...args} fill="red.500" />
     <CloudBlock {...args} fill="gray.900" />

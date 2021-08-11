@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PlusSquare> = (
   args: PlusSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlusSquare {...args} />
     <PlusSquare {...args} fill="red.500" />
     <PlusSquare {...args} fill="gray.900" />

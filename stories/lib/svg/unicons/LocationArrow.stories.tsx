@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LocationArrow> = (
   args: LocationArrowPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LocationArrow {...args} />
     <LocationArrow {...args} fill="red.500" />
     <LocationArrow {...args} fill="gray.900" />

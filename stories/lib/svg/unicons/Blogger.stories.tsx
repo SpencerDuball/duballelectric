@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Blogger>;
 
 const Template: ComponentStory<typeof Blogger> = (args: BloggerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Blogger {...args} />
     <Blogger {...args} fill="red.500" />
     <Blogger {...args} fill="gray.900" />

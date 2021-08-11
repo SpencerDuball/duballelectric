@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FlipH>;
 
 const Template: ComponentStory<typeof FlipH> = (args: FlipHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FlipH {...args} />
     <FlipH {...args} fill="red.500" />
     <FlipH {...args} fill="gray.900" />

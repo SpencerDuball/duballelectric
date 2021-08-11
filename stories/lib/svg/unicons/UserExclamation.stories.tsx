@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof UserExclamation> = (
   args: UserExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UserExclamation {...args} />
     <UserExclamation {...args} fill="red.500" />
     <UserExclamation {...args} fill="gray.900" />

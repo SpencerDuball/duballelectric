@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MouseAlt>;
 
 const Template: ComponentStory<typeof MouseAlt> = (args: MouseAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MouseAlt {...args} />
     <MouseAlt {...args} fill="red.500" />
     <MouseAlt {...args} fill="gray.900" />

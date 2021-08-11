@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExclamationOctagon> = (
   args: ExclamationOctagonPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExclamationOctagon {...args} />
     <ExclamationOctagon {...args} fill="red.500" />
     <ExclamationOctagon {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Anchor>;
 
 const Template: ComponentStory<typeof Anchor> = (args: AnchorPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Anchor {...args} />
     <Anchor {...args} fill="red.500" />
     <Anchor {...args} fill="gray.900" />

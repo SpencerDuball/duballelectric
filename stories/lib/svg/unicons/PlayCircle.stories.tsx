@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PlayCircle> = (
   args: PlayCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlayCircle {...args} />
     <PlayCircle {...args} fill="red.500" />
     <PlayCircle {...args} fill="gray.900" />

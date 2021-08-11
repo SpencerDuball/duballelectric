@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Estate>;
 
 const Template: ComponentStory<typeof Estate> = (args: EstatePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Estate {...args} />
     <Estate {...args} fill="red.500" />
     <Estate {...args} fill="gray.900" />

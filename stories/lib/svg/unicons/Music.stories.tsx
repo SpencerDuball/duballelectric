@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Music>;
 
 const Template: ComponentStory<typeof Music> = (args: MusicPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Music {...args} />
     <Music {...args} fill="red.500" />
     <Music {...args} fill="gray.900" />

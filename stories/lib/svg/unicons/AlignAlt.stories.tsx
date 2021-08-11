@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AlignAlt>;
 
 const Template: ComponentStory<typeof AlignAlt> = (args: AlignAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AlignAlt {...args} />
     <AlignAlt {...args} fill="red.500" />
     <AlignAlt {...args} fill="gray.900" />

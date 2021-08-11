@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Lock>;
 
 const Template: ComponentStory<typeof Lock> = (args: LockPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Lock {...args} />
     <Lock {...args} fill="red.500" />
     <Lock {...args} fill="gray.900" />

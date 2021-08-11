@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Glass>;
 
 const Template: ComponentStory<typeof Glass> = (args: GlassPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Glass {...args} />
     <Glass {...args} fill="red.500" />
     <Glass {...args} fill="gray.900" />

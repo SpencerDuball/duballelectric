@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof PlaneFly>;
 
 const Template: ComponentStory<typeof PlaneFly> = (args: PlaneFlyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlaneFly {...args} />
     <PlaneFly {...args} fill="red.500" />
     <PlaneFly {...args} fill="gray.900" />

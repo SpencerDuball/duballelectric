@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderCheck> = (
   args: FolderCheckPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderCheck {...args} />
     <FolderCheck {...args} fill="red.500" />
     <FolderCheck {...args} fill="gray.900" />

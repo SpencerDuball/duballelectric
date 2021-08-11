@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Coffee>;
 
 const Template: ComponentStory<typeof Coffee> = (args: CoffeePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Coffee {...args} />
     <Coffee {...args} fill="red.500" />
     <Coffee {...args} fill="gray.900" />

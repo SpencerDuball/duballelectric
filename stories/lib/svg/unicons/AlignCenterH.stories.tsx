@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AlignCenterH> = (
   args: AlignCenterHPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AlignCenterH {...args} />
     <AlignCenterH {...args} fill="red.500" />
     <AlignCenterH {...args} fill="gray.900" />

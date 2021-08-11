@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Desert>;
 
 const Template: ComponentStory<typeof Desert> = (args: DesertPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Desert {...args} />
     <Desert {...args} fill="red.500" />
     <Desert {...args} fill="gray.900" />

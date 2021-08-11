@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof EditAlt>;
 
 const Template: ComponentStory<typeof EditAlt> = (args: EditAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EditAlt {...args} />
     <EditAlt {...args} fill="red.500" />
     <EditAlt {...args} fill="gray.900" />

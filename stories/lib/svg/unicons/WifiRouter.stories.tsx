@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WifiRouter> = (
   args: WifiRouterPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WifiRouter {...args} />
     <WifiRouter {...args} fill="red.500" />
     <WifiRouter {...args} fill="gray.900" />

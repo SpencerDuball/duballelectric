@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BringBottom> = (
   args: BringBottomPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BringBottom {...args} />
     <BringBottom {...args} fill="red.500" />
     <BringBottom {...args} fill="gray.900" />

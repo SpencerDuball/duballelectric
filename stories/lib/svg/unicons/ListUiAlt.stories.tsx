@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ListUiAlt>;
 
 const Template: ComponentStory<typeof ListUiAlt> = (args: ListUiAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ListUiAlt {...args} />
     <ListUiAlt {...args} fill="red.500" />
     <ListUiAlt {...args} fill="gray.900" />

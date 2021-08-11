@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeRedo> = (
   args: EnvelopeRedoPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeRedo {...args} />
     <EnvelopeRedo {...args} fill="red.500" />
     <EnvelopeRedo {...args} fill="gray.900" />

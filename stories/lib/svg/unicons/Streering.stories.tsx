@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Streering>;
 
 const Template: ComponentStory<typeof Streering> = (args: StreeringPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Streering {...args} />
     <Streering {...args} fill="red.500" />
     <Streering {...args} fill="gray.900" />

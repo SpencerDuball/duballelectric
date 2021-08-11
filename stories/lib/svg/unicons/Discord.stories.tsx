@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Discord>;
 
 const Template: ComponentStory<typeof Discord> = (args: DiscordPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Discord {...args} />
     <Discord {...args} fill="red.500" />
     <Discord {...args} fill="gray.900" />

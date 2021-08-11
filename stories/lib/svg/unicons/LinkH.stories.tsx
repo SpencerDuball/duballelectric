@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LinkH>;
 
 const Template: ComponentStory<typeof LinkH> = (args: LinkHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LinkH {...args} />
     <LinkH {...args} fill="red.500" />
     <LinkH {...args} fill="gray.900" />

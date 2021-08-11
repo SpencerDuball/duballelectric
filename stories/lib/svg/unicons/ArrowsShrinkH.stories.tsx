@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsShrinkH> = (
   args: ArrowsShrinkHPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsShrinkH {...args} />
     <ArrowsShrinkH {...args} fill="red.500" />
     <ArrowsShrinkH {...args} fill="gray.900" />

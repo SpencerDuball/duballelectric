@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Intercom>;
 
 const Template: ComponentStory<typeof Intercom> = (args: IntercomPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Intercom {...args} />
     <Intercom {...args} fill="red.500" />
     <Intercom {...args} fill="gray.900" />

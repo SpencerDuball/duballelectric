@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ninja>;
 
 const Template: ComponentStory<typeof Ninja> = (args: NinjaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ninja {...args} />
     <Ninja {...args} fill="red.500" />
     <Ninja {...args} fill="gray.900" />

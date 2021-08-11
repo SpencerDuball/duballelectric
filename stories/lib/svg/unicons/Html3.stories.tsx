@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Html3>;
 
 const Template: ComponentStory<typeof Html3> = (args: Html3PropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Html3 {...args} />
     <Html3 {...args} fill="red.500" />
     <Html3 {...args} fill="gray.900" />

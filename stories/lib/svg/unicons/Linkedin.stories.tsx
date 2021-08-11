@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Linkedin>;
 
 const Template: ComponentStory<typeof Linkedin> = (args: LinkedinPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Linkedin {...args} />
     <Linkedin {...args} fill="red.500" />
     <Linkedin {...args} fill="gray.900" />

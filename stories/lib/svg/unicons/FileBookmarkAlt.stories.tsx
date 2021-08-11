@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileBookmarkAlt> = (
   args: FileBookmarkAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileBookmarkAlt {...args} />
     <FileBookmarkAlt {...args} fill="red.500" />
     <FileBookmarkAlt {...args} fill="gray.900" />

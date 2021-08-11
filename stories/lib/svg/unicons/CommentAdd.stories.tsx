@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAdd> = (
   args: CommentAddPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAdd {...args} />
     <CommentAdd {...args} fill="red.500" />
     <CommentAdd {...args} fill="gray.900" />

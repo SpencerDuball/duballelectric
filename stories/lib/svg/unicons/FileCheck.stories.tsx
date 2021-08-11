@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FileCheck>;
 
 const Template: ComponentStory<typeof FileCheck> = (args: FileCheckPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileCheck {...args} />
     <FileCheck {...args} fill="red.500" />
     <FileCheck {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VisualStudio> = (
   args: VisualStudioPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VisualStudio {...args} />
     <VisualStudio {...args} fill="red.500" />
     <VisualStudio {...args} fill="gray.900" />

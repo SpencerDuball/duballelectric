@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof At>;
 
 const Template: ComponentStory<typeof At> = (args: AtPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <At {...args} />
     <At {...args} fill="red.500" />
     <At {...args} fill="gray.900" />

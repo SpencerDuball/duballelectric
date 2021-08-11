@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof HorizontalAlignRight> = (
   args: HorizontalAlignRightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HorizontalAlignRight {...args} />
     <HorizontalAlignRight {...args} fill="red.500" />
     <HorizontalAlignRight {...args} fill="gray.900" />

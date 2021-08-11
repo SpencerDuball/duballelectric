@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Subject>;
 
 const Template: ComponentStory<typeof Subject> = (args: SubjectPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Subject {...args} />
     <Subject {...args} fill="red.500" />
     <Subject {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Dropbox>;
 
 const Template: ComponentStory<typeof Dropbox> = (args: DropboxPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Dropbox {...args} />
     <Dropbox {...args} fill="red.500" />
     <Dropbox {...args} fill="gray.900" />

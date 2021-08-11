@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowBreak> = (
   args: ArrowBreakPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowBreak {...args} />
     <ArrowBreak {...args} fill="red.500" />
     <ArrowBreak {...args} fill="gray.900" />

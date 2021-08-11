@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VolumeMute> = (
   args: VolumeMutePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VolumeMute {...args} />
     <VolumeMute {...args} fill="red.500" />
     <VolumeMute {...args} fill="gray.900" />

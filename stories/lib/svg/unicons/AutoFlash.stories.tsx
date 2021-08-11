@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AutoFlash>;
 
 const Template: ComponentStory<typeof AutoFlash> = (args: AutoFlashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AutoFlash {...args} />
     <AutoFlash {...args} fill="red.500" />
     <AutoFlash {...args} fill="gray.900" />

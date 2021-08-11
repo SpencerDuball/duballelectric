@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UserPlus>;
 
 const Template: ComponentStory<typeof UserPlus> = (args: UserPlusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UserPlus {...args} />
     <UserPlus {...args} fill="red.500" />
     <UserPlus {...args} fill="gray.900" />

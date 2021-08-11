@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Euro>;
 
 const Template: ComponentStory<typeof Euro> = (args: EuroPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Euro {...args} />
     <Euro {...args} fill="red.500" />
     <Euro {...args} fill="gray.900" />

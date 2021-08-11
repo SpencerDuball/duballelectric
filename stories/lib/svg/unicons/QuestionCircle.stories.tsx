@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof QuestionCircle> = (
   args: QuestionCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <QuestionCircle {...args} />
     <QuestionCircle {...args} fill="red.500" />
     <QuestionCircle {...args} fill="gray.900" />

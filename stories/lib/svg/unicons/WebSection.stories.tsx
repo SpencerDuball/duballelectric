@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WebSection> = (
   args: WebSectionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WebSection {...args} />
     <WebSection {...args} fill="red.500" />
     <WebSection {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LockSlash>;
 
 const Template: ComponentStory<typeof LockSlash> = (args: LockSlashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LockSlash {...args} />
     <LockSlash {...args} fill="red.500" />
     <LockSlash {...args} fill="gray.900" />

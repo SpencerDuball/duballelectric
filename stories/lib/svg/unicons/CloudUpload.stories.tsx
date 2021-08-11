@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudUpload> = (
   args: CloudUploadPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudUpload {...args} />
     <CloudUpload {...args} fill="red.500" />
     <CloudUpload {...args} fill="gray.900" />

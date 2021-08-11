@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MultimeterAlt> = (
   args: MultimeterAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MultimeterAlt {...args} />
     <MultimeterAlt {...args} fill="red.500" />
     <MultimeterAlt {...args} fill="gray.900" />

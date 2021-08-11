@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Forward>;
 
 const Template: ComponentStory<typeof Forward> = (args: ForwardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Forward {...args} />
     <Forward {...args} fill="red.500" />
     <Forward {...args} fill="gray.900" />

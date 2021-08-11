@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SnapchatSquare> = (
   args: SnapchatSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SnapchatSquare {...args} />
     <SnapchatSquare {...args} fill="red.500" />
     <SnapchatSquare {...args} fill="gray.900" />

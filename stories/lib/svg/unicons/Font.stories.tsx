@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Font>;
 
 const Template: ComponentStory<typeof Font> = (args: FontPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Font {...args} />
     <Font {...args} fill="red.500" />
     <Font {...args} fill="gray.900" />

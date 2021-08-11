@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BedDouble>;
 
 const Template: ComponentStory<typeof BedDouble> = (args: BedDoublePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BedDouble {...args} />
     <BedDouble {...args} fill="red.500" />
     <BedDouble {...args} fill="gray.900" />

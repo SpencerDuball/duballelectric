@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MobileAndroidAlt> = (
   args: MobileAndroidAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MobileAndroidAlt {...args} />
     <MobileAndroidAlt {...args} fill="red.500" />
     <MobileAndroidAlt {...args} fill="gray.900" />

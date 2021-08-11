@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileQuestion> = (
   args: FileQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileQuestion {...args} />
     <FileQuestion {...args} fill="red.500" />
     <FileQuestion {...args} fill="gray.900" />

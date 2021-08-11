@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Newspaper>;
 
 const Template: ComponentStory<typeof Newspaper> = (args: NewspaperPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Newspaper {...args} />
     <Newspaper {...args} fill="red.500" />
     <Newspaper {...args} fill="gray.900" />

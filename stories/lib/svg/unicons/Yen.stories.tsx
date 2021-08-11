@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Yen>;
 
 const Template: ComponentStory<typeof Yen> = (args: YenPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Yen {...args} />
     <Yen {...args} fill="red.500" />
     <Yen {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TelegramAlt> = (
   args: TelegramAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TelegramAlt {...args} />
     <TelegramAlt {...args} fill="red.500" />
     <TelegramAlt {...args} fill="gray.900" />

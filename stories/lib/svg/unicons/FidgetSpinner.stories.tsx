@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FidgetSpinner> = (
   args: FidgetSpinnerPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FidgetSpinner {...args} />
     <FidgetSpinner {...args} fill="red.500" />
     <FidgetSpinner {...args} fill="gray.900" />

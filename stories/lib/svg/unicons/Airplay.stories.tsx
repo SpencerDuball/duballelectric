@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Airplay>;
 
 const Template: ComponentStory<typeof Airplay> = (args: AirplayPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Airplay {...args} />
     <Airplay {...args} fill="red.500" />
     <Airplay {...args} fill="gray.900" />

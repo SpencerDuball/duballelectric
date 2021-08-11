@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CameraSlash> = (
   args: CameraSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CameraSlash {...args} />
     <CameraSlash {...args} fill="red.500" />
     <CameraSlash {...args} fill="gray.900" />

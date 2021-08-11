@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BracketsCurly> = (
   args: BracketsCurlyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BracketsCurly {...args} />
     <BracketsCurly {...args} fill="red.500" />
     <BracketsCurly {...args} fill="gray.900" />

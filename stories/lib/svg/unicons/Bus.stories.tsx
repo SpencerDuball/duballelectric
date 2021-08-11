@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bus>;
 
 const Template: ComponentStory<typeof Bus> = (args: BusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bus {...args} />
     <Bus {...args} fill="red.500" />
     <Bus {...args} fill="gray.900" />

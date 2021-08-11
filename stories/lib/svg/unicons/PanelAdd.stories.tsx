@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof PanelAdd>;
 
 const Template: ComponentStory<typeof PanelAdd> = (args: PanelAddPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PanelAdd {...args} />
     <PanelAdd {...args} fill="red.500" />
     <PanelAdd {...args} fill="gray.900" />

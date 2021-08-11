@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Robot>;
 
 const Template: ComponentStory<typeof Robot> = (args: RobotPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Robot {...args} />
     <Robot {...args} fill="red.500" />
     <Robot {...args} fill="gray.900" />

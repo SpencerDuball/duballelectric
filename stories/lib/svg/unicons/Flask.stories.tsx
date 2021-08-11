@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Flask>;
 
 const Template: ComponentStory<typeof Flask> = (args: FlaskPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Flask {...args} />
     <Flask {...args} fill="red.500" />
     <Flask {...args} fill="gray.900" />

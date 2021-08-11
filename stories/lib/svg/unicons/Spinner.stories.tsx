@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Spinner>;
 
 const Template: ComponentStory<typeof Spinner> = (args: SpinnerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Spinner {...args} />
     <Spinner {...args} fill="red.500" />
     <Spinner {...args} fill="gray.900" />

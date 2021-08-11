@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof V240Outlet> = (
   args: V240OutletPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <V240Outlet {...args} />
     <V240Outlet {...args} fill="red.500" />
     <V240Outlet {...args} fill="gray.900" />

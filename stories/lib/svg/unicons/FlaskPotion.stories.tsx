@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FlaskPotion> = (
   args: FlaskPotionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FlaskPotion {...args} />
     <FlaskPotion {...args} fill="red.500" />
     <FlaskPotion {...args} fill="gray.900" />

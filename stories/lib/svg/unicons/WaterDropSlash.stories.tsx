@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WaterDropSlash> = (
   args: WaterDropSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WaterDropSlash {...args} />
     <WaterDropSlash {...args} fill="red.500" />
     <WaterDropSlash {...args} fill="gray.900" />

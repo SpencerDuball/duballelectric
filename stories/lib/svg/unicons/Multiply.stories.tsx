@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Multiply>;
 
 const Template: ComponentStory<typeof Multiply> = (args: MultiplyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Multiply {...args} />
     <Multiply {...args} fill="red.500" />
     <Multiply {...args} fill="gray.900" />

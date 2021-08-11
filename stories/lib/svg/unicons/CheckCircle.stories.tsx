@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CheckCircle> = (
   args: CheckCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CheckCircle {...args} />
     <CheckCircle {...args} fill="red.500" />
     <CheckCircle {...args} fill="gray.900" />

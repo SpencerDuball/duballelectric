@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClipboardBlank> = (
   args: ClipboardBlankPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClipboardBlank {...args} />
     <ClipboardBlank {...args} fill="red.500" />
     <ClipboardBlank {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Rss>;
 
 const Template: ComponentStory<typeof Rss> = (args: RssPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Rss {...args} />
     <Rss {...args} fill="red.500" />
     <Rss {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GooglePlay> = (
   args: GooglePlayPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GooglePlay {...args} />
     <GooglePlay {...args} fill="red.500" />
     <GooglePlay {...args} fill="gray.900" />

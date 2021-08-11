@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof StethoscopeAlt> = (
   args: StethoscopeAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <StethoscopeAlt {...args} />
     <StethoscopeAlt {...args} fill="red.500" />
     <StethoscopeAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FreeEstimates> = (
   args: FreeEstimatesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FreeEstimates {...args} />
     <FreeEstimates {...args} colorPalette={["red.500", "gray.50"]} />
     <FreeEstimates {...args} colorPalette={["blue.400", "gray.50"]} />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Comparison> = (
   args: ComparisonPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Comparison {...args} />
     <Comparison {...args} fill="red.500" />
     <Comparison {...args} fill="gray.900" />

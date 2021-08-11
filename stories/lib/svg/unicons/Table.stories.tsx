@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Table>;
 
 const Template: ComponentStory<typeof Table> = (args: TablePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Table {...args} />
     <Table {...args} fill="red.500" />
     <Table {...args} fill="gray.900" />

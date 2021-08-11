@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DollarSignAlt> = (
   args: DollarSignAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DollarSignAlt {...args} />
     <DollarSignAlt {...args} fill="red.500" />
     <DollarSignAlt {...args} fill="gray.900" />

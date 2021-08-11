@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ReactLogo>;
 
 const Template: ComponentStory<typeof ReactLogo> = (args: ReactLogoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ReactLogo {...args} />
     <ReactLogo {...args} fill="red.500" />
     <ReactLogo {...args} fill="gray.900" />

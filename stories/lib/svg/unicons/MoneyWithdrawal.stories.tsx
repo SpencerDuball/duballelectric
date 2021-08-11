@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MoneyWithdrawal> = (
   args: MoneyWithdrawalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoneyWithdrawal {...args} />
     <MoneyWithdrawal {...args} fill="red.500" />
     <MoneyWithdrawal {...args} fill="gray.900" />

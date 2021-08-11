@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bell>;
 
 const Template: ComponentStory<typeof Bell> = (args: BellPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bell {...args} />
     <Bell {...args} fill="red.500" />
     <Bell {...args} fill="gray.900" />

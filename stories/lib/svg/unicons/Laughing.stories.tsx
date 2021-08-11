@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Laughing>;
 
 const Template: ComponentStory<typeof Laughing> = (args: LaughingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Laughing {...args} />
     <Laughing {...args} fill="red.500" />
     <Laughing {...args} fill="gray.900" />

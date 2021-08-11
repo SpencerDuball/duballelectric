@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExposureAlt> = (
   args: ExposureAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExposureAlt {...args} />
     <ExposureAlt {...args} fill="red.500" />
     <ExposureAlt {...args} fill="gray.900" />

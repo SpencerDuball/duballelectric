@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ear>;
 
 const Template: ComponentStory<typeof Ear> = (args: EarPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ear {...args} />
     <Ear {...args} fill="red.500" />
     <Ear {...args} fill="gray.900" />

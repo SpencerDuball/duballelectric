@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnglishToChinese> = (
   args: EnglishToChinesePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnglishToChinese {...args} />
     <EnglishToChinese {...args} fill="red.500" />
     <EnglishToChinese {...args} fill="gray.900" />

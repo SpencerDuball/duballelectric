@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Refresh>;
 
 const Template: ComponentStory<typeof Refresh> = (args: RefreshPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Refresh {...args} />
     <Refresh {...args} fill="red.500" />
     <Refresh {...args} fill="gray.900" />

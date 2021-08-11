@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Android>;
 
 const Template: ComponentStory<typeof Android> = (args: AndroidPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Android {...args} />
     <Android {...args} fill="red.500" />
     <Android {...args} fill="gray.900" />

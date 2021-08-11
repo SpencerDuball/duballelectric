@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FilePlus>;
 
 const Template: ComponentStory<typeof FilePlus> = (args: FilePlusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FilePlus {...args} />
     <FilePlus {...args} fill="red.500" />
     <FilePlus {...args} fill="gray.900" />

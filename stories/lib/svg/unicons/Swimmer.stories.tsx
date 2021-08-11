@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Swimmer>;
 
 const Template: ComponentStory<typeof Swimmer> = (args: SwimmerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Swimmer {...args} />
     <Swimmer {...args} fill="red.500" />
     <Swimmer {...args} fill="gray.900" />

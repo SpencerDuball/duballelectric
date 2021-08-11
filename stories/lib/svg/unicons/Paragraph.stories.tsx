@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Paragraph>;
 
 const Template: ComponentStory<typeof Paragraph> = (args: ParagraphPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Paragraph {...args} />
     <Paragraph {...args} fill="red.500" />
     <Paragraph {...args} fill="gray.900" />

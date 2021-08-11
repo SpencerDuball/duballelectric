@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Archive>;
 
 const Template: ComponentStory<typeof Archive> = (args: ArchivePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Archive {...args} />
     <Archive {...args} fill="red.500" />
     <Archive {...args} fill="gray.900" />

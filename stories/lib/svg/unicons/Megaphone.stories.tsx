@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Megaphone>;
 
 const Template: ComponentStory<typeof Megaphone> = (args: MegaphonePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Megaphone {...args} />
     <Megaphone {...args} fill="red.500" />
     <Megaphone {...args} fill="gray.900" />

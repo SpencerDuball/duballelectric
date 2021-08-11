@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bullseye>;
 
 const Template: ComponentStory<typeof Bullseye> = (args: BullseyePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bullseye {...args} />
     <Bullseye {...args} fill="red.500" />
     <Bullseye {...args} fill="gray.900" />

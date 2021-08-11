@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Power>;
 
 const Template: ComponentStory<typeof Power> = (args: PowerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Power {...args} />
     <Power {...args} fill="red.500" />
     <Power {...args} fill="gray.900" />

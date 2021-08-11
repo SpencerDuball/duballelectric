@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CompressArrows> = (
   args: CompressArrowsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompressArrows {...args} />
     <CompressArrows {...args} fill="red.500" />
     <CompressArrows {...args} fill="gray.900" />

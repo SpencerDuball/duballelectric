@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof StepForward> = (
   args: StepForwardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <StepForward {...args} />
     <StepForward {...args} fill="red.500" />
     <StepForward {...args} fill="gray.900" />

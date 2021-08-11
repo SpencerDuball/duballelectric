@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SignalAlt>;
 
 const Template: ComponentStory<typeof SignalAlt> = (args: SignalAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SignalAlt {...args} />
     <SignalAlt {...args} fill="red.500" />
     <SignalAlt {...args} fill="gray.900" />

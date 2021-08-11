@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltRedo> = (
   args: CommentAltRedoPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltRedo {...args} />
     <CommentAltRedo {...args} fill="red.500" />
     <CommentAltRedo {...args} fill="gray.900" />

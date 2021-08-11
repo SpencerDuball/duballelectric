@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof OpenCircuit> = (
   args: OpenCircuitPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <OpenCircuit {...args} />
     <OpenCircuit {...args} fill="red.500" />
     <OpenCircuit {...args} fill="gray.900" />

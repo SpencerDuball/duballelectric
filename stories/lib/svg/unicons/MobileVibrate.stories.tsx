@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MobileVibrate> = (
   args: MobileVibratePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MobileVibrate {...args} />
     <MobileVibrate {...args} fill="red.500" />
     <MobileVibrate {...args} fill="gray.900" />

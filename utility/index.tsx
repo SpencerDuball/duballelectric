@@ -1,4 +1,3 @@
-import { XSvgProps, XSvg } from "./XSvg";
 import {
   useColorPalette,
   UseColorPalettePropsI,
@@ -6,6 +5,6 @@ import {
 import { filterProps } from "./helpers/filterProps";
 import { MotionBox } from "./MotionBox";
 
-export { XSvg, useColorPalette, filterProps, MotionBox };
+export { useColorPalette, filterProps, MotionBox };
 
-export type { XSvgProps, UseColorPalettePropsI };
+export type { UseColorPalettePropsI };

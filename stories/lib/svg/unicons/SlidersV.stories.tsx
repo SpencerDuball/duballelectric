@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SlidersV>;
 
 const Template: ComponentStory<typeof SlidersV> = (args: SlidersVPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SlidersV {...args} />
     <SlidersV {...args} fill="red.500" />
     <SlidersV {...args} fill="gray.900" />

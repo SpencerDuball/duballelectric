@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Shutter>;
 
 const Template: ComponentStory<typeof Shutter> = (args: ShutterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Shutter {...args} />
     <Shutter {...args} fill="red.500" />
     <Shutter {...args} fill="gray.900" />

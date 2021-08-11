@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Lightbulb>;
 
 const Template: ComponentStory<typeof Lightbulb> = (args: LightbulbPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Lightbulb {...args} />
     <Lightbulb {...args} fill="red.500" />
     <Lightbulb {...args} fill="gray.900" />

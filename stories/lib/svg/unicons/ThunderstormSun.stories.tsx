@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ThunderstormSun> = (
   args: ThunderstormSunPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ThunderstormSun {...args} />
     <ThunderstormSun {...args} fill="red.500" />
     <ThunderstormSun {...args} fill="gray.900" />

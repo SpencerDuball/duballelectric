@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudBookmark> = (
   args: CloudBookmarkPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudBookmark {...args} />
     <CloudBookmark {...args} fill="red.500" />
     <CloudBookmark {...args} fill="gray.900" />

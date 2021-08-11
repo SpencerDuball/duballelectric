@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentShare> = (
   args: CommentSharePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentShare {...args} />
     <CommentShare {...args} fill="red.500" />
     <CommentShare {...args} fill="gray.900" />

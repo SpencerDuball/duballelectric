@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MapMarkerAlt> = (
   args: MapMarkerAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarkerAlt {...args} />
     <MapMarkerAlt {...args} fill="red.500" />
     <MapMarkerAlt {...args} fill="gray.900" />

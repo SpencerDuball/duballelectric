@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Instagram>;
 
 const Template: ComponentStory<typeof Instagram> = (args: InstagramPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Instagram {...args} />
     <Instagram {...args} fill="red.500" />
     <Instagram {...args} fill="gray.900" />

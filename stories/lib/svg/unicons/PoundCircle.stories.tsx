@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PoundCircle> = (
   args: PoundCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PoundCircle {...args} />
     <PoundCircle {...args} fill="red.500" />
     <PoundCircle {...args} fill="gray.900" />

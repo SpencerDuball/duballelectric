@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Snowflake>;
 
 const Template: ComponentStory<typeof Snowflake> = (args: SnowflakePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Snowflake {...args} />
     <Snowflake {...args} fill="red.500" />
     <Snowflake {...args} fill="gray.900" />

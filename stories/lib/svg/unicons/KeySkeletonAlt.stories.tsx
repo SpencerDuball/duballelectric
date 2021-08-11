@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof KeySkeletonAlt> = (
   args: KeySkeletonAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <KeySkeletonAlt {...args} />
     <KeySkeletonAlt {...args} fill="red.500" />
     <KeySkeletonAlt {...args} fill="gray.900" />

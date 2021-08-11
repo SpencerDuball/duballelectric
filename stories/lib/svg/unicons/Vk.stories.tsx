@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Vk>;
 
 const Template: ComponentStory<typeof Vk> = (args: VkPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Vk {...args} />
     <Vk {...args} fill="red.500" />
     <Vk {...args} fill="gray.900" />

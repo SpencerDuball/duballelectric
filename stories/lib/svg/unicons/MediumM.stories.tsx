@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MediumM>;
 
 const Template: ComponentStory<typeof MediumM> = (args: MediumMPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MediumM {...args} />
     <MediumM {...args} fill="red.500" />
     <MediumM {...args} fill="gray.900" />

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useColor, SystemProps, FillProps } from "@xstyled/emotion";
+import { useToken, SystemProps, ColorProps } from "@chakra-ui/react";
 
 // types
-type FillType = FillProps["fill"];
+type FillType = ColorProps["fill"];
 
 // constants
 const arbitraryColor = "black";
@@ -47,12 +47,12 @@ export const useColorPalette = (
   const themedColorPalette = colorPalette.map((color) => {
     // if the color is not undefined we will return the result
     // of the useColor hook
-    if (color) return (useColor(color) as unknown) as string | undefined;
+    if (color) return useToken("colors", [color as string]);
     // if the color is undefined, we still need to maintain the
     // same number of hook calls. So run the hook with an arbitrary
     // color, but return undefined.
     else {
-      useColor(arbitraryColor);
+      useToken("colors", [color as string]);
       return undefined;
     }
   });

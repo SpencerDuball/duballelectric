@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof StoreAlt>;
 
 const Template: ComponentStory<typeof StoreAlt> = (args: StoreAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <StoreAlt {...args} />
     <StoreAlt {...args} fill="red.500" />
     <StoreAlt {...args} fill="gray.900" />

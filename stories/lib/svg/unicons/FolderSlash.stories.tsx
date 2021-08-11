@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderSlash> = (
   args: FolderSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderSlash {...args} />
     <FolderSlash {...args} fill="red.500" />
     <FolderSlash {...args} fill="gray.900" />

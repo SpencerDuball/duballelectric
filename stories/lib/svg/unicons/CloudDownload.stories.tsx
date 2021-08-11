@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudDownload> = (
   args: CloudDownloadPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudDownload {...args} />
     <CloudDownload {...args} fill="red.500" />
     <CloudDownload {...args} fill="gray.900" />

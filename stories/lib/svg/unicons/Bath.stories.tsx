@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bath>;
 
 const Template: ComponentStory<typeof Bath> = (args: BathPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bath {...args} />
     <Bath {...args} fill="red.500" />
     <Bath {...args} fill="gray.900" />

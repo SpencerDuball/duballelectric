@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof IncandescantBulb> = (
   args: IncandescantBulbPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <IncandescantBulb {...args} />
     <IncandescantBulb {...args} fill="red.500" />
     <IncandescantBulb {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MoonEclipse> = (
   args: MoonEclipsePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoonEclipse {...args} />
     <MoonEclipse {...args} fill="red.500" />
     <MoonEclipse {...args} fill="gray.900" />

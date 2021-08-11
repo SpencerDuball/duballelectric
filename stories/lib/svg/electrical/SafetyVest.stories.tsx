@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SafetyVest> = (
   args: SafetyVestPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SafetyVest {...args} />
     <SafetyVest {...args} fill="red.500" />
     <SafetyVest {...args} fill="gray.900" />

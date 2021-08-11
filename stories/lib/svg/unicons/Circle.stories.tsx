@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Circle>;
 
 const Template: ComponentStory<typeof Circle> = (args: CirclePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Circle {...args} />
     <Circle {...args} fill="red.500" />
     <Circle {...args} fill="gray.900" />

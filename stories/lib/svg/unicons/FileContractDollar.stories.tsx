@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileContractDollar> = (
   args: FileContractDollarPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileContractDollar {...args} />
     <FileContractDollar {...args} fill="red.500" />
     <FileContractDollar {...args} fill="gray.900" />

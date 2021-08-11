@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof TemperatureThreeQuarter> = (
   args: TemperatureThreeQuarterPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TemperatureThreeQuarter {...args} />
     <TemperatureThreeQuarter {...args} fill="red.500" />
     <TemperatureThreeQuarter {...args} fill="gray.900" />

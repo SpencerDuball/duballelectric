@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BloggerAlt> = (
   args: BloggerAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BloggerAlt {...args} />
     <BloggerAlt {...args} fill="red.500" />
     <BloggerAlt {...args} fill="gray.900" />

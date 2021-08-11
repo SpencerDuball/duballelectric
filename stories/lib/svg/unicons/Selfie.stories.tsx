@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Selfie>;
 
 const Template: ComponentStory<typeof Selfie> = (args: SelfiePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Selfie {...args} />
     <Selfie {...args} fill="red.500" />
     <Selfie {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CreditCardSearch> = (
   args: CreditCardSearchPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CreditCardSearch {...args} />
     <CreditCardSearch {...args} fill="red.500" />
     <CreditCardSearch {...args} fill="gray.900" />

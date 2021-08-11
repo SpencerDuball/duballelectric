@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Folder>;
 
 const Template: ComponentStory<typeof Folder> = (args: FolderPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Folder {...args} />
     <Folder {...args} fill="red.500" />
     <Folder {...args} fill="gray.900" />

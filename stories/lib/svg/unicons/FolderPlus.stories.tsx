@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderPlus> = (
   args: FolderPlusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderPlus {...args} />
     <FolderPlus {...args} fill="red.500" />
     <FolderPlus {...args} fill="gray.900" />

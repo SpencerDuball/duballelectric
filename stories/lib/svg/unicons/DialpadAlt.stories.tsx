@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DialpadAlt> = (
   args: DialpadAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DialpadAlt {...args} />
     <DialpadAlt {...args} fill="red.500" />
     <DialpadAlt {...args} fill="gray.900" />

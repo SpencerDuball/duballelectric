@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BusAlt>;
 
 const Template: ComponentStory<typeof BusAlt> = (args: BusAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BusAlt {...args} />
     <BusAlt {...args} fill="red.500" />
     <BusAlt {...args} fill="gray.900" />

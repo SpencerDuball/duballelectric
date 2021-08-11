@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SocialDistancing> = (
   args: SocialDistancingPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SocialDistancing {...args} />
     <SocialDistancing {...args} fill="red.500" />
     <SocialDistancing {...args} fill="gray.900" />

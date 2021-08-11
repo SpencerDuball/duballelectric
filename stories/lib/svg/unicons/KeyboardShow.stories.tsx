@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof KeyboardShow> = (
   args: KeyboardShowPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <KeyboardShow {...args} />
     <KeyboardShow {...args} fill="red.500" />
     <KeyboardShow {...args} fill="gray.900" />

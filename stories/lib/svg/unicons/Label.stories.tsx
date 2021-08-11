@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Label>;
 
 const Template: ComponentStory<typeof Label> = (args: LabelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Label {...args} />
     <Label {...args} fill="red.500" />
     <Label {...args} fill="gray.900" />

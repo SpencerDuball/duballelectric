@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Polygon>;
 
 const Template: ComponentStory<typeof Polygon> = (args: PolygonPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Polygon {...args} />
     <Polygon {...args} fill="red.500" />
     <Polygon {...args} fill="gray.900" />

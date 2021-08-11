@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sun>;
 
 const Template: ComponentStory<typeof Sun> = (args: SunPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sun {...args} />
     <Sun {...args} fill="red.500" />
     <Sun {...args} fill="gray.900" />

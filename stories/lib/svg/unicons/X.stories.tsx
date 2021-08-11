@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof X>;
 
 const Template: ComponentStory<typeof X> = (args: XPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <X {...args} />
     <X {...args} fill="red.500" />
     <X {...args} fill="gray.900" />

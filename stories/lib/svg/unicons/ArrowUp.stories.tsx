@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ArrowUp>;
 
 const Template: ComponentStory<typeof ArrowUp> = (args: ArrowUpPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowUp {...args} />
     <ArrowUp {...args} fill="red.500" />
     <ArrowUp {...args} fill="gray.900" />

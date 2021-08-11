@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Constructor> = (
   args: ConstructorPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Constructor {...args} />
     <Constructor {...args} fill="red.500" />
     <Constructor {...args} fill="gray.900" />

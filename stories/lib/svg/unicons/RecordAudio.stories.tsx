@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof RecordAudio> = (
   args: RecordAudioPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RecordAudio {...args} />
     <RecordAudio {...args} fill="red.500" />
     <RecordAudio {...args} fill="gray.900" />

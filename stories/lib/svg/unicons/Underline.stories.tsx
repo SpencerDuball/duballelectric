@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Underline>;
 
 const Template: ComponentStory<typeof Underline> = (args: UnderlinePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Underline {...args} />
     <Underline {...args} fill="red.500" />
     <Underline {...args} fill="gray.900" />

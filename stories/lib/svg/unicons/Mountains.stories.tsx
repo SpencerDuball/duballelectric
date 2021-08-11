@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Mountains>;
 
 const Template: ComponentStory<typeof Mountains> = (args: MountainsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Mountains {...args} />
     <Mountains {...args} fill="red.500" />
     <Mountains {...args} fill="gray.900" />

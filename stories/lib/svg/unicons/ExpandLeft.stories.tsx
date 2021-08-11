@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExpandLeft> = (
   args: ExpandLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExpandLeft {...args} />
     <ExpandLeft {...args} fill="red.500" />
     <ExpandLeft {...args} fill="gray.900" />

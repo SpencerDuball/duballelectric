@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Monitor>;
 
 const Template: ComponentStory<typeof Monitor> = (args: MonitorPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Monitor {...args} />
     <Monitor {...args} fill="red.500" />
     <Monitor {...args} fill="gray.900" />

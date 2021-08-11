@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SlidersVAlt> = (
   args: SlidersVAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SlidersVAlt {...args} />
     <SlidersVAlt {...args} fill="red.500" />
     <SlidersVAlt {...args} fill="gray.900" />

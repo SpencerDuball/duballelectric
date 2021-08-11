@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudSlash> = (
   args: CloudSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudSlash {...args} />
     <CloudSlash {...args} fill="red.500" />
     <CloudSlash {...args} fill="gray.900" />

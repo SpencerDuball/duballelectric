@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Adobe>;
 
 const Template: ComponentStory<typeof Adobe> = (args: AdobePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Adobe {...args} />
     <Adobe {...args} fill="red.500" />
     <Adobe {...args} fill="gray.900" />

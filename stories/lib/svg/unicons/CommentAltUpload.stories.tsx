@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltUpload> = (
   args: CommentAltUploadPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltUpload {...args} />
     <CommentAltUpload {...args} fill="red.500" />
     <CommentAltUpload {...args} fill="gray.900" />

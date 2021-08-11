@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TextFields> = (
   args: TextFieldsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TextFields {...args} />
     <TextFields {...args} fill="red.500" />
     <TextFields {...args} fill="gray.900" />

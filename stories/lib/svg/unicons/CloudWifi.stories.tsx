@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudWifi>;
 
 const Template: ComponentStory<typeof CloudWifi> = (args: CloudWifiPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudWifi {...args} />
     <CloudWifi {...args} fill="red.500" />
     <CloudWifi {...args} fill="gray.900" />

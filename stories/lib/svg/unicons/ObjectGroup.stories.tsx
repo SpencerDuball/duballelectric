@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ObjectGroup> = (
   args: ObjectGroupPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ObjectGroup {...args} />
     <ObjectGroup {...args} fill="red.500" />
     <ObjectGroup {...args} fill="gray.900" />

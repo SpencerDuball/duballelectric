@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeDownload> = (
   args: EnvelopeDownloadPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeDownload {...args} />
     <EnvelopeDownload {...args} fill="red.500" />
     <EnvelopeDownload {...args} fill="gray.900" />

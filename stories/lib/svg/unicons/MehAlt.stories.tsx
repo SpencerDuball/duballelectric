@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MehAlt>;
 
 const Template: ComponentStory<typeof MehAlt> = (args: MehAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MehAlt {...args} />
     <MehAlt {...args} fill="red.500" />
     <MehAlt {...args} fill="gray.900" />

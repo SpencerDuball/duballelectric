@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TimesSquare> = (
   args: TimesSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TimesSquare {...args} />
     <TimesSquare {...args} fill="red.500" />
     <TimesSquare {...args} fill="gray.900" />

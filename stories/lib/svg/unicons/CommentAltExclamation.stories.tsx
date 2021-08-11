@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltExclamation> = (
   args: CommentAltExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltExclamation {...args} />
     <CommentAltExclamation {...args} fill="red.500" />
     <CommentAltExclamation {...args} fill="gray.900" />

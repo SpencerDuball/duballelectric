@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sitemap>;
 
 const Template: ComponentStory<typeof Sitemap> = (args: SitemapPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sitemap {...args} />
     <Sitemap {...args} fill="red.500" />
     <Sitemap {...args} fill="gray.900" />

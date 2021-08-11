@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileLandscapeAlt> = (
   args: FileLandscapeAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileLandscapeAlt {...args} />
     <FileLandscapeAlt {...args} fill="red.500" />
     <FileLandscapeAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GoogleHangoutsAlt> = (
   args: GoogleHangoutsAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GoogleHangoutsAlt {...args} />
     <GoogleHangoutsAlt {...args} fill="red.500" />
     <GoogleHangoutsAlt {...args} fill="gray.900" />

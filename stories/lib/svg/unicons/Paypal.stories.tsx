@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Paypal>;
 
 const Template: ComponentStory<typeof Paypal> = (args: PaypalPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Paypal {...args} />
     <Paypal {...args} fill="red.500" />
     <Paypal {...args} fill="gray.900" />

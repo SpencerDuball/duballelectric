@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ImageLock>;
 
 const Template: ComponentStory<typeof ImageLock> = (args: ImageLockPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageLock {...args} />
     <ImageLock {...args} fill="red.500" />
     <ImageLock {...args} fill="gray.900" />

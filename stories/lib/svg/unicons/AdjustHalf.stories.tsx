@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AdjustHalf> = (
   args: AdjustHalfPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AdjustHalf {...args} />
     <AdjustHalf {...args} fill="red.500" />
     <AdjustHalf {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BookmarkFull> = (
   args: BookmarkFullPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BookmarkFull {...args} />
     <BookmarkFull {...args} fill="red.500" />
     <BookmarkFull {...args} fill="gray.900" />

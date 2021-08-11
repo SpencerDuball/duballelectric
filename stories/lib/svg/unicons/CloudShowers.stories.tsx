@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudShowers> = (
   args: CloudShowersPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudShowers {...args} />
     <CloudShowers {...args} fill="red.500" />
     <CloudShowers {...args} fill="gray.900" />

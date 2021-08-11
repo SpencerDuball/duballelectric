@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentNotes> = (
   args: CommentNotesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentNotes {...args} />
     <CommentNotes {...args} fill="red.500" />
     <CommentNotes {...args} fill="gray.900" />

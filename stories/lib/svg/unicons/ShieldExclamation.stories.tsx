@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShieldExclamation> = (
   args: ShieldExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShieldExclamation {...args} />
     <ShieldExclamation {...args} fill="red.500" />
     <ShieldExclamation {...args} fill="gray.900" />

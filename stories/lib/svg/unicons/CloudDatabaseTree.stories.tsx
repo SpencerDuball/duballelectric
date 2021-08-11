@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudDatabaseTree> = (
   args: CloudDatabaseTreePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudDatabaseTree {...args} />
     <CloudDatabaseTree {...args} fill="red.500" />
     <CloudDatabaseTree {...args} fill="gray.900" />

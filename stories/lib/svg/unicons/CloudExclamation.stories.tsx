@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudExclamation> = (
   args: CloudExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudExclamation {...args} />
     <CloudExclamation {...args} fill="red.500" />
     <CloudExclamation {...args} fill="gray.900" />

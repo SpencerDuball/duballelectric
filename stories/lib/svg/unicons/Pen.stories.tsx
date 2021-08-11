@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Pen>;
 
 const Template: ComponentStory<typeof Pen> = (args: PenPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pen {...args} />
     <Pen {...args} fill="red.500" />
     <Pen {...args} fill="gray.900" />

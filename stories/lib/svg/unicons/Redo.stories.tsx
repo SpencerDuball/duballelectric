@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Redo>;
 
 const Template: ComponentStory<typeof Redo> = (args: RedoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Redo {...args} />
     <Redo {...args} fill="red.500" />
     <Redo {...args} fill="gray.900" />

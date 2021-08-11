@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PizzaSlice> = (
   args: PizzaSlicePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PizzaSlice {...args} />
     <PizzaSlice {...args} fill="red.500" />
     <PizzaSlice {...args} fill="gray.900" />

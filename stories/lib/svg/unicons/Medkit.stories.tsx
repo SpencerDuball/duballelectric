@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Medkit>;
 
 const Template: ComponentStory<typeof Medkit> = (args: MedkitPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Medkit {...args} />
     <Medkit {...args} fill="red.500" />
     <Medkit {...args} fill="gray.900" />

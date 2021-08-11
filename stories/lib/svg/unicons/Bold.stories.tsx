@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bold>;
 
 const Template: ComponentStory<typeof Bold> = (args: BoldPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bold {...args} />
     <Bold {...args} fill="red.500" />
     <Bold {...args} fill="gray.900" />

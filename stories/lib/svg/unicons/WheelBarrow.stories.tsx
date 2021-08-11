@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WheelBarrow> = (
   args: WheelBarrowPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WheelBarrow {...args} />
     <WheelBarrow {...args} fill="red.500" />
     <WheelBarrow {...args} fill="gray.900" />

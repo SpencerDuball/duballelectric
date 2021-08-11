@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bookmark>;
 
 const Template: ComponentStory<typeof Bookmark> = (args: BookmarkPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bookmark {...args} />
     <Bookmark {...args} fill="red.500" />
     <Bookmark {...args} fill="gray.900" />

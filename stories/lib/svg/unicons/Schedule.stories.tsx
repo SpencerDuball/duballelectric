@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Schedule>;
 
 const Template: ComponentStory<typeof Schedule> = (args: SchedulePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Schedule {...args} />
     <Schedule {...args} fill="red.500" />
     <Schedule {...args} fill="gray.900" />

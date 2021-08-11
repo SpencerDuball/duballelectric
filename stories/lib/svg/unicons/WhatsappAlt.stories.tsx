@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WhatsappAlt> = (
   args: WhatsappAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WhatsappAlt {...args} />
     <WhatsappAlt {...args} fill="red.500" />
     <WhatsappAlt {...args} fill="gray.900" />

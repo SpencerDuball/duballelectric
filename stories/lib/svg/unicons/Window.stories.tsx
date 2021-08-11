@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Window>;
 
 const Template: ComponentStory<typeof Window> = (args: WindowPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Window {...args} />
     <Window {...args} fill="red.500" />
     <Window {...args} fill="gray.900" />

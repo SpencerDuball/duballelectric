@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Apps>;
 
 const Template: ComponentStory<typeof Apps> = (args: AppsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Apps {...args} />
     <Apps {...args} fill="red.500" />
     <Apps {...args} fill="gray.900" />

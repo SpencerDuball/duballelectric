@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PlaneDeparture> = (
   args: PlaneDeparturePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlaneDeparture {...args} />
     <PlaneDeparture {...args} fill="red.500" />
     <PlaneDeparture {...args} fill="gray.900" />

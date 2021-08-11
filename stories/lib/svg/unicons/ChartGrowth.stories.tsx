@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ChartGrowth> = (
   args: ChartGrowthPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChartGrowth {...args} />
     <ChartGrowth {...args} fill="red.500" />
     <ChartGrowth {...args} fill="gray.900" />

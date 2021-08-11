@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Voltmeter>;
 
 const Template: ComponentStory<typeof Voltmeter> = (args: VoltmeterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Voltmeter {...args} />
     <Voltmeter {...args} fill="red.500" />
     <Voltmeter {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WindMoon>;
 
 const Template: ComponentStory<typeof WindMoon> = (args: WindMoonPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WindMoon {...args} />
     <WindMoon {...args} fill="red.500" />
     <WindMoon {...args} fill="gray.900" />

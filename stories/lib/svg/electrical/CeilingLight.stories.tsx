@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CeilingLight> = (
   args: CeilingLightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CeilingLight {...args} />
     <CeilingLight {...args} fill="red.500" />
     <CeilingLight {...args} fill="gray.900" />

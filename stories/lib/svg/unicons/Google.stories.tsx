@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Google>;
 
 const Template: ComponentStory<typeof Google> = (args: GooglePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Google {...args} />
     <Google {...args} fill="red.500" />
     <Google {...args} fill="gray.900" />

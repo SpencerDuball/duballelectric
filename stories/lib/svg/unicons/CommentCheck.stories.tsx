@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentCheck> = (
   args: CommentCheckPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentCheck {...args} />
     <CommentCheck {...args} fill="red.500" />
     <CommentCheck {...args} fill="gray.900" />

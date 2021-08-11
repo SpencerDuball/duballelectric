@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeUploadAlt> = (
   args: EnvelopeUploadAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeUploadAlt {...args} />
     <EnvelopeUploadAlt {...args} fill="red.500" />
     <EnvelopeUploadAlt {...args} fill="gray.900" />

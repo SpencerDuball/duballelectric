@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MapMarkerMinus> = (
   args: MapMarkerMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarkerMinus {...args} />
     <MapMarkerMinus {...args} fill="red.500" />
     <MapMarkerMinus {...args} fill="gray.900" />

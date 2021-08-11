@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsResize> = (
   args: ArrowsResizePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsResize {...args} />
     <ArrowsResize {...args} fill="red.500" />
     <ArrowsResize {...args} fill="gray.900" />

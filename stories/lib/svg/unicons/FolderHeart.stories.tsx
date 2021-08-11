@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderHeart> = (
   args: FolderHeartPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderHeart {...args} />
     <FolderHeart {...args} fill="red.500" />
     <FolderHeart {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LetterEnglishA> = (
   args: LetterEnglishAPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LetterEnglishA {...args} />
     <LetterEnglishA {...args} fill="red.500" />
     <LetterEnglishA {...args} fill="gray.900" />

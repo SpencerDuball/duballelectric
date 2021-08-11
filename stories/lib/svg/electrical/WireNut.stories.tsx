@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WireNut>;
 
 const Template: ComponentStory<typeof WireNut> = (args: WireNutPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WireNut {...args} />
     <WireNut {...args} fill="red.500" />
     <WireNut {...args} fill="gray.900" />

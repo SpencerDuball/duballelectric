@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Edit>;
 
 const Template: ComponentStory<typeof Edit> = (args: EditPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Edit {...args} />
     <Edit {...args} fill="red.500" />
     <Edit {...args} fill="gray.900" />

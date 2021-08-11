@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Hunting>;
 
 const Template: ComponentStory<typeof Hunting> = (args: HuntingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Hunting {...args} />
     <Hunting {...args} fill="red.500" />
     <Hunting {...args} fill="gray.900" />

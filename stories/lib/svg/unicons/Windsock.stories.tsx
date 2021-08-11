@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Windsock>;
 
 const Template: ComponentStory<typeof Windsock> = (args: WindsockPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Windsock {...args} />
     <Windsock {...args} fill="red.500" />
     <Windsock {...args} fill="gray.900" />

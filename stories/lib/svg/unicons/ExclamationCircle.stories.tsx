@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExclamationCircle> = (
   args: ExclamationCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExclamationCircle {...args} />
     <ExclamationCircle {...args} fill="red.500" />
     <ExclamationCircle {...args} fill="gray.900" />

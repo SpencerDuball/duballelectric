@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DocumentLayoutLeft> = (
   args: DocumentLayoutLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DocumentLayoutLeft {...args} />
     <DocumentLayoutLeft {...args} fill="red.500" />
     <DocumentLayoutLeft {...args} fill="gray.900" />

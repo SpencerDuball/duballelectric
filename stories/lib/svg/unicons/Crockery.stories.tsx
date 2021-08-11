@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Crockery>;
 
 const Template: ComponentStory<typeof Crockery> = (args: CrockeryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Crockery {...args} />
     <Crockery {...args} fill="red.500" />
     <Crockery {...args} fill="gray.900" />

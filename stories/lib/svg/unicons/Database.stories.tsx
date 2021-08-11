@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Database>;
 
 const Template: ComponentStory<typeof Database> = (args: DatabasePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Database {...args} />
     <Database {...args} fill="red.500" />
     <Database {...args} fill="gray.900" />

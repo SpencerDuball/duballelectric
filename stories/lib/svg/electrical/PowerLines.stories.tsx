@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PowerLines> = (
   args: PowerLinesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PowerLines {...args} />
     <PowerLines {...args} fill="red.500" />
     <PowerLines {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Slack>;
 
 const Template: ComponentStory<typeof Slack> = (args: SlackPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Slack {...args} />
     <Slack {...args} fill="red.500" />
     <Slack {...args} fill="gray.900" />

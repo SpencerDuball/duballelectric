@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Pound>;
 
 const Template: ComponentStory<typeof Pound> = (args: PoundPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pound {...args} />
     <Pound {...args} fill="red.500" />
     <Pound {...args} fill="gray.900" />

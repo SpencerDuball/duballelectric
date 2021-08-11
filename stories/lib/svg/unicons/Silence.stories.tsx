@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Silence>;
 
 const Template: ComponentStory<typeof Silence> = (args: SilencePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Silence {...args} />
     <Silence {...args} fill="red.500" />
     <Silence {...args} fill="gray.900" />

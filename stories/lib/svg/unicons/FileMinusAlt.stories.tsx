@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileMinusAlt> = (
   args: FileMinusAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileMinusAlt {...args} />
     <FileMinusAlt {...args} fill="red.500" />
     <FileMinusAlt {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof DiaryAlt>;
 
 const Template: ComponentStory<typeof DiaryAlt> = (args: DiaryAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DiaryAlt {...args} />
     <DiaryAlt {...args} fill="red.500" />
     <DiaryAlt {...args} fill="gray.900" />

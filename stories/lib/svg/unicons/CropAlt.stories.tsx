@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CropAlt>;
 
 const Template: ComponentStory<typeof CropAlt> = (args: CropAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CropAlt {...args} />
     <CropAlt {...args} fill="red.500" />
     <CropAlt {...args} fill="gray.900" />

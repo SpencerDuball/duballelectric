@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LetterJapaneseA> = (
   args: LetterJapaneseAPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LetterJapaneseA {...args} />
     <LetterJapaneseA {...args} fill="red.500" />
     <LetterJapaneseA {...args} fill="gray.900" />

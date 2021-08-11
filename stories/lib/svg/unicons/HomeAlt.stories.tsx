@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof HomeAlt>;
 
 const Template: ComponentStory<typeof HomeAlt> = (args: HomeAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HomeAlt {...args} />
     <HomeAlt {...args} fill="red.500" />
     <HomeAlt {...args} fill="gray.900" />

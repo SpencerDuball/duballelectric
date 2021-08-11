@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Chart>;
 
 const Template: ComponentStory<typeof Chart> = (args: ChartPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Chart {...args} />
     <Chart {...args} fill="red.500" />
     <Chart {...args} fill="gray.900" />

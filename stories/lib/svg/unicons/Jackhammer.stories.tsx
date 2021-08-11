@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Jackhammer> = (
   args: JackhammerPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Jackhammer {...args} />
     <Jackhammer {...args} fill="red.500" />
     <Jackhammer {...args} fill="gray.900" />

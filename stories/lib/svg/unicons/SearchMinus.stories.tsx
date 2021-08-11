@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SearchMinus> = (
   args: SearchMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SearchMinus {...args} />
     <SearchMinus {...args} fill="red.500" />
     <SearchMinus {...args} fill="gray.900" />

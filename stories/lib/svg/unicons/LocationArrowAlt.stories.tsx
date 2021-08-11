@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LocationArrowAlt> = (
   args: LocationArrowAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LocationArrowAlt {...args} />
     <LocationArrowAlt {...args} fill="red.500" />
     <LocationArrowAlt {...args} fill="gray.900" />

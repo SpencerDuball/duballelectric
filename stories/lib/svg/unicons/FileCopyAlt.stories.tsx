@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileCopyAlt> = (
   args: FileCopyAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileCopyAlt {...args} />
     <FileCopyAlt {...args} fill="red.500" />
     <FileCopyAlt {...args} fill="gray.900" />

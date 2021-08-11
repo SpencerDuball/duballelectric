@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TrafficLight> = (
   args: TrafficLightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TrafficLight {...args} />
     <TrafficLight {...args} fill="red.500" />
     <TrafficLight {...args} fill="gray.900" />

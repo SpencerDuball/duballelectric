@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PresentationCheck> = (
   args: PresentationCheckPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PresentationCheck {...args} />
     <PresentationCheck {...args} fill="red.500" />
     <PresentationCheck {...args} fill="gray.900" />

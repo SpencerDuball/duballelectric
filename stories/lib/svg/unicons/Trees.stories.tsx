@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Trees>;
 
 const Template: ComponentStory<typeof Trees> = (args: TreesPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Trees {...args} />
     <Trees {...args} fill="red.500" />
     <Trees {...args} fill="gray.900" />

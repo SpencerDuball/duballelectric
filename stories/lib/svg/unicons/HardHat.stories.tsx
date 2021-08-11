@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof HardHat>;
 
 const Template: ComponentStory<typeof HardHat> = (args: HardHatPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HardHat {...args} />
     <HardHat {...args} fill="red.500" />
     <HardHat {...args} fill="gray.900" />

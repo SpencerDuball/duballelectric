@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageShield> = (
   args: ImageShieldPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageShield {...args} />
     <ImageShield {...args} fill="red.500" />
     <ImageShield {...args} fill="gray.900" />

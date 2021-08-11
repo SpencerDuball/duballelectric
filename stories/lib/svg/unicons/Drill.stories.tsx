@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Drill>;
 
 const Template: ComponentStory<typeof Drill> = (args: DrillPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Drill {...args} />
     <Drill {...args} fill="red.500" />
     <Drill {...args} fill="gray.900" />

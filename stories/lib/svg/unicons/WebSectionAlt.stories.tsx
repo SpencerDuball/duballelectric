@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WebSectionAlt> = (
   args: WebSectionAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WebSectionAlt {...args} />
     <WebSectionAlt {...args} fill="red.500" />
     <WebSectionAlt {...args} fill="gray.900" />

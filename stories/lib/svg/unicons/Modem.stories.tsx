@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Modem>;
 
 const Template: ComponentStory<typeof Modem> = (args: ModemPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Modem {...args} />
     <Modem {...args} fill="red.500" />
     <Modem {...args} fill="gray.900" />

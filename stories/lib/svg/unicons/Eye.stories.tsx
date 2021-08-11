@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Eye>;
 
 const Template: ComponentStory<typeof Eye> = (args: EyePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Eye {...args} />
     <Eye {...args} fill="red.500" />
     <Eye {...args} fill="gray.900" />

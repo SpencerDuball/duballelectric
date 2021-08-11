@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Copy>;
 
 const Template: ComponentStory<typeof Copy> = (args: CopyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Copy {...args} />
     <Copy {...args} fill="red.500" />
     <Copy {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Icons>;
 
 const Template: ComponentStory<typeof Icons> = (args: IconsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Icons {...args} />
     <Icons {...args} fill="red.500" />
     <Icons {...args} fill="gray.900" />

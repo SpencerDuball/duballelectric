@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClockSeven> = (
   args: ClockSevenPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClockSeven {...args} />
     <ClockSeven {...args} fill="red.500" />
     <ClockSeven {...args} fill="gray.900" />

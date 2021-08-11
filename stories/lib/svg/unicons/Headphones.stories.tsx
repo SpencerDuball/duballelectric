@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Headphones> = (
   args: HeadphonesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Headphones {...args} />
     <Headphones {...args} fill="red.500" />
     <Headphones {...args} fill="gray.900" />

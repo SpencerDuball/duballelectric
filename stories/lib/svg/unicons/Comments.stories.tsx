@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Comments>;
 
 const Template: ComponentStory<typeof Comments> = (args: CommentsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Comments {...args} />
     <Comments {...args} fill="red.500" />
     <Comments {...args} fill="gray.900" />

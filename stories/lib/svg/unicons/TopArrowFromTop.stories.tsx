@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TopArrowFromTop> = (
   args: TopArrowFromTopPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TopArrowFromTop {...args} />
     <TopArrowFromTop {...args} fill="red.500" />
     <TopArrowFromTop {...args} fill="gray.900" />

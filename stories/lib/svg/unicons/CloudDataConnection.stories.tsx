@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof CloudDataConnection> = (
   args: CloudDataConnectionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudDataConnection {...args} />
     <CloudDataConnection {...args} fill="red.500" />
     <CloudDataConnection {...args} fill="gray.900" />

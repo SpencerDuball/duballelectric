@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TumblrSquare> = (
   args: TumblrSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TumblrSquare {...args} />
     <TumblrSquare {...args} fill="red.500" />
     <TumblrSquare {...args} fill="gray.900" />

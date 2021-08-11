@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudShield> = (
   args: CloudShieldPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudShield {...args} />
     <CloudShield {...args} fill="red.500" />
     <CloudShield {...args} fill="gray.900" />

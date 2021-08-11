@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof ArrowResizeDiagonal> = (
   args: ArrowResizeDiagonalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowResizeDiagonal {...args} />
     <ArrowResizeDiagonal {...args} fill="red.500" />
     <ArrowResizeDiagonal {...args} fill="gray.900" />

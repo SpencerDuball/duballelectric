@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ruler>;
 
 const Template: ComponentStory<typeof Ruler> = (args: RulerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ruler {...args} />
     <Ruler {...args} fill="red.500" />
     <Ruler {...args} fill="gray.900" />

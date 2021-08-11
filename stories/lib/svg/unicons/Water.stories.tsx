@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Water>;
 
 const Template: ComponentStory<typeof Water> = (args: WaterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Water {...args} />
     <Water {...args} fill="red.500" />
     <Water {...args} fill="gray.900" />

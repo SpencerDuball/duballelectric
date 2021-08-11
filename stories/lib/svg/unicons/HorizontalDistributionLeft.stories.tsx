@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof HorizontalDistributionLeft> = (
   args: HorizontalDistributionLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HorizontalDistributionLeft {...args} />
     <HorizontalDistributionLeft {...args} fill="red.500" />
     <HorizontalDistributionLeft {...args} fill="gray.900" />

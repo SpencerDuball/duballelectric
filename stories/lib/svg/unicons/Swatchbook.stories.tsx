@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Swatchbook> = (
   args: SwatchbookPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Swatchbook {...args} />
     <Swatchbook {...args} fill="red.500" />
     <Swatchbook {...args} fill="gray.900" />

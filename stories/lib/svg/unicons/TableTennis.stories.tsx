@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TableTennis> = (
   args: TableTennisPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TableTennis {...args} />
     <TableTennis {...args} fill="red.500" />
     <TableTennis {...args} fill="gray.900" />

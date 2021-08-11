@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HeadSideMask> = (
   args: HeadSideMaskPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeadSideMask {...args} />
     <HeadSideMask {...args} fill="red.500" />
     <HeadSideMask {...args} fill="gray.900" />

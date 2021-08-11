@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Utensils>;
 
 const Template: ComponentStory<typeof Utensils> = (args: UtensilsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Utensils {...args} />
     <Utensils {...args} fill="red.500" />
     <Utensils {...args} fill="gray.900" />

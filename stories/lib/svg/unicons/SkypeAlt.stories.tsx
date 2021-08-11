@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SkypeAlt>;
 
 const Template: ComponentStory<typeof SkypeAlt> = (args: SkypeAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SkypeAlt {...args} />
     <SkypeAlt {...args} fill="red.500" />
     <SkypeAlt {...args} fill="gray.900" />

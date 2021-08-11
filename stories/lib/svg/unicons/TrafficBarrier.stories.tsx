@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TrafficBarrier> = (
   args: TrafficBarrierPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TrafficBarrier {...args} />
     <TrafficBarrier {...args} fill="red.500" />
     <TrafficBarrier {...args} fill="gray.900" />

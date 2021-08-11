@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MehClosedEye> = (
   args: MehClosedEyePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MehClosedEye {...args} />
     <MehClosedEye {...args} fill="red.500" />
     <MehClosedEye {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BellSlash>;
 
 const Template: ComponentStory<typeof BellSlash> = (args: BellSlashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BellSlash {...args} />
     <BellSlash {...args} fill="red.500" />
     <BellSlash {...args} fill="gray.900" />

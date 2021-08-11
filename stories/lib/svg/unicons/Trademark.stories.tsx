@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Trademark>;
 
 const Template: ComponentStory<typeof Trademark> = (args: TrademarkPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Trademark {...args} />
     <Trademark {...args} fill="red.500" />
     <Trademark {...args} fill="gray.900" />

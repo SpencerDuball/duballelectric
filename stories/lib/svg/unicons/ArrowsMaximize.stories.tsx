@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsMaximize> = (
   args: ArrowsMaximizePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsMaximize {...args} />
     <ArrowsMaximize {...args} fill="red.500" />
     <ArrowsMaximize {...args} fill="gray.900" />

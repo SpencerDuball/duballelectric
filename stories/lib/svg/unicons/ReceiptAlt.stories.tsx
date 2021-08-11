@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ReceiptAlt> = (
   args: ReceiptAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ReceiptAlt {...args} />
     <ReceiptAlt {...args} fill="red.500" />
     <ReceiptAlt {...args} fill="gray.900" />

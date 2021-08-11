@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderExclamation> = (
   args: FolderExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderExclamation {...args} />
     <FolderExclamation {...args} fill="red.500" />
     <FolderExclamation {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof PaintTool>;
 
 const Template: ComponentStory<typeof PaintTool> = (args: PaintToolPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PaintTool {...args} />
     <PaintTool {...args} fill="red.500" />
     <PaintTool {...args} fill="gray.900" />

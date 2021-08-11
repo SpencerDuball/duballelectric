@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Apple>;
 
 const Template: ComponentStory<typeof Apple> = (args: ApplePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Apple {...args} />
     <Apple {...args} fill="red.500" />
     <Apple {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TemperatureMinus> = (
   args: TemperatureMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TemperatureMinus {...args} />
     <TemperatureMinus {...args} fill="red.500" />
     <TemperatureMinus {...args} fill="gray.900" />

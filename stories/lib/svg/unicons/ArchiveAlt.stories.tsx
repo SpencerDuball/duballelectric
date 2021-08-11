@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArchiveAlt> = (
   args: ArchiveAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArchiveAlt {...args} />
     <ArchiveAlt {...args} fill="red.500" />
     <ArchiveAlt {...args} fill="gray.900" />

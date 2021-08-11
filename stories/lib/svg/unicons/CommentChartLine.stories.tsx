@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentChartLine> = (
   args: CommentChartLinePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentChartLine {...args} />
     <CommentChartLine {...args} fill="red.500" />
     <CommentChartLine {...args} fill="gray.900" />

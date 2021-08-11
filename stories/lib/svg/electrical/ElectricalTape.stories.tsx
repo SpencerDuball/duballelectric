@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ElectricalTape> = (
   args: ElectricalTapePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ElectricalTape {...args} />
     <ElectricalTape {...args} fill="red.500" />
     <ElectricalTape {...args} fill="gray.900" />

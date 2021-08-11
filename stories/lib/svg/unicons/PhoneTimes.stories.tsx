@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PhoneTimes> = (
   args: PhoneTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PhoneTimes {...args} />
     <PhoneTimes {...args} fill="red.500" />
     <PhoneTimes {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Navigator>;
 
 const Template: ComponentStory<typeof Navigator> = (args: NavigatorPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Navigator {...args} />
     <Navigator {...args} fill="red.500" />
     <Navigator {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Favorite>;
 
 const Template: ComponentStory<typeof Favorite> = (args: FavoritePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Favorite {...args} />
     <Favorite {...args} fill="red.500" />
     <Favorite {...args} fill="gray.900" />

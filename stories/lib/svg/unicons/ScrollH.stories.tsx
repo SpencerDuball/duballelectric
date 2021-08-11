@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ScrollH>;
 
 const Template: ComponentStory<typeof ScrollH> = (args: ScrollHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ScrollH {...args} />
     <ScrollH {...args} fill="red.500" />
     <ScrollH {...args} fill="gray.900" />

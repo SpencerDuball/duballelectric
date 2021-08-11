@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Server>;
 
 const Template: ComponentStory<typeof Server> = (args: ServerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Server {...args} />
     <Server {...args} fill="red.500" />
     <Server {...args} fill="gray.900" />

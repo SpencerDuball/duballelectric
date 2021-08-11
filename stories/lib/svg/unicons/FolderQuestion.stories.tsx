@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderQuestion> = (
   args: FolderQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderQuestion {...args} />
     <FolderQuestion {...args} fill="red.500" />
     <FolderQuestion {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Plug>;
 
 const Template: ComponentStory<typeof Plug> = (args: PlugPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Plug {...args} />
     <Plug {...args} fill="red.500" />
     <Plug {...args} fill="gray.900" />

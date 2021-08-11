@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AngleDoubleDown> = (
   args: AngleDoubleDownPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AngleDoubleDown {...args} />
     <AngleDoubleDown {...args} fill="red.500" />
     <AngleDoubleDown {...args} fill="gray.900" />

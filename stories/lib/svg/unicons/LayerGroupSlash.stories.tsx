@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LayerGroupSlash> = (
   args: LayerGroupSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LayerGroupSlash {...args} />
     <LayerGroupSlash {...args} fill="red.500" />
     <LayerGroupSlash {...args} fill="gray.900" />

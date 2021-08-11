@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Kayak>;
 
 const Template: ComponentStory<typeof Kayak> = (args: KayakPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Kayak {...args} />
     <Kayak {...args} fill="red.500" />
     <Kayak {...args} fill="gray.900" />

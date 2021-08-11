@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UnlockAlt>;
 
 const Template: ComponentStory<typeof UnlockAlt> = (args: UnlockAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UnlockAlt {...args} />
     <UnlockAlt {...args} fill="red.500" />
     <UnlockAlt {...args} fill="gray.900" />

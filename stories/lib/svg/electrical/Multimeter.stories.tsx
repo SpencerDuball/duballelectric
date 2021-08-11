@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Multimeter> = (
   args: MultimeterPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Multimeter {...args} />
     <Multimeter {...args} fill="red.500" />
     <Multimeter {...args} fill="gray.900" />

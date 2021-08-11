@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ListOlAlt>;
 
 const Template: ComponentStory<typeof ListOlAlt> = (args: ListOlAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ListOlAlt {...args} />
     <ListOlAlt {...args} fill="red.500" />
     <ListOlAlt {...args} fill="gray.900" />

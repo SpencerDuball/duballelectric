@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SmileDizzy> = (
   args: SmileDizzyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SmileDizzy {...args} />
     <SmileDizzy {...args} fill="red.500" />
     <SmileDizzy {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof GolfBall>;
 
 const Template: ComponentStory<typeof GolfBall> = (args: GolfBallPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GolfBall {...args} />
     <GolfBall {...args} fill="red.500" />
     <GolfBall {...args} fill="gray.900" />

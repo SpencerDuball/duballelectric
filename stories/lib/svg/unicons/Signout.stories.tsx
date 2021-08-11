@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Signout>;
 
 const Template: ComponentStory<typeof Signout> = (args: SignoutPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Signout {...args} />
     <Signout {...args} fill="red.500" />
     <Signout {...args} fill="gray.900" />

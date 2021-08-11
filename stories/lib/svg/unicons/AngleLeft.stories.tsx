@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AngleLeft>;
 
 const Template: ComponentStory<typeof AngleLeft> = (args: AngleLeftPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AngleLeft {...args} />
     <AngleLeft {...args} fill="red.500" />
     <AngleLeft {...args} fill="gray.900" />

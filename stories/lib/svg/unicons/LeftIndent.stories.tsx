@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LeftIndent> = (
   args: LeftIndentPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LeftIndent {...args} />
     <LeftIndent {...args} fill="red.500" />
     <LeftIndent {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SadSquint>;
 
 const Template: ComponentStory<typeof SadSquint> = (args: SadSquintPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SadSquint {...args} />
     <SadSquint {...args} fill="red.500" />
     <SadSquint {...args} fill="gray.900" />

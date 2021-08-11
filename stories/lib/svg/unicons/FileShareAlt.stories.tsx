@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileShareAlt> = (
   args: FileShareAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileShareAlt {...args} />
     <FileShareAlt {...args} fill="red.500" />
     <FileShareAlt {...args} fill="gray.900" />

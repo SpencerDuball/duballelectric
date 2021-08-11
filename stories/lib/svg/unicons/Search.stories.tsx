@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Search>;
 
 const Template: ComponentStory<typeof Search> = (args: SearchPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Search {...args} />
     <Search {...args} fill="red.500" />
     <Search {...args} fill="gray.900" />

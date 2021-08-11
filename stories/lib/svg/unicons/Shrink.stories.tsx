@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Shrink>;
 
 const Template: ComponentStory<typeof Shrink> = (args: ShrinkPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Shrink {...args} />
     <Shrink {...args} fill="red.500" />
     <Shrink {...args} fill="gray.900" />

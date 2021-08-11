@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Postcard>;
 
 const Template: ComponentStory<typeof Postcard> = (args: PostcardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Postcard {...args} />
     <Postcard {...args} fill="red.500" />
     <Postcard {...args} fill="gray.900" />

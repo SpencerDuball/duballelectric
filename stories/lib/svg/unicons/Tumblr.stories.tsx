@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tumblr>;
 
 const Template: ComponentStory<typeof Tumblr> = (args: TumblrPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tumblr {...args} />
     <Tumblr {...args} fill="red.500" />
     <Tumblr {...args} fill="gray.900" />

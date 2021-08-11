@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sick>;
 
 const Template: ComponentStory<typeof Sick> = (args: SickPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sick {...args} />
     <Sick {...args} fill="red.500" />
     <Sick {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Gitlab>;
 
 const Template: ComponentStory<typeof Gitlab> = (args: GitlabPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Gitlab {...args} />
     <Gitlab {...args} fill="red.500" />
     <Gitlab {...args} fill="gray.900" />

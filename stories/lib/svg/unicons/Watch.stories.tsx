@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Watch>;
 
 const Template: ComponentStory<typeof Watch> = (args: WatchPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Watch {...args} />
     <Watch {...args} fill="red.500" />
     <Watch {...args} fill="gray.900" />

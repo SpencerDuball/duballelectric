@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Html3Alt>;
 
 const Template: ComponentStory<typeof Html3Alt> = (args: Html3AltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Html3Alt {...args} />
     <Html3Alt {...args} fill="red.500" />
     <Html3Alt {...args} fill="gray.900" />

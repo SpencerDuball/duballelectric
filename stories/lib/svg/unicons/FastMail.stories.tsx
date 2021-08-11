@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FastMail>;
 
 const Template: ComponentStory<typeof FastMail> = (args: FastMailPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FastMail {...args} />
     <FastMail {...args} fill="red.500" />
     <FastMail {...args} fill="gray.900" />

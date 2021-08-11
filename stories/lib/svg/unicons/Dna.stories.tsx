@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Dna>;
 
 const Template: ComponentStory<typeof Dna> = (args: DnaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Dna {...args} />
     <Dna {...args} fill="red.500" />
     <Dna {...args} fill="gray.900" />

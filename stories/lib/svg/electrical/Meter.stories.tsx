@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Meter>;
 
 const Template: ComponentStory<typeof Meter> = (args: MeterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Meter {...args} />
     <Meter {...args} fill="red.500" />
     <Meter {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Map>;
 
 const Template: ComponentStory<typeof Map> = (args: MapPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Map {...args} />
     <Map {...args} fill="red.500" />
     <Map {...args} fill="gray.900" />

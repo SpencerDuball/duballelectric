@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof HeadSide>;
 
 const Template: ComponentStory<typeof HeadSide> = (args: HeadSidePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeadSide {...args} />
     <HeadSide {...args} fill="red.500" />
     <HeadSide {...args} fill="gray.900" />

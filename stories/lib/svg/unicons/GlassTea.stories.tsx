@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof GlassTea>;
 
 const Template: ComponentStory<typeof GlassTea> = (args: GlassTeaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GlassTea {...args} />
     <GlassTea {...args} fill="red.500" />
     <GlassTea {...args} fill="gray.900" />

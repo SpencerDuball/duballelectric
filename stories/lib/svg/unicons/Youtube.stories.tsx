@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Youtube>;
 
 const Template: ComponentStory<typeof Youtube> = (args: YoutubePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Youtube {...args} />
     <Youtube {...args} fill="red.500" />
     <Youtube {...args} fill="gray.900" />

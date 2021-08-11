@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExpandFromCorner> = (
   args: ExpandFromCornerPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExpandFromCorner {...args} />
     <ExpandFromCorner {...args} fill="red.500" />
     <ExpandFromCorner {...args} fill="gray.900" />

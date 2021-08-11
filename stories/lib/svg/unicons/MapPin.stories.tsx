@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MapPin>;
 
 const Template: ComponentStory<typeof MapPin> = (args: MapPinPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapPin {...args} />
     <MapPin {...args} fill="red.500" />
     <MapPin {...args} fill="gray.900" />

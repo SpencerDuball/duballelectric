@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Flower>;
 
 const Template: ComponentStory<typeof Flower> = (args: FlowerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Flower {...args} />
     <Flower {...args} fill="red.500" />
     <Flower {...args} fill="gray.900" />

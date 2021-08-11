@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UserCheck>;
 
 const Template: ComponentStory<typeof UserCheck> = (args: UserCheckPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UserCheck {...args} />
     <UserCheck {...args} fill="red.500" />
     <UserCheck {...args} fill="gray.900" />

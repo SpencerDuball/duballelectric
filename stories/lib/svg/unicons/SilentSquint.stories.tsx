@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SilentSquint> = (
   args: SilentSquintPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SilentSquint {...args} />
     <SilentSquint {...args} fill="red.500" />
     <SilentSquint {...args} fill="gray.900" />

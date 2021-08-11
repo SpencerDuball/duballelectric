@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Unlock>;
 
 const Template: ComponentStory<typeof Unlock> = (args: UnlockPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Unlock {...args} />
     <Unlock {...args} fill="red.500" />
     <Unlock {...args} fill="gray.900" />

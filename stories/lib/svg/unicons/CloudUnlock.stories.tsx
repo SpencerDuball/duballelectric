@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudUnlock> = (
   args: CloudUnlockPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudUnlock {...args} />
     <CloudUnlock {...args} fill="red.500" />
     <CloudUnlock {...args} fill="gray.900" />

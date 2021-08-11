@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AppleAlt>;
 
 const Template: ComponentStory<typeof AppleAlt> = (args: AppleAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AppleAlt {...args} />
     <AppleAlt {...args} fill="red.500" />
     <AppleAlt {...args} fill="gray.900" />

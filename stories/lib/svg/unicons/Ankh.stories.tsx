@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ankh>;
 
 const Template: ComponentStory<typeof Ankh> = (args: AnkhPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ankh {...args} />
     <Ankh {...args} fill="red.500" />
     <Ankh {...args} fill="gray.900" />

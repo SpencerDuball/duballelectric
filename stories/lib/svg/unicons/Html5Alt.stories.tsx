@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Html5Alt>;
 
 const Template: ComponentStory<typeof Html5Alt> = (args: Html5AltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Html5Alt {...args} />
     <Html5Alt {...args} fill="red.500" />
     <Html5Alt {...args} fill="gray.900" />

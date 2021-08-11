@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof TagAlt>;
 
 const Template: ComponentStory<typeof TagAlt> = (args: TagAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TagAlt {...args} />
     <TagAlt {...args} fill="red.500" />
     <TagAlt {...args} fill="gray.900" />

@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltChartLines> = (
   args: CommentAltChartLinesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltChartLines {...args} />
     <CommentAltChartLines {...args} fill="red.500" />
     <CommentAltChartLines {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderMinus> = (
   args: FolderMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderMinus {...args} />
     <FolderMinus {...args} fill="red.500" />
     <FolderMinus {...args} fill="gray.900" />

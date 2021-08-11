@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileEditAlt> = (
   args: FileEditAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileEditAlt {...args} />
     <FileEditAlt {...args} fill="red.500" />
     <FileEditAlt {...args} fill="gray.900" />

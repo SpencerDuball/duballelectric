@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VideoQuestion> = (
   args: VideoQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VideoQuestion {...args} />
     <VideoQuestion {...args} fill="red.500" />
     <VideoQuestion {...args} fill="gray.900" />

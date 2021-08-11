@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ClockTen>;
 
 const Template: ComponentStory<typeof ClockTen> = (args: ClockTenPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClockTen {...args} />
     <ClockTen {...args} fill="red.500" />
     <ClockTen {...args} fill="gray.900" />

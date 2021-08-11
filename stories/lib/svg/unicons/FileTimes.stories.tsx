@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FileTimes>;
 
 const Template: ComponentStory<typeof FileTimes> = (args: FileTimesPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileTimes {...args} />
     <FileTimes {...args} fill="red.500" />
     <FileTimes {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CaretRight> = (
   args: CaretRightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CaretRight {...args} />
     <CaretRight {...args} fill="red.500" />
     <CaretRight {...args} fill="gray.900" />

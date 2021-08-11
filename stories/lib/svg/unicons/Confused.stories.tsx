@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Confused>;
 
 const Template: ComponentStory<typeof Confused> = (args: ConfusedPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Confused {...args} />
     <Confused {...args} fill="red.500" />
     <Confused {...args} fill="gray.900" />

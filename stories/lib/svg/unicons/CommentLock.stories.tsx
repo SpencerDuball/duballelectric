@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentLock> = (
   args: CommentLockPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentLock {...args} />
     <CommentLock {...args} fill="red.500" />
     <CommentLock {...args} fill="gray.900" />

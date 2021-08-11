@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClockEight> = (
   args: ClockEightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClockEight {...args} />
     <ClockEight {...args} fill="red.500" />
     <ClockEight {...args} fill="gray.900" />

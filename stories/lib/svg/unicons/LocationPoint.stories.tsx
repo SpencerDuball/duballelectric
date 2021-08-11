@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LocationPoint> = (
   args: LocationPointPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LocationPoint {...args} />
     <LocationPoint {...args} fill="red.500" />
     <LocationPoint {...args} fill="gray.900" />

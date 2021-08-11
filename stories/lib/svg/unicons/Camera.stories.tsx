@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Camera>;
 
 const Template: ComponentStory<typeof Camera> = (args: CameraPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Camera {...args} />
     <Camera {...args} fill="red.500" />
     <Camera {...args} fill="gray.900" />

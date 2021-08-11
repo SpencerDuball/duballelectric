@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PanoramaHAlt> = (
   args: PanoramaHAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PanoramaHAlt {...args} />
     <PanoramaHAlt {...args} fill="red.500" />
     <PanoramaHAlt {...args} fill="gray.900" />

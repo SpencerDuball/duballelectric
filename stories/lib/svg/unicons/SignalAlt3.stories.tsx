@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SignalAlt3> = (
   args: SignalAlt3PropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SignalAlt3 {...args} />
     <SignalAlt3 {...args} fill="red.500" />
     <SignalAlt3 {...args} fill="gray.900" />

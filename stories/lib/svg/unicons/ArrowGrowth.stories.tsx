@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowGrowth> = (
   args: ArrowGrowthPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowGrowth {...args} />
     <ArrowGrowth {...args} fill="red.500" />
     <ArrowGrowth {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WebGrid>;
 
 const Template: ComponentStory<typeof WebGrid> = (args: WebGridPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WebGrid {...args} />
     <WebGrid {...args} fill="red.500" />
     <WebGrid {...args} fill="gray.900" />

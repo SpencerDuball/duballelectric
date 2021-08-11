@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof PhoneAlt>;
 
 const Template: ComponentStory<typeof PhoneAlt> = (args: PhoneAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PhoneAlt {...args} />
     <PhoneAlt {...args} fill="red.500" />
     <PhoneAlt {...args} fill="gray.900" />

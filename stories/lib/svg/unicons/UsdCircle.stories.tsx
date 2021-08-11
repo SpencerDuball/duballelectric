@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UsdCircle>;
 
 const Template: ComponentStory<typeof UsdCircle> = (args: UsdCirclePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UsdCircle {...args} />
     <UsdCircle {...args} fill="red.500" />
     <UsdCircle {...args} fill="gray.900" />

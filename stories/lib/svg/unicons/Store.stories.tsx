@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Store>;
 
 const Template: ComponentStory<typeof Store> = (args: StorePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Store {...args} />
     <Store {...args} fill="red.500" />
     <Store {...args} fill="gray.900" />

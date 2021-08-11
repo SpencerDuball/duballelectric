@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudComputing> = (
   args: CloudComputingPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudComputing {...args} />
     <CloudComputing {...args} fill="red.500" />
     <CloudComputing {...args} fill="gray.900" />

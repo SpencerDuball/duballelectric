@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tag>;
 
 const Template: ComponentStory<typeof Tag> = (args: TagPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tag {...args} />
     <Tag {...args} fill="red.500" />
     <Tag {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsMerge> = (
   args: ArrowsMergePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsMerge {...args} />
     <ArrowsMerge {...args} fill="red.500" />
     <ArrowsMerge {...args} fill="gray.900" />

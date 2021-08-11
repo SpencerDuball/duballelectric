@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Weight>;
 
 const Template: ComponentStory<typeof Weight> = (args: WeightPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Weight {...args} />
     <Weight {...args} fill="red.500" />
     <Weight {...args} fill="gray.900" />

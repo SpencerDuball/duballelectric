@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof AssistiveListeningSystems> = (
   args: AssistiveListeningSystemsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AssistiveListeningSystems {...args} />
     <AssistiveListeningSystems {...args} fill="red.500" />
     <AssistiveListeningSystems {...args} fill="gray.900" />

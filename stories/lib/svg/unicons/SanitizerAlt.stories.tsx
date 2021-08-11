@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SanitizerAlt> = (
   args: SanitizerAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SanitizerAlt {...args} />
     <SanitizerAlt {...args} fill="red.500" />
     <SanitizerAlt {...args} fill="gray.900" />

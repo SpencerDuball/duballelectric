@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentExclamation> = (
   args: CommentExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentExclamation {...args} />
     <CommentExclamation {...args} fill="red.500" />
     <CommentExclamation {...args} fill="gray.900" />

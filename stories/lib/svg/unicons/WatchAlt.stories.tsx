@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WatchAlt>;
 
 const Template: ComponentStory<typeof WatchAlt> = (args: WatchAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WatchAlt {...args} />
     <WatchAlt {...args} fill="red.500" />
     <WatchAlt {...args} fill="gray.900" />

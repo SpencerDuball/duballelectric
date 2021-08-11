@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowCircleLeft> = (
   args: ArrowCircleLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowCircleLeft {...args} />
     <ArrowCircleLeft {...args} fill="red.500" />
     <ArrowCircleLeft {...args} fill="gray.900" />

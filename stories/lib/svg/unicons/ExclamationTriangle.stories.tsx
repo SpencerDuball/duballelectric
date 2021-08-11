@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof ExclamationTriangle> = (
   args: ExclamationTrianglePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExclamationTriangle {...args} />
     <ExclamationTriangle {...args} fill="red.500" />
     <ExclamationTriangle {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Dialpad>;
 
 const Template: ComponentStory<typeof Dialpad> = (args: DialpadPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Dialpad {...args} />
     <Dialpad {...args} fill="red.500" />
     <Dialpad {...args} fill="gray.900" />

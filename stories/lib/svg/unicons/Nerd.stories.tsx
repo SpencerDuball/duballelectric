@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Nerd>;
 
 const Template: ComponentStory<typeof Nerd> = (args: NerdPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Nerd {...args} />
     <Nerd {...args} fill="red.500" />
     <Nerd {...args} fill="gray.900" />

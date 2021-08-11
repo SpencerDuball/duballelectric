@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Brightness> = (
   args: BrightnessPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Brightness {...args} />
     <Brightness {...args} fill="red.500" />
     <Brightness {...args} fill="gray.900" />

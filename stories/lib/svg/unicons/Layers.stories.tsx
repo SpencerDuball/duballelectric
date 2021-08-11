@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Layers>;
 
 const Template: ComponentStory<typeof Layers> = (args: LayersPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Layers {...args} />
     <Layers {...args} fill="red.500" />
     <Layers {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Amazon>;
 
 const Template: ComponentStory<typeof Amazon> = (args: AmazonPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Amazon {...args} />
     <Amazon {...args} fill="red.500" />
     <Amazon {...args} fill="gray.900" />

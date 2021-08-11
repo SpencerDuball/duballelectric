@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Octagon>;
 
 const Template: ComponentStory<typeof Octagon> = (args: OctagonPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Octagon {...args} />
     <Octagon {...args} fill="red.500" />
     <Octagon {...args} fill="gray.900" />

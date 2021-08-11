@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof YenCircle>;
 
 const Template: ComponentStory<typeof YenCircle> = (args: YenCirclePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <YenCircle {...args} />
     <YenCircle {...args} fill="red.500" />
     <YenCircle {...args} fill="gray.900" />

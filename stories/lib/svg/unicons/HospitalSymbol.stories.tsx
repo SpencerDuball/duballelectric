@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HospitalSymbol> = (
   args: HospitalSymbolPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HospitalSymbol {...args} />
     <HospitalSymbol {...args} fill="red.500" />
     <HospitalSymbol {...args} fill="gray.900" />

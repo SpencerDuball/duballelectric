@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Italic>;
 
 const Template: ComponentStory<typeof Italic> = (args: ItalicPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Italic {...args} />
     <Italic {...args} fill="red.500" />
     <Italic {...args} fill="gray.900" />

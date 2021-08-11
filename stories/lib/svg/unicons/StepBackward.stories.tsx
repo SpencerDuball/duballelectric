@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof StepBackward> = (
   args: StepBackwardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <StepBackward {...args} />
     <StepBackward {...args} fill="red.500" />
     <StepBackward {...args} fill="gray.900" />

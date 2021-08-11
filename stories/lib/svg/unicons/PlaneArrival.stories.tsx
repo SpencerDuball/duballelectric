@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PlaneArrival> = (
   args: PlaneArrivalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlaneArrival {...args} />
     <PlaneArrival {...args} fill="red.500" />
     <PlaneArrival {...args} fill="gray.900" />

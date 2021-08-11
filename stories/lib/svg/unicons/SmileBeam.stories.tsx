@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SmileBeam>;
 
 const Template: ComponentStory<typeof SmileBeam> = (args: SmileBeamPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SmileBeam {...args} />
     <SmileBeam {...args} fill="red.500" />
     <SmileBeam {...args} fill="gray.900" />

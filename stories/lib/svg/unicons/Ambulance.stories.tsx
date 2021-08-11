@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ambulance>;
 
 const Template: ComponentStory<typeof Ambulance> = (args: AmbulancePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ambulance {...args} />
     <Ambulance {...args} fill="red.500" />
     <Ambulance {...args} fill="gray.900" />

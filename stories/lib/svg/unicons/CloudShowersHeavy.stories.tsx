@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudShowersHeavy> = (
   args: CloudShowersHeavyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudShowersHeavy {...args} />
     <CloudShowersHeavy {...args} fill="red.500" />
     <CloudShowersHeavy {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Medal>;
 
 const Template: ComponentStory<typeof Medal> = (args: MedalPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Medal {...args} />
     <Medal {...args} fill="red.500" />
     <Medal {...args} fill="gray.900" />

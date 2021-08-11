@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Meh>;
 
 const Template: ComponentStory<typeof Meh> = (args: MehPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Meh {...args} />
     <Meh {...args} fill="red.500" />
     <Meh {...args} fill="gray.900" />

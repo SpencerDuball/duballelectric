@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Align>;
 
 const Template: ComponentStory<typeof Align> = (args: AlignPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Align {...args} />
     <Align {...args} fill="red.500" />
     <Align {...args} fill="gray.900" />

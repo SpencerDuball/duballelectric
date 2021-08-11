@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Keyboard>;
 
 const Template: ComponentStory<typeof Keyboard> = (args: KeyboardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Keyboard {...args} />
     <Keyboard {...args} fill="red.500" />
     <Keyboard {...args} fill="gray.900" />

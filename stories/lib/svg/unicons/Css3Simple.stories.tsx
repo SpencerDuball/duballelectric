@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Css3Simple> = (
   args: Css3SimplePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Css3Simple {...args} />
     <Css3Simple {...args} fill="red.500" />
     <Css3Simple {...args} fill="gray.900" />

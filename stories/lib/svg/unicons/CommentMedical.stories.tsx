@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentMedical> = (
   args: CommentMedicalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentMedical {...args} />
     <CommentMedical {...args} fill="red.500" />
     <CommentMedical {...args} fill="gray.900" />

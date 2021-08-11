@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HeadphoneSlash> = (
   args: HeadphoneSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeadphoneSlash {...args} />
     <HeadphoneSlash {...args} fill="red.500" />
     <HeadphoneSlash {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WireStrippers> = (
   args: WireStrippersPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WireStrippers {...args} />
     <WireStrippers {...args} fill="red.500" />
     <WireStrippers {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MicrophoneSlash> = (
   args: MicrophoneSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MicrophoneSlash {...args} />
     <MicrophoneSlash {...args} fill="red.500" />
     <MicrophoneSlash {...args} fill="gray.900" />

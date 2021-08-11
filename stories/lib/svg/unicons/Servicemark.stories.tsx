@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Servicemark> = (
   args: ServicemarkPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Servicemark {...args} />
     <Servicemark {...args} fill="red.500" />
     <Servicemark {...args} fill="gray.900" />

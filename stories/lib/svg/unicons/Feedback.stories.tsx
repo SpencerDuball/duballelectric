@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Feedback>;
 
 const Template: ComponentStory<typeof Feedback> = (args: FeedbackPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Feedback {...args} />
     <Feedback {...args} fill="red.500" />
     <Feedback {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SyncExclamation> = (
   args: SyncExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SyncExclamation {...args} />
     <SyncExclamation {...args} fill="red.500" />
     <SyncExclamation {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Football>;
 
 const Template: ComponentStory<typeof Football> = (args: FootballPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Football {...args} />
     <Football {...args} fill="red.500" />
     <Football {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageResizeSquare> = (
   args: ImageResizeSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageResizeSquare {...args} />
     <ImageResizeSquare {...args} fill="red.500" />
     <ImageResizeSquare {...args} fill="gray.900" />

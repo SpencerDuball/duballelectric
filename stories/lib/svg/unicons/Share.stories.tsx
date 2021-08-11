@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Share>;
 
 const Template: ComponentStory<typeof Share> = (args: SharePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Share {...args} />
     <Share {...args} fill="red.500" />
     <Share {...args} fill="gray.900" />

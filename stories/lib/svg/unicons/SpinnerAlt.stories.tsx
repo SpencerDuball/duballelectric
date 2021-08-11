@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SpinnerAlt> = (
   args: SpinnerAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SpinnerAlt {...args} />
     <SpinnerAlt {...args} fill="red.500" />
     <SpinnerAlt {...args} fill="gray.900" />

@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof VerticalDistributeBottom> = (
   args: VerticalDistributeBottomPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VerticalDistributeBottom {...args} />
     <VerticalDistributeBottom {...args} fill="red.500" />
     <VerticalDistributeBottom {...args} fill="gray.900" />

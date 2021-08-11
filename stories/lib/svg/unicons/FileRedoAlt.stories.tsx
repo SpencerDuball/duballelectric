@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileRedoAlt> = (
   args: FileRedoAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileRedoAlt {...args} />
     <FileRedoAlt {...args} fill="red.500" />
     <FileRedoAlt {...args} fill="gray.900" />

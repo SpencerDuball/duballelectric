@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudLock>;
 
 const Template: ComponentStory<typeof CloudLock> = (args: CloudLockPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudLock {...args} />
     <CloudLock {...args} fill="red.500" />
     <CloudLock {...args} fill="gray.900" />

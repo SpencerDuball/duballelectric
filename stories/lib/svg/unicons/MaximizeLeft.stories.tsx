@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MaximizeLeft> = (
   args: MaximizeLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MaximizeLeft {...args} />
     <MaximizeLeft {...args} fill="red.500" />
     <MaximizeLeft {...args} fill="gray.900" />

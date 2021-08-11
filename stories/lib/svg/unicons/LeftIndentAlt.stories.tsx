@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LeftIndentAlt> = (
   args: LeftIndentAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LeftIndentAlt {...args} />
     <LeftIndentAlt {...args} fill="red.500" />
     <LeftIndentAlt {...args} fill="gray.900" />

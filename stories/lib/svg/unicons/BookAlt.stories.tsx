@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BookAlt>;
 
 const Template: ComponentStory<typeof BookAlt> = (args: BookAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BookAlt {...args} />
     <BookAlt {...args} fill="red.500" />
     <BookAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GlassMartiniAlt> = (
   args: GlassMartiniAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GlassMartiniAlt {...args} />
     <GlassMartiniAlt {...args} fill="red.500" />
     <GlassMartiniAlt {...args} fill="gray.900" />

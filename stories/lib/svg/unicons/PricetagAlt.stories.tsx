@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PricetagAlt> = (
   args: PricetagAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PricetagAlt {...args} />
     <PricetagAlt {...args} fill="red.500" />
     <PricetagAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LockAccess> = (
   args: LockAccessPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LockAccess {...args} />
     <LockAccess {...args} fill="red.500" />
     <LockAccess {...args} fill="gray.900" />

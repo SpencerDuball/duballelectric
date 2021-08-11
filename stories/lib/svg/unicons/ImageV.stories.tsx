@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ImageV>;
 
 const Template: ComponentStory<typeof ImageV> = (args: ImageVPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageV {...args} />
     <ImageV {...args} fill="red.500" />
     <ImageV {...args} fill="gray.900" />

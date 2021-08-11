@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CardAtm>;
 
 const Template: ComponentStory<typeof CardAtm> = (args: CardAtmPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CardAtm {...args} />
     <CardAtm {...args} fill="red.500" />
     <CardAtm {...args} fill="gray.900" />

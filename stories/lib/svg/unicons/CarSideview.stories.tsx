@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CarSideview> = (
   args: CarSideviewPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CarSideview {...args} />
     <CarSideview {...args} fill="red.500" />
     <CarSideview {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FilterSlash> = (
   args: FilterSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FilterSlash {...args} />
     <FilterSlash {...args} fill="red.500" />
     <FilterSlash {...args} fill="gray.900" />

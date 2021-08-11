@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PauseCircle> = (
   args: PauseCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PauseCircle {...args} />
     <PauseCircle {...args} fill="red.500" />
     <PauseCircle {...args} fill="gray.900" />

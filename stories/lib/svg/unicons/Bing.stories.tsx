@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bing>;
 
 const Template: ComponentStory<typeof Bing> = (args: BingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bing {...args} />
     <Bing {...args} fill="red.500" />
     <Bing {...args} fill="gray.900" />

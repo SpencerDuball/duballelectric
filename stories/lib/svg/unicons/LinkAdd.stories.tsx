@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LinkAdd>;
 
 const Template: ComponentStory<typeof LinkAdd> = (args: LinkAddPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LinkAdd {...args} />
     <LinkAdd {...args} fill="red.500" />
     <LinkAdd {...args} fill="gray.900" />

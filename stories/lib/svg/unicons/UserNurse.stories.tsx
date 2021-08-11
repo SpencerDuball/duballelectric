@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UserNurse>;
 
 const Template: ComponentStory<typeof UserNurse> = (args: UserNursePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UserNurse {...args} />
     <UserNurse {...args} fill="red.500" />
     <UserNurse {...args} fill="gray.900" />

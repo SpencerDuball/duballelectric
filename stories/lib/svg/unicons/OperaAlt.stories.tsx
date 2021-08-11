@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof OperaAlt>;
 
 const Template: ComponentStory<typeof OperaAlt> = (args: OperaAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <OperaAlt {...args} />
     <OperaAlt {...args} fill="red.500" />
     <OperaAlt {...args} fill="gray.900" />

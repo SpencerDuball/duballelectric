@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SignOutAlt> = (
   args: SignOutAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SignOutAlt {...args} />
     <SignOutAlt {...args} fill="red.500" />
     <SignOutAlt {...args} fill="gray.900" />

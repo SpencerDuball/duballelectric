@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BorderHorizontal> = (
   args: BorderHorizontalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderHorizontal {...args} />
     <BorderHorizontal {...args} fill="red.500" />
     <BorderHorizontal {...args} fill="gray.900" />

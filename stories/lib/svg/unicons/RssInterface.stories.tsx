@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof RssInterface> = (
   args: RssInterfacePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RssInterface {...args} />
     <RssInterface {...args} fill="red.500" />
     <RssInterface {...args} fill="gray.900" />

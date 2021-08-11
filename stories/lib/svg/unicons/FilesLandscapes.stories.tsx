@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FilesLandscapes> = (
   args: FilesLandscapesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FilesLandscapes {...args} />
     <FilesLandscapes {...args} fill="red.500" />
     <FilesLandscapes {...args} fill="gray.900" />

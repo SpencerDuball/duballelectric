@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PresentationTimes> = (
   args: PresentationTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PresentationTimes {...args} />
     <PresentationTimes {...args} fill="red.500" />
     <PresentationTimes {...args} fill="gray.900" />

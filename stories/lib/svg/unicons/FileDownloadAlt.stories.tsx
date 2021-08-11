@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileDownloadAlt> = (
   args: FileDownloadAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileDownloadAlt {...args} />
     <FileDownloadAlt {...args} fill="red.500" />
     <FileDownloadAlt {...args} fill="gray.900" />

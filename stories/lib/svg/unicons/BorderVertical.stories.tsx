@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BorderVertical> = (
   args: BorderVerticalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderVertical {...args} />
     <BorderVertical {...args} fill="red.500" />
     <BorderVertical {...args} fill="gray.900" />

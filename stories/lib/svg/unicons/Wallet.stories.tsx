@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wallet>;
 
 const Template: ComponentStory<typeof Wallet> = (args: WalletPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wallet {...args} />
     <Wallet {...args} fill="red.500" />
     <Wallet {...args} fill="gray.900" />

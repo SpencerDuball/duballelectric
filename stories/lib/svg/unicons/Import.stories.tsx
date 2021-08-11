@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Import>;
 
 const Template: ComponentStory<typeof Import> = (args: ImportPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Import {...args} />
     <Import {...args} fill="red.500" />
     <Import {...args} fill="gray.900" />

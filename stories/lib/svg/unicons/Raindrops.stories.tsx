@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Raindrops>;
 
 const Template: ComponentStory<typeof Raindrops> = (args: RaindropsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Raindrops {...args} />
     <Raindrops {...args} fill="red.500" />
     <Raindrops {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ChartPieAlt> = (
   args: ChartPieAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChartPieAlt {...args} />
     <ChartPieAlt {...args} fill="red.500" />
     <ChartPieAlt {...args} fill="gray.900" />

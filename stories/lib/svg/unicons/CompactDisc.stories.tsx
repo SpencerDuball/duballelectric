@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CompactDisc> = (
   args: CompactDiscPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompactDisc {...args} />
     <CompactDisc {...args} fill="red.500" />
     <CompactDisc {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Rotate360>;
 
 const Template: ComponentStory<typeof Rotate360> = (args: Rotate360PropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Rotate360 {...args} />
     <Rotate360 {...args} fill="red.500" />
     <Rotate360 {...args} fill="gray.900" />

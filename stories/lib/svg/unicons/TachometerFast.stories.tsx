@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TachometerFast> = (
   args: TachometerFastPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TachometerFast {...args} />
     <TachometerFast {...args} fill="red.500" />
     <TachometerFast {...args} fill="gray.900" />

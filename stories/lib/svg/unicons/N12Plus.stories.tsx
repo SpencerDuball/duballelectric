@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof N12Plus>;
 
 const Template: ComponentStory<typeof N12Plus> = (args: N12PlusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <N12Plus {...args} />
     <N12Plus {...args} fill="red.500" />
     <N12Plus {...args} fill="gray.900" />

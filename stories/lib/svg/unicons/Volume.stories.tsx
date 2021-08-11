@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Volume>;
 
 const Template: ComponentStory<typeof Volume> = (args: VolumePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Volume {...args} />
     <Volume {...args} fill="red.500" />
     <Volume {...args} fill="gray.900" />

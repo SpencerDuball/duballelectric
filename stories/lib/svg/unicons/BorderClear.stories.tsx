@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BorderClear> = (
   args: BorderClearPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderClear {...args} />
     <BorderClear {...args} fill="red.500" />
     <BorderClear {...args} fill="gray.900" />

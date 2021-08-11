@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShieldCheck> = (
   args: ShieldCheckPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShieldCheck {...args} />
     <ShieldCheck {...args} fill="red.500" />
     <ShieldCheck {...args} fill="gray.900" />

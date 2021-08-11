@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeSearch> = (
   args: EnvelopeSearchPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeSearch {...args} />
     <EnvelopeSearch {...args} fill="red.500" />
     <EnvelopeSearch {...args} fill="gray.900" />

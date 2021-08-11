@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Play>;
 
 const Template: ComponentStory<typeof Play> = (args: PlayPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Play {...args} />
     <Play {...args} fill="red.500" />
     <Play {...args} fill="gray.900" />

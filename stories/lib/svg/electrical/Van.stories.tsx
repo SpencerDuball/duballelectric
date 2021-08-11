@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Van>;
 
 const Template: ComponentStory<typeof Van> = (args: VanPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Van {...args} />
     <Van {...args} fill="red.500" />
     <Van {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof KeySkeleton> = (
   args: KeySkeletonPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <KeySkeleton {...args} />
     <KeySkeleton {...args} fill="red.500" />
     <KeySkeleton {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BasestationAlt> = (
   args: BasestationAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BasestationAlt {...args} />
     <BasestationAlt {...args} fill="red.500" />
     <BasestationAlt {...args} fill="gray.900" />

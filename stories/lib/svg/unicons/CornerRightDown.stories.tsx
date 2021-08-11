@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CornerRightDown> = (
   args: CornerRightDownPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CornerRightDown {...args} />
     <CornerRightDown {...args} fill="red.500" />
     <CornerRightDown {...args} fill="gray.900" />

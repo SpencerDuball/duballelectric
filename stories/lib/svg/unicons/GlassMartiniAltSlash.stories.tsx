@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof GlassMartiniAltSlash> = (
   args: GlassMartiniAltSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GlassMartiniAltSlash {...args} />
     <GlassMartiniAltSlash {...args} fill="red.500" />
     <GlassMartiniAltSlash {...args} fill="gray.900" />

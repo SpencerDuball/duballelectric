@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VoicemailRectangle> = (
   args: VoicemailRectanglePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VoicemailRectangle {...args} />
     <VoicemailRectangle {...args} fill="red.500" />
     <VoicemailRectangle {...args} fill="gray.900" />

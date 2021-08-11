@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tape>;
 
 const Template: ComponentStory<typeof Tape> = (args: TapePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tape {...args} />
     <Tape {...args} fill="red.500" />
     <Tape {...args} fill="gray.900" />

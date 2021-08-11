@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Ticket>;
 
 const Template: ComponentStory<typeof Ticket> = (args: TicketPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Ticket {...args} />
     <Ticket {...args} fill="red.500" />
     <Ticket {...args} fill="gray.900" />

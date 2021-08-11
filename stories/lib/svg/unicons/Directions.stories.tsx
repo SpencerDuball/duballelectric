@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Directions> = (
   args: DirectionsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Directions {...args} />
     <Directions {...args} fill="red.500" />
     <Directions {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClipboardNotes> = (
   args: ClipboardNotesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClipboardNotes {...args} />
     <ClipboardNotes {...args} fill="red.500" />
     <ClipboardNotes {...args} fill="gray.900" />

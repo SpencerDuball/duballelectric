@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Heart>;
 
 const Template: ComponentStory<typeof Heart> = (args: HeartPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Heart {...args} />
     <Heart {...args} fill="red.500" />
     <Heart {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HistoryAlt> = (
   args: HistoryAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HistoryAlt {...args} />
     <HistoryAlt {...args} fill="red.500" />
     <HistoryAlt {...args} fill="gray.900" />

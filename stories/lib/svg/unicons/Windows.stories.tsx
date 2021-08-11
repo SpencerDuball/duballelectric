@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Windows>;
 
 const Template: ComponentStory<typeof Windows> = (args: WindowsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Windows {...args} />
     <Windows {...args} fill="red.500" />
     <Windows {...args} fill="gray.900" />

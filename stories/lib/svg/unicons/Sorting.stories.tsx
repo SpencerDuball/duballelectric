@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sorting>;
 
 const Template: ComponentStory<typeof Sorting> = (args: SortingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sorting {...args} />
     <Sorting {...args} fill="red.500" />
     <Sorting {...args} fill="gray.900" />

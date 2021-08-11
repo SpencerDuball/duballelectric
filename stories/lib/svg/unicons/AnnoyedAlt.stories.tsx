@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AnnoyedAlt> = (
   args: AnnoyedAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AnnoyedAlt {...args} />
     <AnnoyedAlt {...args} fill="red.500" />
     <AnnoyedAlt {...args} fill="gray.900" />

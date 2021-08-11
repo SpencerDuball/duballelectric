@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tear>;
 
 const Template: ComponentStory<typeof Tear> = (args: TearPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tear {...args} />
     <Tear {...args} fill="red.500" />
     <Tear {...args} fill="gray.900" />

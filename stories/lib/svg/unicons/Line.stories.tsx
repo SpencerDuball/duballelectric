@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Line>;
 
 const Template: ComponentStory<typeof Line> = (args: LinePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Line {...args} />
     <Line {...args} fill="red.500" />
     <Line {...args} fill="gray.900" />

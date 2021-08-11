@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsResizeH> = (
   args: ArrowsResizeHPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsResizeH {...args} />
     <ArrowsResizeH {...args} fill="red.500" />
     <ArrowsResizeH {...args} fill="gray.900" />

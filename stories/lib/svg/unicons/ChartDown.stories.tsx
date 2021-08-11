@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ChartDown>;
 
 const Template: ComponentStory<typeof ChartDown> = (args: ChartDownPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChartDown {...args} />
     <ChartDown {...args} fill="red.500" />
     <ChartDown {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof KeyboardHide> = (
   args: KeyboardHidePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <KeyboardHide {...args} />
     <KeyboardHide {...args} fill="red.500" />
     <KeyboardHide {...args} fill="gray.900" />

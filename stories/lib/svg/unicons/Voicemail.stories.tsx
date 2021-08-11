@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Voicemail>;
 
 const Template: ComponentStory<typeof Voicemail> = (args: VoicemailPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Voicemail {...args} />
     <Voicemail {...args} fill="red.500" />
     <Voicemail {...args} fill="gray.900" />

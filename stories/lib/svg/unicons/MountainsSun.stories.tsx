@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MountainsSun> = (
   args: MountainsSunPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MountainsSun {...args} />
     <MountainsSun {...args} fill="red.500" />
     <MountainsSun {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PhoneVolume> = (
   args: PhoneVolumePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PhoneVolume {...args} />
     <PhoneVolume {...args} fill="red.500" />
     <PhoneVolume {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Notes>;
 
 const Template: ComponentStory<typeof Notes> = (args: NotesPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Notes {...args} />
     <Notes {...args} fill="red.500" />
     <Notes {...args} fill="gray.900" />

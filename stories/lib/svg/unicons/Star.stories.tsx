@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Star>;
 
 const Template: ComponentStory<typeof Star> = (args: StarPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Star {...args} />
     <Star {...args} fill="red.500" />
     <Star {...args} fill="gray.900" />

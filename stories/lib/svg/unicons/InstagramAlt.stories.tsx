@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof InstagramAlt> = (
   args: InstagramAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <InstagramAlt {...args} />
     <InstagramAlt {...args} fill="red.500" />
     <InstagramAlt {...args} fill="gray.900" />

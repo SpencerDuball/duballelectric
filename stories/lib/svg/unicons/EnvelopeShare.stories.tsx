@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeShare> = (
   args: EnvelopeSharePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeShare {...args} />
     <EnvelopeShare {...args} fill="red.500" />
     <EnvelopeShare {...args} fill="gray.900" />

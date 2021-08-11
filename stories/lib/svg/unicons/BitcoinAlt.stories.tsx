@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BitcoinAlt> = (
   args: BitcoinAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BitcoinAlt {...args} />
     <BitcoinAlt {...args} fill="red.500" />
     <BitcoinAlt {...args} fill="gray.900" />

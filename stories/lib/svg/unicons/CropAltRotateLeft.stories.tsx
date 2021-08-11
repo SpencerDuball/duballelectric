@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CropAltRotateLeft> = (
   args: CropAltRotateLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CropAltRotateLeft {...args} />
     <CropAltRotateLeft {...args} fill="red.500" />
     <CropAltRotateLeft {...args} fill="gray.900" />

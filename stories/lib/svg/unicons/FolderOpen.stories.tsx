@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderOpen> = (
   args: FolderOpenPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderOpen {...args} />
     <FolderOpen {...args} fill="red.500" />
     <FolderOpen {...args} fill="gray.900" />

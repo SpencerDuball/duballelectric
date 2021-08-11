@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Analysis>;
 
 const Template: ComponentStory<typeof Analysis> = (args: AnalysisPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Analysis {...args} />
     <Analysis {...args} fill="red.500" />
     <Analysis {...args} fill="gray.900" />

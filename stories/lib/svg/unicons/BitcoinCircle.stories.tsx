@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BitcoinCircle> = (
   args: BitcoinCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BitcoinCircle {...args} />
     <BitcoinCircle {...args} fill="red.500" />
     <BitcoinCircle {...args} fill="gray.900" />

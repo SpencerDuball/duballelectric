@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof JavaScript> = (
   args: JavaScriptPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <JavaScript {...args} />
     <JavaScript {...args} fill="red.500" />
     <JavaScript {...args} fill="gray.900" />

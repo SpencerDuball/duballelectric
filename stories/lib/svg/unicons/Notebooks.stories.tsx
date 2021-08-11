@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Notebooks>;
 
 const Template: ComponentStory<typeof Notebooks> = (args: NotebooksPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Notebooks {...args} />
     <Notebooks {...args} fill="red.500" />
     <Notebooks {...args} fill="gray.900" />

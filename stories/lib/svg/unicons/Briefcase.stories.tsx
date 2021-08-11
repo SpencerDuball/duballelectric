@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Briefcase>;
 
 const Template: ComponentStory<typeof Briefcase> = (args: BriefcasePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Briefcase {...args} />
     <Briefcase {...args} fill="red.500" />
     <Briefcase {...args} fill="gray.900" />

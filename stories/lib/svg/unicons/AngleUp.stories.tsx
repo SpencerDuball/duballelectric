@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AngleUp>;
 
 const Template: ComponentStory<typeof AngleUp> = (args: AngleUpPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AngleUp {...args} />
     <AngleUp {...args} fill="red.500" />
     <AngleUp {...args} fill="gray.900" />

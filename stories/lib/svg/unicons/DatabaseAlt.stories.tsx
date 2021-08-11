@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DatabaseAlt> = (
   args: DatabaseAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DatabaseAlt {...args} />
     <DatabaseAlt {...args} fill="red.500" />
     <DatabaseAlt {...args} fill="gray.900" />

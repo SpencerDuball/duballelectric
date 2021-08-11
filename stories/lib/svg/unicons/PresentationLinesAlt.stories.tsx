@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof PresentationLinesAlt> = (
   args: PresentationLinesAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PresentationLinesAlt {...args} />
     <PresentationLinesAlt {...args} fill="red.500" />
     <PresentationLinesAlt {...args} fill="gray.900" />

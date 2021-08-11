@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VectorSquare> = (
   args: VectorSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VectorSquare {...args} />
     <VectorSquare {...args} fill="red.500" />
     <VectorSquare {...args} fill="gray.900" />

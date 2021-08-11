@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Palette>;
 
 const Template: ComponentStory<typeof Palette> = (args: PalettePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Palette {...args} />
     <Palette {...args} fill="red.500" />
     <Palette {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Annoyed>;
 
 const Template: ComponentStory<typeof Annoyed> = (args: AnnoyedPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Annoyed {...args} />
     <Annoyed {...args} fill="red.500" />
     <Annoyed {...args} fill="gray.900" />

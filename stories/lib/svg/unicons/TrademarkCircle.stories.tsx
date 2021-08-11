@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TrademarkCircle> = (
   args: TrademarkCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TrademarkCircle {...args} />
     <TrademarkCircle {...args} fill="red.500" />
     <TrademarkCircle {...args} fill="gray.900" />

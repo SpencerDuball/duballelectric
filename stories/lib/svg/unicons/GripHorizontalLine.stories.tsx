@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GripHorizontalLine> = (
   args: GripHorizontalLinePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GripHorizontalLine {...args} />
     <GripHorizontalLine {...args} fill="red.500" />
     <GripHorizontalLine {...args} fill="gray.900" />

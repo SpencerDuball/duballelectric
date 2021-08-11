@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WrapText>;
 
 const Template: ComponentStory<typeof WrapText> = (args: WrapTextPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WrapText {...args} />
     <WrapText {...args} fill="red.500" />
     <WrapText {...args} fill="gray.900" />

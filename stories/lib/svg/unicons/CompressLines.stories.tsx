@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CompressLines> = (
   args: CompressLinesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompressLines {...args} />
     <CompressLines {...args} fill="red.500" />
     <CompressLines {...args} fill="gray.900" />

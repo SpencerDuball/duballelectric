@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Globe>;
 
 const Template: ComponentStory<typeof Globe> = (args: GlobePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Globe {...args} />
     <Globe {...args} fill="red.500" />
     <Globe {...args} fill="gray.900" />

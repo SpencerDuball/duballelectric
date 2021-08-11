@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wind>;
 
 const Template: ComponentStory<typeof Wind> = (args: WindPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wind {...args} />
     <Wind {...args} fill="red.500" />
     <Wind {...args} fill="gray.900" />

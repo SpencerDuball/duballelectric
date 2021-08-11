@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MoneyInsert> = (
   args: MoneyInsertPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoneyInsert {...args} />
     <MoneyInsert {...args} fill="red.500" />
     <MoneyInsert {...args} fill="gray.900" />

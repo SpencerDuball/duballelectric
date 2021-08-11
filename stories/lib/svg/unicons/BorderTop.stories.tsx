@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BorderTop>;
 
 const Template: ComponentStory<typeof BorderTop> = (args: BorderTopPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderTop {...args} />
     <BorderTop {...args} fill="red.500" />
     <BorderTop {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsVAlt> = (
   args: ArrowsVAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsVAlt {...args} />
     <ArrowsVAlt {...args} fill="red.500" />
     <ArrowsVAlt {...args} fill="gray.900" />

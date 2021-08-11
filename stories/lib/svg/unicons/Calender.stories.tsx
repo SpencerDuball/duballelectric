@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Calender>;
 
 const Template: ComponentStory<typeof Calender> = (args: CalenderPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Calender {...args} />
     <Calender {...args} fill="red.500" />
     <Calender {...args} fill="gray.900" />

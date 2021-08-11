@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Analytics>;
 
 const Template: ComponentStory<typeof Analytics> = (args: AnalyticsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Analytics {...args} />
     <Analytics {...args} fill="red.500" />
     <Analytics {...args} fill="gray.900" />

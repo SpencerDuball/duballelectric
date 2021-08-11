@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ListUl>;
 
 const Template: ComponentStory<typeof ListUl> = (args: ListUlPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ListUl {...args} />
     <ListUl {...args} fill="red.500" />
     <ListUl {...args} fill="gray.900" />

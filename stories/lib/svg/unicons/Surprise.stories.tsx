@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Surprise>;
 
 const Template: ComponentStory<typeof Surprise> = (args: SurprisePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Surprise {...args} />
     <Surprise {...args} fill="red.500" />
     <Surprise {...args} fill="gray.900" />

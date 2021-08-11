@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WireShort>;
 
 const Template: ComponentStory<typeof WireShort> = (args: WireShortPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WireShort {...args} />
     <WireShort {...args} fill="red.500" />
     <WireShort {...args} fill="gray.900" />

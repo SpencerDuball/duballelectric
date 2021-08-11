@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudDrizzle> = (
   args: CloudDrizzlePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudDrizzle {...args} />
     <CloudDrizzle {...args} fill="red.500" />
     <CloudDrizzle {...args} fill="gray.900" />

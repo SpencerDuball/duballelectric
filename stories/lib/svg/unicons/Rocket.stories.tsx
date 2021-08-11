@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Rocket>;
 
 const Template: ComponentStory<typeof Rocket> = (args: RocketPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Rocket {...args} />
     <Rocket {...args} fill="red.500" />
     <Rocket {...args} fill="gray.900" />

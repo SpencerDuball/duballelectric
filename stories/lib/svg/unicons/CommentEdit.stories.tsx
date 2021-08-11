@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentEdit> = (
   args: CommentEditPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentEdit {...args} />
     <CommentEdit {...args} fill="red.500" />
     <CommentEdit {...args} fill="gray.900" />

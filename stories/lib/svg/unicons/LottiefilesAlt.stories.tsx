@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LottiefilesAlt> = (
   args: LottiefilesAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LottiefilesAlt {...args} />
     <LottiefilesAlt {...args} fill="red.500" />
     <LottiefilesAlt {...args} fill="gray.900" />

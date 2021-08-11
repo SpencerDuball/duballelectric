@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentsAlt> = (
   args: CommentsAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentsAlt {...args} />
     <CommentsAlt {...args} fill="red.500" />
     <CommentsAlt {...args} fill="gray.900" />

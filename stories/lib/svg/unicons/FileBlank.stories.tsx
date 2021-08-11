@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FileBlank>;
 
 const Template: ComponentStory<typeof FileBlank> = (args: FileBlankPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileBlank {...args} />
     <FileBlank {...args} fill="red.500" />
     <FileBlank {...args} fill="gray.900" />

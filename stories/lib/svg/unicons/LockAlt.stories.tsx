@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LockAlt>;
 
 const Template: ComponentStory<typeof LockAlt> = (args: LockAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LockAlt {...args} />
     <LockAlt {...args} fill="red.500" />
     <LockAlt {...args} fill="gray.900" />

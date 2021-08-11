@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CornerUpLeftAlt> = (
   args: CornerUpLeftAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CornerUpLeftAlt {...args} />
     <CornerUpLeftAlt {...args} fill="red.500" />
     <CornerUpLeftAlt {...args} fill="gray.900" />

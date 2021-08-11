@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VideoSlash> = (
   args: VideoSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VideoSlash {...args} />
     <VideoSlash {...args} fill="red.500" />
     <VideoSlash {...args} fill="gray.900" />

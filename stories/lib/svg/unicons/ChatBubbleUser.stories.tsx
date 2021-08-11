@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ChatBubbleUser> = (
   args: ChatBubbleUserPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChatBubbleUser {...args} />
     <ChatBubbleUser {...args} fill="red.500" />
     <ChatBubbleUser {...args} fill="gray.900" />

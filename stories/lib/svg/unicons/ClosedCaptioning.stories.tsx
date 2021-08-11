@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClosedCaptioning> = (
   args: ClosedCaptioningPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClosedCaptioning {...args} />
     <ClosedCaptioning {...args} fill="red.500" />
     <ClosedCaptioning {...args} fill="gray.900" />

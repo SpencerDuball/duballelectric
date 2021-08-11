@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VirusSlash> = (
   args: VirusSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VirusSlash {...args} />
     <VirusSlash {...args} fill="red.500" />
     <VirusSlash {...args} fill="gray.900" />

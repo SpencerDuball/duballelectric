@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SnapchatAlt> = (
   args: SnapchatAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SnapchatAlt {...args} />
     <SnapchatAlt {...args} fill="red.500" />
     <SnapchatAlt {...args} fill="gray.900" />

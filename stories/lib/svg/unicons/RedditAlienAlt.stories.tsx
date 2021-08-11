@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof RedditAlienAlt> = (
   args: RedditAlienAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RedditAlienAlt {...args} />
     <RedditAlienAlt {...args} fill="red.500" />
     <RedditAlienAlt {...args} fill="gray.900" />

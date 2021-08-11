@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Exit>;
 
 const Template: ComponentStory<typeof Exit> = (args: ExitPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Exit {...args} />
     <Exit {...args} fill="red.500" />
     <Exit {...args} fill="gray.900" />

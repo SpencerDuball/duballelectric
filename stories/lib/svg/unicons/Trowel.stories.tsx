@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Trowel>;
 
 const Template: ComponentStory<typeof Trowel> = (args: TrowelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Trowel {...args} />
     <Trowel {...args} fill="red.500" />
     <Trowel {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Focus>;
 
 const Template: ComponentStory<typeof Focus> = (args: FocusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Focus {...args} />
     <Focus {...args} fill="red.500" />
     <Focus {...args} fill="gray.900" />

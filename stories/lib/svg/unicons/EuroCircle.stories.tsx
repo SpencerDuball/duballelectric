@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EuroCircle> = (
   args: EuroCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EuroCircle {...args} />
     <EuroCircle {...args} fill="red.500" />
     <EuroCircle {...args} fill="gray.900" />

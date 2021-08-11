@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof File>;
 
 const Template: ComponentStory<typeof File> = (args: FilePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <File {...args} />
     <File {...args} fill="red.500" />
     <File {...args} fill="gray.900" />

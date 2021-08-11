@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof DuballElectricSquare> = (
   args: DuballElectricSquarePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DuballElectricSquare {...args} />
     <DuballElectricSquare
       {...args}

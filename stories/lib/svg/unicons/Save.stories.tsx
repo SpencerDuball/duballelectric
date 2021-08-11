@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Save>;
 
 const Template: ComponentStory<typeof Save> = (args: SavePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Save {...args} />
     <Save {...args} fill="red.500" />
     <Save {...args} fill="gray.900" />

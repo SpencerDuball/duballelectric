@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Metro>;
 
 const Template: ComponentStory<typeof Metro> = (args: MetroPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Metro {...args} />
     <Metro {...args} fill="red.500" />
     <Metro {...args} fill="gray.900" />

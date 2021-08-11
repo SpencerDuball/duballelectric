@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AlignCenterJustify> = (
   args: AlignCenterJustifyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AlignCenterJustify {...args} />
     <AlignCenterJustify {...args} fill="red.500" />
     <AlignCenterJustify {...args} fill="gray.900" />

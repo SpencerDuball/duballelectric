@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Stopwatch>;
 
 const Template: ComponentStory<typeof Stopwatch> = (args: StopwatchPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Stopwatch {...args} />
     <Stopwatch {...args} fill="red.500" />
     <Stopwatch {...args} fill="gray.900" />

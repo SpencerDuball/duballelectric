@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageUpload> = (
   args: ImageUploadPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageUpload {...args} />
     <ImageUpload {...args} fill="red.500" />
     <ImageUpload {...args} fill="gray.900" />

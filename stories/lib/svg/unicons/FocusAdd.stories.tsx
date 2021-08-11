@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FocusAdd>;
 
 const Template: ComponentStory<typeof FocusAdd> = (args: FocusAddPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FocusAdd {...args} />
     <FocusAdd {...args} fill="red.500" />
     <FocusAdd {...args} fill="gray.900" />

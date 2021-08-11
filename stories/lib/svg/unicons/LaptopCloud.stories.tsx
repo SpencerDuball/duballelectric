@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LaptopCloud> = (
   args: LaptopCloudPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LaptopCloud {...args} />
     <LaptopCloud {...args} fill="red.500" />
     <LaptopCloud {...args} fill="gray.900" />

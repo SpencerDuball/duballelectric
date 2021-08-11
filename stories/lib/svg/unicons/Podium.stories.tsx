@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Podium>;
 
 const Template: ComponentStory<typeof Podium> = (args: PodiumPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Podium {...args} />
     <Podium {...args} fill="red.500" />
     <Podium {...args} fill="gray.900" />

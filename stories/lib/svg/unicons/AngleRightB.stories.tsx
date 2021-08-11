@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AngleRightB> = (
   args: AngleRightBPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AngleRightB {...args} />
     <AngleRightB {...args} fill="red.500" />
     <AngleRightB {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Backward>;
 
 const Template: ComponentStory<typeof Backward> = (args: BackwardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Backward {...args} />
     <Backward {...args} fill="red.500" />
     <Backward {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Celsius>;
 
 const Template: ComponentStory<typeof Celsius> = (args: CelsiusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Celsius {...args} />
     <Celsius {...args} fill="red.500" />
     <Celsius {...args} fill="gray.900" />

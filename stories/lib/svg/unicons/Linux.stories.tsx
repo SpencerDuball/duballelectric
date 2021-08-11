@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Linux>;
 
 const Template: ComponentStory<typeof Linux> = (args: LinuxPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Linux {...args} />
     <Linux {...args} fill="red.500" />
     <Linux {...args} fill="gray.900" />

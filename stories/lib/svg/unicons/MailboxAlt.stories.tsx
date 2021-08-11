@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MailboxAlt> = (
   args: MailboxAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MailboxAlt {...args} />
     <MailboxAlt {...args} fill="red.500" />
     <MailboxAlt {...args} fill="gray.900" />

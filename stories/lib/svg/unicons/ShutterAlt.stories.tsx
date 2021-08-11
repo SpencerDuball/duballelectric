@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShutterAlt> = (
   args: ShutterAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShutterAlt {...args} />
     <ShutterAlt {...args} fill="red.500" />
     <ShutterAlt {...args} fill="gray.900" />

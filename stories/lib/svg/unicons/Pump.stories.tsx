@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Pump>;
 
 const Template: ComponentStory<typeof Pump> = (args: PumpPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pump {...args} />
     <Pump {...args} fill="red.500" />
     <Pump {...args} fill="gray.900" />

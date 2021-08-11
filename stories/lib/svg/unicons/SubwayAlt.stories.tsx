@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SubwayAlt>;
 
 const Template: ComponentStory<typeof SubwayAlt> = (args: SubwayAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SubwayAlt {...args} />
     <SubwayAlt {...args} fill="red.500" />
     <SubwayAlt {...args} fill="gray.900" />

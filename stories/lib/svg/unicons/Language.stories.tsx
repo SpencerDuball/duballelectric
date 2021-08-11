@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Language>;
 
 const Template: ComponentStory<typeof Language> = (args: LanguagePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Language {...args} />
     <Language {...args} fill="red.500" />
     <Language {...args} fill="gray.900" />

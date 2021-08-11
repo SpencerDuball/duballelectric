@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileInfoAlt> = (
   args: FileInfoAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileInfoAlt {...args} />
     <FileInfoAlt {...args} fill="red.500" />
     <FileInfoAlt {...args} fill="gray.900" />

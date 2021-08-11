@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bright>;
 
 const Template: ComponentStory<typeof Bright> = (args: BrightPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bright {...args} />
     <Bright {...args} fill="red.500" />
     <Bright {...args} fill="gray.900" />

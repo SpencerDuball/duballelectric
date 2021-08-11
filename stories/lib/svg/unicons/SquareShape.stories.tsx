@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SquareShape> = (
   args: SquareShapePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SquareShape {...args} />
     <SquareShape {...args} fill="red.500" />
     <SquareShape {...args} fill="gray.900" />

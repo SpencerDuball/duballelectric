@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Trophy>;
 
 const Template: ComponentStory<typeof Trophy> = (args: TrophyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Trophy {...args} />
     <Trophy {...args} fill="red.500" />
     <Trophy {...args} fill="gray.900" />

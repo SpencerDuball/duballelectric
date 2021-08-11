@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof RulerCombined> = (
   args: RulerCombinedPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RulerCombined {...args} />
     <RulerCombined {...args} fill="red.500" />
     <RulerCombined {...args} fill="gray.900" />

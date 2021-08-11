@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShoppingCartAlt> = (
   args: ShoppingCartAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShoppingCartAlt {...args} />
     <ShoppingCartAlt {...args} fill="red.500" />
     <ShoppingCartAlt {...args} fill="gray.900" />

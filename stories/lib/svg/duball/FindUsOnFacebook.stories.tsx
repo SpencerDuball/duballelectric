@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FindUsOnFacebook> = (
   args: FindUsOnFacebookPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FindUsOnFacebook {...args} />
     <FindUsOnFacebook {...args} fill="red.500" />
     <FindUsOnFacebook {...args} fill="gray.900" />

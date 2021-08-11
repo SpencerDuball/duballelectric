@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tools>;
 
 const Template: ComponentStory<typeof Tools> = (args: ToolsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tools {...args} />
     <Tools {...args} fill="red.500" />
     <Tools {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GrinTongueWink> = (
   args: GrinTongueWinkPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GrinTongueWink {...args} />
     <GrinTongueWink {...args} fill="red.500" />
     <GrinTongueWink {...args} fill="gray.900" />

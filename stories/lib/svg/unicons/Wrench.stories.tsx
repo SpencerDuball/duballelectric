@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wrench>;
 
 const Template: ComponentStory<typeof Wrench> = (args: WrenchPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wrench {...args} />
     <Wrench {...args} fill="red.500" />
     <Wrench {...args} fill="gray.900" />

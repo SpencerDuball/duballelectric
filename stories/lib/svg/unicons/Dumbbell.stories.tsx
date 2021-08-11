@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Dumbbell>;
 
 const Template: ComponentStory<typeof Dumbbell> = (args: DumbbellPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Dumbbell {...args} />
     <Dumbbell {...args} fill="red.500" />
     <Dumbbell {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ToggleOn>;
 
 const Template: ComponentStory<typeof ToggleOn> = (args: ToggleOnPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ToggleOn {...args} />
     <ToggleOn {...args} fill="red.500" />
     <ToggleOn {...args} fill="gray.900" />

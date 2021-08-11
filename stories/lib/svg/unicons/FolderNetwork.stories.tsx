@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderNetwork> = (
   args: FolderNetworkPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderNetwork {...args} />
     <FolderNetwork {...args} fill="red.500" />
     <FolderNetwork {...args} fill="gray.900" />

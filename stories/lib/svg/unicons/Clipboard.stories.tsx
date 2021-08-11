@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Clipboard>;
 
 const Template: ComponentStory<typeof Clipboard> = (args: ClipboardPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Clipboard {...args} />
     <Clipboard {...args} fill="red.500" />
     <Clipboard {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Cog>;
 
 const Template: ComponentStory<typeof Cog> = (args: CogPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Cog {...args} />
     <Cog {...args} fill="red.500" />
     <Cog {...args} fill="gray.900" />

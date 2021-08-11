@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof DollarAlt>;
 
 const Template: ComponentStory<typeof DollarAlt> = (args: DollarAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DollarAlt {...args} />
     <DollarAlt {...args} fill="red.500" />
     <DollarAlt {...args} fill="gray.900" />

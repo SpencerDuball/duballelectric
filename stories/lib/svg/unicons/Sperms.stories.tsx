@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sperms>;
 
 const Template: ComponentStory<typeof Sperms> = (args: SpermsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sperms {...args} />
     <Sperms {...args} fill="red.500" />
     <Sperms {...args} fill="gray.900" />

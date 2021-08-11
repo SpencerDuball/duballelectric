@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Adjust>;
 
 const Template: ComponentStory<typeof Adjust> = (args: AdjustPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Adjust {...args} />
     <Adjust {...args} fill="red.500" />
     <Adjust {...args} fill="gray.900" />

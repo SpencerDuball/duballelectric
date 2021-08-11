@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudMoonMeatball> = (
   args: CloudMoonMeatballPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudMoonMeatball {...args} />
     <CloudMoonMeatball {...args} fill="red.500" />
     <CloudMoonMeatball {...args} fill="gray.900" />

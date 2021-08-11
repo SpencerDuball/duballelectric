@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BaseballBall> = (
   args: BaseballBallPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BaseballBall {...args} />
     <BaseballBall {...args} fill="red.500" />
     <BaseballBall {...args} fill="gray.900" />

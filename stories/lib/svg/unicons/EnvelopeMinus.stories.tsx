@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeMinus> = (
   args: EnvelopeMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeMinus {...args} />
     <EnvelopeMinus {...args} fill="red.500" />
     <EnvelopeMinus {...args} fill="gray.900" />

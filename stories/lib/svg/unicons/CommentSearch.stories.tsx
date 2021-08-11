@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentSearch> = (
   args: CommentSearchPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentSearch {...args} />
     <CommentSearch {...args} fill="red.500" />
     <CommentSearch {...args} fill="gray.900" />

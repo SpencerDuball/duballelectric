@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bitcoin>;
 
 const Template: ComponentStory<typeof Bitcoin> = (args: BitcoinPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bitcoin {...args} />
     <Bitcoin {...args} fill="red.500" />
     <Bitcoin {...args} fill="gray.900" />

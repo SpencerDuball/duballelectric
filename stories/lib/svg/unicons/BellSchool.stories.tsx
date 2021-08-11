@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BellSchool> = (
   args: BellSchoolPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BellSchool {...args} />
     <BellSchool {...args} fill="red.500" />
     <BellSchool {...args} fill="gray.900" />

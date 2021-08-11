@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof StopwatchSlash> = (
   args: StopwatchSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <StopwatchSlash {...args} />
     <StopwatchSlash {...args} fill="red.500" />
     <StopwatchSlash {...args} fill="gray.900" />

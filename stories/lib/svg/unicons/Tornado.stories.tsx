@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Tornado>;
 
 const Template: ComponentStory<typeof Tornado> = (args: TornadoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Tornado {...args} />
     <Tornado {...args} fill="red.500" />
     <Tornado {...args} fill="gray.900" />

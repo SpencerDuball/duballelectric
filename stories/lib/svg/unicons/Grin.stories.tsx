@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Grin>;
 
 const Template: ComponentStory<typeof Grin> = (args: GrinPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Grin {...args} />
     <Grin {...args} fill="red.500" />
     <Grin {...args} fill="gray.900" />

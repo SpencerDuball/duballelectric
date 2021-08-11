@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CameraChange> = (
   args: CameraChangePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CameraChange {...args} />
     <CameraChange {...args} fill="red.500" />
     <CameraChange {...args} fill="gray.900" />

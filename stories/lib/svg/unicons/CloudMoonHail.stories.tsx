@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudMoonHail> = (
   args: CloudMoonHailPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudMoonHail {...args} />
     <CloudMoonHail {...args} fill="red.500" />
     <CloudMoonHail {...args} fill="gray.900" />

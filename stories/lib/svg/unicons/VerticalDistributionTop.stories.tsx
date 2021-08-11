@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof VerticalDistributionTop> = (
   args: VerticalDistributionTopPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VerticalDistributionTop {...args} />
     <VerticalDistributionTop {...args} fill="red.500" />
     <VerticalDistributionTop {...args} fill="gray.900" />

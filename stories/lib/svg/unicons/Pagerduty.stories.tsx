@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Pagerduty>;
 
 const Template: ComponentStory<typeof Pagerduty> = (args: PagerdutyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pagerduty {...args} />
     <Pagerduty {...args} fill="red.500" />
     <Pagerduty {...args} fill="gray.900" />

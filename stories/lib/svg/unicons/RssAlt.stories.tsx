@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof RssAlt>;
 
 const Template: ComponentStory<typeof RssAlt> = (args: RssAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RssAlt {...args} />
     <RssAlt {...args} fill="red.500" />
     <RssAlt {...args} fill="gray.900" />

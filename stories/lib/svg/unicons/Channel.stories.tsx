@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Channel>;
 
 const Template: ComponentStory<typeof Channel> = (args: ChannelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Channel {...args} />
     <Channel {...args} fill="red.500" />
     <Channel {...args} fill="gray.900" />

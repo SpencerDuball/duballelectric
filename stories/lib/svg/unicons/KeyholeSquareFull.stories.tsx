@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof KeyholeSquareFull> = (
   args: KeyholeSquareFullPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <KeyholeSquareFull {...args} />
     <KeyholeSquareFull {...args} fill="red.500" />
     <KeyholeSquareFull {...args} fill="gray.900" />

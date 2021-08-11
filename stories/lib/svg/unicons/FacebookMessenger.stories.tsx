@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FacebookMessenger> = (
   args: FacebookMessengerPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FacebookMessenger {...args} />
     <FacebookMessenger {...args} fill="red.500" />
     <FacebookMessenger {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Microsoft>;
 
 const Template: ComponentStory<typeof Microsoft> = (args: MicrosoftPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Microsoft {...args} />
     <Microsoft {...args} fill="red.500" />
     <Microsoft {...args} fill="gray.900" />

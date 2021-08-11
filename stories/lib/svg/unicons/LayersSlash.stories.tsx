@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LayersSlash> = (
   args: LayersSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LayersSlash {...args} />
     <LayersSlash {...args} fill="red.500" />
     <LayersSlash {...args} fill="gray.900" />

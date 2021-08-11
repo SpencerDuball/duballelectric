@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LeftArrowFromLeft> = (
   args: LeftArrowFromLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LeftArrowFromLeft {...args} />
     <LeftArrowFromLeft {...args} fill="red.500" />
     <LeftArrowFromLeft {...args} fill="gray.900" />

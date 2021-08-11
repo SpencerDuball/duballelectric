@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Switch>;
 
 const Template: ComponentStory<typeof Switch> = (args: SwitchPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Switch {...args} />
     <Switch {...args} fill="red.500" />
     <Switch {...args} fill="gray.900" />

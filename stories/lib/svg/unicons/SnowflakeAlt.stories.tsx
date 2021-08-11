@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SnowflakeAlt> = (
   args: SnowflakeAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SnowflakeAlt {...args} />
     <SnowflakeAlt {...args} fill="red.500" />
     <SnowflakeAlt {...args} fill="gray.900" />

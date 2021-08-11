@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CreditCard> = (
   args: CreditCardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CreditCard {...args} />
     <CreditCard {...args} fill="red.500" />
     <CreditCard {...args} fill="gray.900" />

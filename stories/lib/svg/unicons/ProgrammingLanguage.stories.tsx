@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof ProgrammingLanguage> = (
   args: ProgrammingLanguagePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ProgrammingLanguage {...args} />
     <ProgrammingLanguage {...args} fill="red.500" />
     <ProgrammingLanguage {...args} fill="gray.900" />

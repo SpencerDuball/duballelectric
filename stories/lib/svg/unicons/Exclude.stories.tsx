@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Exclude>;
 
 const Template: ComponentStory<typeof Exclude> = (args: ExcludePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Exclude {...args} />
     <Exclude {...args} fill="red.500" />
     <Exclude {...args} fill="gray.900" />

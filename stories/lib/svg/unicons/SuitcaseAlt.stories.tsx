@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SuitcaseAlt> = (
   args: SuitcaseAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SuitcaseAlt {...args} />
     <SuitcaseAlt {...args} fill="red.500" />
     <SuitcaseAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowsResizeV> = (
   args: ArrowsResizeVPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsResizeV {...args} />
     <ArrowsResizeV {...args} fill="red.500" />
     <ArrowsResizeV {...args} fill="gray.900" />

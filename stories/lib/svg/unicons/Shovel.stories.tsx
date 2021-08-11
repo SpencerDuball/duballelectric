@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Shovel>;
 
 const Template: ComponentStory<typeof Shovel> = (args: ShovelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Shovel {...args} />
     <Shovel {...args} fill="red.500" />
     <Shovel {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Mouse>;
 
 const Template: ComponentStory<typeof Mouse> = (args: MousePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Mouse {...args} />
     <Mouse {...args} fill="red.500" />
     <Mouse {...args} fill="gray.900" />

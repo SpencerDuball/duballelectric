@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BehanceAlt> = (
   args: BehanceAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BehanceAlt {...args} />
     <BehanceAlt {...args} fill="red.500" />
     <BehanceAlt {...args} fill="gray.900" />

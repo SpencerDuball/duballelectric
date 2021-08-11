@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudWind>;
 
 const Template: ComponentStory<typeof CloudWind> = (args: CloudWindPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudWind {...args} />
     <CloudWind {...args} fill="red.500" />
     <CloudWind {...args} fill="gray.900" />

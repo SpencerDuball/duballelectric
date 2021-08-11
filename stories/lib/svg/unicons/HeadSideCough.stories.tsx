@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HeadSideCough> = (
   args: HeadSideCoughPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeadSideCough {...args} />
     <HeadSideCough {...args} fill="red.500" />
     <HeadSideCough {...args} fill="gray.900" />

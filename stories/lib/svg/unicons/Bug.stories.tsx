@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bug>;
 
 const Template: ComponentStory<typeof Bug> = (args: BugPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bug {...args} />
     <Bug {...args} fill="red.500" />
     <Bug {...args} fill="gray.900" />

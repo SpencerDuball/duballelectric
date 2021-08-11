@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ClapperBoard> = (
   args: ClapperBoardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ClapperBoard {...args} />
     <ClapperBoard {...args} fill="red.500" />
     <ClapperBoard {...args} fill="gray.900" />

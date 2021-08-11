@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WindowMaximize> = (
   args: WindowMaximizePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WindowMaximize {...args} />
     <WindowMaximize {...args} fill="red.500" />
     <WindowMaximize {...args} fill="gray.900" />

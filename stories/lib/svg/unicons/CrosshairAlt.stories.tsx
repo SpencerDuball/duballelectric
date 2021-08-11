@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CrosshairAlt> = (
   args: CrosshairAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CrosshairAlt {...args} />
     <CrosshairAlt {...args} fill="red.500" />
     <CrosshairAlt {...args} fill="gray.900" />

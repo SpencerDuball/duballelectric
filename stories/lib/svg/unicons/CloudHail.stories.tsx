@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudHail>;
 
 const Template: ComponentStory<typeof CloudHail> = (args: CloudHailPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudHail {...args} />
     <CloudHail {...args} fill="red.500" />
     <CloudHail {...args} fill="gray.900" />

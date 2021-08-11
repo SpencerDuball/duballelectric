@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Setting>;
 
 const Template: ComponentStory<typeof Setting> = (args: SettingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Setting {...args} />
     <Setting {...args} fill="red.500" />
     <Setting {...args} fill="gray.900" />

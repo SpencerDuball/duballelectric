@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Diary>;
 
 const Template: ComponentStory<typeof Diary> = (args: DiaryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Diary {...args} />
     <Diary {...args} fill="red.500" />
     <Diary {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ElipsisDoubleVAlt> = (
   args: ElipsisDoubleVAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ElipsisDoubleVAlt {...args} />
     <ElipsisDoubleVAlt {...args} fill="red.500" />
     <ElipsisDoubleVAlt {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Flashlight> = (
   args: FlashlightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Flashlight {...args} />
     <Flashlight {...args} fill="red.500" />
     <Flashlight {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Parcel>;
 
 const Template: ComponentStory<typeof Parcel> = (args: ParcelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Parcel {...args} />
     <Parcel {...args} fill="red.500" />
     <Parcel {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Swiggy>;
 
 const Template: ComponentStory<typeof Swiggy> = (args: SwiggyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Swiggy {...args} />
     <Swiggy {...args} fill="red.500" />
     <Swiggy {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileLanscapeSlash> = (
   args: FileLanscapeSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileLanscapeSlash {...args} />
     <FileLanscapeSlash {...args} fill="red.500" />
     <FileLanscapeSlash {...args} fill="gray.900" />

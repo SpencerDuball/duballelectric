@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileSearchAlt> = (
   args: FileSearchAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileSearchAlt {...args} />
     <FileSearchAlt {...args} fill="red.500" />
     <FileSearchAlt {...args} fill="gray.900" />

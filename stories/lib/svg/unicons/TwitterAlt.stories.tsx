@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TwitterAlt> = (
   args: TwitterAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TwitterAlt {...args} />
     <TwitterAlt {...args} fill="red.500" />
     <TwitterAlt {...args} fill="gray.900" />

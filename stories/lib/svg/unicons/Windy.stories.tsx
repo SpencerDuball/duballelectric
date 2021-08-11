@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Windy>;
 
 const Template: ComponentStory<typeof Windy> = (args: WindyPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Windy {...args} />
     <Windy {...args} fill="red.500" />
     <Windy {...args} fill="gray.900" />

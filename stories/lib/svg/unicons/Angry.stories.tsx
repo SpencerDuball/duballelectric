@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Angry>;
 
 const Template: ComponentStory<typeof Angry> = (args: AngryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Angry {...args} />
     <Angry {...args} fill="red.500" />
     <Angry {...args} fill="gray.900" />

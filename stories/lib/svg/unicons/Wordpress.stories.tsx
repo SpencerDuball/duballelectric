@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wordpress>;
 
 const Template: ComponentStory<typeof Wordpress> = (args: WordpressPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wordpress {...args} />
     <Wordpress {...args} fill="red.500" />
     <Wordpress {...args} fill="gray.900" />

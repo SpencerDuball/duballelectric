@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Html5>;
 
 const Template: ComponentStory<typeof Html5> = (args: Html5PropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Html5 {...args} />
     <Html5 {...args} fill="red.500" />
     <Html5 {...args} fill="gray.900" />

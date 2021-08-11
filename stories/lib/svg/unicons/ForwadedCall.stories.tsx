@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ForwadedCall> = (
   args: ForwadedCallPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ForwadedCall {...args} />
     <ForwadedCall {...args} fill="red.500" />
     <ForwadedCall {...args} fill="gray.900" />

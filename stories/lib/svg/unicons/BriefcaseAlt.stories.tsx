@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BriefcaseAlt> = (
   args: BriefcaseAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BriefcaseAlt {...args} />
     <BriefcaseAlt {...args} fill="red.500" />
     <BriefcaseAlt {...args} fill="gray.900" />

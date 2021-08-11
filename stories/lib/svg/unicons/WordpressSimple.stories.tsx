@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WordpressSimple> = (
   args: WordpressSimplePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WordpressSimple {...args} />
     <WordpressSimple {...args} fill="red.500" />
     <WordpressSimple {...args} fill="gray.900" />

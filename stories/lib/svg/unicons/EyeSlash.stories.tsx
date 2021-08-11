@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof EyeSlash>;
 
 const Template: ComponentStory<typeof EyeSlash> = (args: EyeSlashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EyeSlash {...args} />
     <EyeSlash {...args} fill="red.500" />
     <EyeSlash {...args} fill="gray.900" />

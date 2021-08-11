@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CompressV>;
 
 const Template: ComponentStory<typeof CompressV> = (args: CompressVPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompressV {...args} />
     <CompressV {...args} fill="red.500" />
     <CompressV {...args} fill="gray.900" />

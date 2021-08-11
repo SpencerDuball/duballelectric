@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageMinus> = (
   args: ImageMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageMinus {...args} />
     <ImageMinus {...args} fill="red.500" />
     <ImageMinus {...args} fill="gray.900" />

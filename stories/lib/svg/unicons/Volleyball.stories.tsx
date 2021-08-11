@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Volleyball> = (
   args: VolleyballPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Volleyball {...args} />
     <Volleyball {...args} fill="red.500" />
     <Volleyball {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Filter>;
 
 const Template: ComponentStory<typeof Filter> = (args: FilterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Filter {...args} />
     <Filter {...args} fill="red.500" />
     <Filter {...args} fill="gray.900" />

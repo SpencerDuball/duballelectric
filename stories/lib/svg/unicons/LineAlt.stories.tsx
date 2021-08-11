@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LineAlt>;
 
 const Template: ComponentStory<typeof LineAlt> = (args: LineAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LineAlt {...args} />
     <LineAlt {...args} fill="red.500" />
     <LineAlt {...args} fill="gray.900" />

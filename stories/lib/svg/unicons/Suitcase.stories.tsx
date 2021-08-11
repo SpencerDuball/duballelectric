@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Suitcase>;
 
 const Template: ComponentStory<typeof Suitcase> = (args: SuitcasePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Suitcase {...args} />
     <Suitcase {...args} fill="red.500" />
     <Suitcase {...args} fill="gray.900" />

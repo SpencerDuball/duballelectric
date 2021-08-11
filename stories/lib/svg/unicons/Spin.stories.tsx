@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Spin>;
 
 const Template: ComponentStory<typeof Spin> = (args: SpinPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Spin {...args} />
     <Spin {...args} fill="red.500" />
     <Spin {...args} fill="gray.900" />

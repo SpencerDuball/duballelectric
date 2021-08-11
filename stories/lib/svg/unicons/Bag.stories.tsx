@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bag>;
 
 const Template: ComponentStory<typeof Bag> = (args: BagPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bag {...args} />
     <Bag {...args} fill="red.500" />
     <Bag {...args} fill="gray.900" />

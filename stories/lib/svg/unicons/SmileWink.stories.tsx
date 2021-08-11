@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SmileWink>;
 
 const Template: ComponentStory<typeof SmileWink> = (args: SmileWinkPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SmileWink {...args} />
     <SmileWink {...args} fill="red.500" />
     <SmileWink {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ServerAlt>;
 
 const Template: ComponentStory<typeof ServerAlt> = (args: ServerAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ServerAlt {...args} />
     <ServerAlt {...args} fill="red.500" />
     <ServerAlt {...args} fill="gray.900" />

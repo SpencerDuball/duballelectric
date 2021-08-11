@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeDownloadAlt> = (
   args: EnvelopeDownloadAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeDownloadAlt {...args} />
     <EnvelopeDownloadAlt {...args} fill="red.500" />
     <EnvelopeDownloadAlt {...args} fill="gray.900" />

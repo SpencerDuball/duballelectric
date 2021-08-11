@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LuggageCart> = (
   args: LuggageCartPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LuggageCart {...args} />
     <LuggageCart {...args} fill="red.500" />
     <LuggageCart {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PrintSlash> = (
   args: PrintSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PrintSlash {...args} />
     <PrintSlash {...args} fill="red.500" />
     <PrintSlash {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Stethoscope> = (
   args: StethoscopePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Stethoscope {...args} />
     <Stethoscope {...args} fill="red.500" />
     <Stethoscope {...args} fill="gray.900" />

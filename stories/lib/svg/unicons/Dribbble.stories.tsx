@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Dribbble>;
 
 const Template: ComponentStory<typeof Dribbble> = (args: DribbblePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Dribbble {...args} />
     <Dribbble {...args} fill="red.500" />
     <Dribbble {...args} fill="gray.900" />

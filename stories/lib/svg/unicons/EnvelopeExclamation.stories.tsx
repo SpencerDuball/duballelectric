@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeExclamation> = (
   args: EnvelopeExclamationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeExclamation {...args} />
     <EnvelopeExclamation {...args} fill="red.500" />
     <EnvelopeExclamation {...args} fill="gray.900" />

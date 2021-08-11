@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Cancel>;
 
 const Template: ComponentStory<typeof Cancel> = (args: CancelPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Cancel {...args} />
     <Cancel {...args} fill="red.500" />
     <Cancel {...args} fill="gray.900" />

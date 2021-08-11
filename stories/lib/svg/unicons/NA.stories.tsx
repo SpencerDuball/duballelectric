@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof NA>;
 
 const Template: ComponentStory<typeof NA> = (args: NAPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <NA {...args} />
     <NA {...args} fill="red.500" />
     <NA {...args} fill="gray.900" />

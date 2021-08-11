@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SearchAlt>;
 
 const Template: ComponentStory<typeof SearchAlt> = (args: SearchAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SearchAlt {...args} />
     <SearchAlt {...args} fill="red.500" />
     <SearchAlt {...args} fill="gray.900" />

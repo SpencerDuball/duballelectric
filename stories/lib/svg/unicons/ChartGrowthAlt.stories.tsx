@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ChartGrowthAlt> = (
   args: ChartGrowthAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChartGrowthAlt {...args} />
     <ChartGrowthAlt {...args} fill="red.500" />
     <ChartGrowthAlt {...args} fill="gray.900" />

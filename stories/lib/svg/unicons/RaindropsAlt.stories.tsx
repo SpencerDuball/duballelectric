@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof RaindropsAlt> = (
   args: RaindropsAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RaindropsAlt {...args} />
     <RaindropsAlt {...args} fill="red.500" />
     <RaindropsAlt {...args} fill="gray.900" />

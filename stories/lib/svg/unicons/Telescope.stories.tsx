@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Telescope>;
 
 const Template: ComponentStory<typeof Telescope> = (args: TelescopePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Telescope {...args} />
     <Telescope {...args} fill="red.500" />
     <Telescope {...args} fill="gray.900" />

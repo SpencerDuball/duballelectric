@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SnapchatGhost> = (
   args: SnapchatGhostPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SnapchatGhost {...args} />
     <SnapchatGhost {...args} fill="red.500" />
     <SnapchatGhost {...args} fill="gray.900" />

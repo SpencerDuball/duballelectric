@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PlusCircle> = (
   args: PlusCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PlusCircle {...args} />
     <PlusCircle {...args} fill="red.500" />
     <PlusCircle {...args} fill="gray.900" />

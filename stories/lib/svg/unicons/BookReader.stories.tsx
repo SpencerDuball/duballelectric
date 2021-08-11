@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BookReader> = (
   args: BookReaderPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BookReader {...args} />
     <BookReader {...args} fill="red.500" />
     <BookReader {...args} fill="gray.900" />

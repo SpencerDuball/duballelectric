@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof UtensilsAlt> = (
   args: UtensilsAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UtensilsAlt {...args} />
     <UtensilsAlt {...args} fill="red.500" />
     <UtensilsAlt {...args} fill="gray.900" />

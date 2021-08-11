@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LaptopConnection> = (
   args: LaptopConnectionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LaptopConnection {...args} />
     <LaptopConnection {...args} fill="red.500" />
     <LaptopConnection {...args} fill="gray.900" />

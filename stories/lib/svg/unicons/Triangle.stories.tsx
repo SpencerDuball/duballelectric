@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Triangle>;
 
 const Template: ComponentStory<typeof Triangle> = (args: TrianglePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Triangle {...args} />
     <Triangle {...args} fill="red.500" />
     <Triangle {...args} fill="gray.900" />

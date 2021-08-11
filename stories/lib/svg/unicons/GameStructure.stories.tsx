@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GameStructure> = (
   args: GameStructurePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GameStructure {...args} />
     <GameStructure {...args} fill="red.500" />
     <GameStructure {...args} fill="gray.900" />

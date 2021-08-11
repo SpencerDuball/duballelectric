@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeQuestion> = (
   args: EnvelopeQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeQuestion {...args} />
     <EnvelopeQuestion {...args} fill="red.500" />
     <EnvelopeQuestion {...args} fill="gray.900" />

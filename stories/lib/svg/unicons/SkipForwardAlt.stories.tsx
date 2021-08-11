@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SkipForwardAlt> = (
   args: SkipForwardAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SkipForwardAlt {...args} />
     <SkipForwardAlt {...args} fill="red.500" />
     <SkipForwardAlt {...args} fill="gray.900" />

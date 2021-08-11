@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Registered> = (
   args: RegisteredPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Registered {...args} />
     <Registered {...args} fill="red.500" />
     <Registered {...args} fill="gray.900" />

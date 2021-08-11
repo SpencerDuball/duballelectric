@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Opera>;
 
 const Template: ComponentStory<typeof Opera> = (args: OperaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Opera {...args} />
     <Opera {...args} fill="red.500" />
     <Opera {...args} fill="gray.900" />

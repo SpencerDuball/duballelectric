@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof IntercomAlt> = (
   args: IntercomAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <IntercomAlt {...args} />
     <IntercomAlt {...args} fill="red.500" />
     <IntercomAlt {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudRedo>;
 
 const Template: ComponentStory<typeof CloudRedo> = (args: CloudRedoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudRedo {...args} />
     <CloudRedo {...args} fill="red.500" />
     <CloudRedo {...args} fill="gray.900" />

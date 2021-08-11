@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Restaurant> = (
   args: RestaurantPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Restaurant {...args} />
     <Restaurant {...args} fill="red.500" />
     <Restaurant {...args} fill="gray.900" />

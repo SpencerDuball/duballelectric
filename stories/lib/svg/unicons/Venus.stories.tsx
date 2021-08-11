@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Venus>;
 
 const Template: ComponentStory<typeof Venus> = (args: VenusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Venus {...args} />
     <Venus {...args} fill="red.500" />
     <Venus {...args} fill="gray.900" />

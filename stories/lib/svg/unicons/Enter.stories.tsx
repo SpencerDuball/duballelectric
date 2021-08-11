@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Enter>;
 
 const Template: ComponentStory<typeof Enter> = (args: EnterPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Enter {...args} />
     <Enter {...args} fill="red.500" />
     <Enter {...args} fill="gray.900" />

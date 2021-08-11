@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LetterHindiA> = (
   args: LetterHindiAPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LetterHindiA {...args} />
     <LetterHindiA {...args} fill="red.500" />
     <LetterHindiA {...args} fill="gray.900" />

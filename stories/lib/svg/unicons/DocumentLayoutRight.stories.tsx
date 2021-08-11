@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof DocumentLayoutRight> = (
   args: DocumentLayoutRightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DocumentLayoutRight {...args} />
     <DocumentLayoutRight {...args} fill="red.500" />
     <DocumentLayoutRight {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FileAlt>;
 
 const Template: ComponentStory<typeof FileAlt> = (args: FileAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileAlt {...args} />
     <FileAlt {...args} fill="red.500" />
     <FileAlt {...args} fill="gray.900" />

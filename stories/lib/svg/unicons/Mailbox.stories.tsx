@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Mailbox>;
 
 const Template: ComponentStory<typeof Mailbox> = (args: MailboxPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Mailbox {...args} />
     <Mailbox {...args} fill="red.500" />
     <Mailbox {...args} fill="gray.900" />

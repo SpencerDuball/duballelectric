@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Shuffle>;
 
 const Template: ComponentStory<typeof Shuffle> = (args: ShufflePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Shuffle {...args} />
     <Shuffle {...args} fill="red.500" />
     <Shuffle {...args} fill="gray.900" />

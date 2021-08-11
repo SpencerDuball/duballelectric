@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MasterCard> = (
   args: MasterCardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MasterCard {...args} />
     <MasterCard {...args} fill="red.500" />
     <MasterCard {...args} fill="gray.900" />

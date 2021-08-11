@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Desktop>;
 
 const Template: ComponentStory<typeof Desktop> = (args: DesktopPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Desktop {...args} />
     <Desktop {...args} fill="red.500" />
     <Desktop {...args} fill="gray.900" />

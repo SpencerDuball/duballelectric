@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ChatInfo>;
 
 const Template: ComponentStory<typeof ChatInfo> = (args: ChatInfoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChatInfo {...args} />
     <ChatInfo {...args} fill="red.500" />
     <ChatInfo {...args} fill="gray.900" />

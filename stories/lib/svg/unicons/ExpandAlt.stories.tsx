@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ExpandAlt>;
 
 const Template: ComponentStory<typeof ExpandAlt> = (args: ExpandAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExpandAlt {...args} />
     <ExpandAlt {...args} fill="red.500" />
     <ExpandAlt {...args} fill="gray.900" />

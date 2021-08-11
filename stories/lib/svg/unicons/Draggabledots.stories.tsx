@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Draggabledots> = (
   args: DraggabledotsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Draggabledots {...args} />
     <Draggabledots {...args} fill="red.500" />
     <Draggabledots {...args} fill="gray.900" />

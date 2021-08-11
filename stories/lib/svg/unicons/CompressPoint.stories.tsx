@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CompressPoint> = (
   args: CompressPointPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompressPoint {...args} />
     <CompressPoint {...args} fill="red.500" />
     <CompressPoint {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PrescriptionBottle> = (
   args: PrescriptionBottlePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PrescriptionBottle {...args} />
     <PrescriptionBottle {...args} fill="red.500" />
     <PrescriptionBottle {...args} fill="gray.900" />

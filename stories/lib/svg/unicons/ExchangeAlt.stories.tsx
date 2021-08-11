@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExchangeAlt> = (
   args: ExchangeAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExchangeAlt {...args} />
     <ExchangeAlt {...args} fill="red.500" />
     <ExchangeAlt {...args} fill="gray.900" />

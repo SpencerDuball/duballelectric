@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ChannelAdd> = (
   args: ChannelAddPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ChannelAdd {...args} />
     <ChannelAdd {...args} fill="red.500" />
     <ChannelAdd {...args} fill="gray.900" />

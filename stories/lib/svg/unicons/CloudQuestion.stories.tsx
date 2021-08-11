@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudQuestion> = (
   args: CloudQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudQuestion {...args} />
     <CloudQuestion {...args} fill="red.500" />
     <CloudQuestion {...args} fill="gray.900" />

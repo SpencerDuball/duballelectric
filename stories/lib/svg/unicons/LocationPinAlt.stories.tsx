@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LocationPinAlt> = (
   args: LocationPinAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LocationPinAlt {...args} />
     <LocationPinAlt {...args} fill="red.500" />
     <LocationPinAlt {...args} fill="gray.900" />

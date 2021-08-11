@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CameraPlus> = (
   args: CameraPlusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CameraPlus {...args} />
     <CameraPlus {...args} fill="red.500" />
     <CameraPlus {...args} fill="gray.900" />

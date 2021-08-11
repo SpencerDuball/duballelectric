@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Illustration> = (
   args: IllustrationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Illustration {...args} />
     <Illustration {...args} fill="red.500" />
     <Illustration {...args} fill="gray.900" />

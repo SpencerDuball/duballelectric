@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ScalingRight> = (
   args: ScalingRightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ScalingRight {...args} />
     <ScalingRight {...args} fill="red.500" />
     <ScalingRight {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof UsdSquare>;
 
 const Template: ComponentStory<typeof UsdSquare> = (args: UsdSquarePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <UsdSquare {...args} />
     <UsdSquare {...args} fill="red.500" />
     <UsdSquare {...args} fill="gray.900" />

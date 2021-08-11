@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ArrowRandom> = (
   args: ArrowRandomPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowRandom {...args} />
     <ArrowRandom {...args} fill="red.500" />
     <ArrowRandom {...args} fill="gray.900" />

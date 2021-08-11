@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Fahrenheit> = (
   args: FahrenheitPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Fahrenheit {...args} />
     <Fahrenheit {...args} fill="red.500" />
     <Fahrenheit {...args} fill="gray.900" />

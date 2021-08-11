@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PhonePause> = (
   args: PhonePausePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PhonePause {...args} />
     <PhonePause {...args} fill="red.500" />
     <PhonePause {...args} fill="gray.900" />

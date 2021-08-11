@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MusicTuneSlash> = (
   args: MusicTuneSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MusicTuneSlash {...args} />
     <MusicTuneSlash {...args} fill="red.500" />
     <MusicTuneSlash {...args} fill="gray.900" />

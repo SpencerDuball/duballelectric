@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ThLarge>;
 
 const Template: ComponentStory<typeof ThLarge> = (args: ThLargePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ThLarge {...args} />
     <ThLarge {...args} fill="red.500" />
     <ThLarge {...args} fill="gray.900" />

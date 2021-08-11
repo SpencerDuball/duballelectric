@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FolderLock> = (
   args: FolderLockPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FolderLock {...args} />
     <FolderLock {...args} fill="red.500" />
     <FolderLock {...args} fill="gray.900" />

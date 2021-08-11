@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ListOl>;
 
 const Template: ComponentStory<typeof ListOl> = (args: ListOlPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ListOl {...args} />
     <ListOl {...args} fill="red.500" />
     <ListOl {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SlackAlt>;
 
 const Template: ComponentStory<typeof SlackAlt> = (args: SlackAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SlackAlt {...args} />
     <SlackAlt {...args} fill="red.500" />
     <SlackAlt {...args} fill="gray.900" />

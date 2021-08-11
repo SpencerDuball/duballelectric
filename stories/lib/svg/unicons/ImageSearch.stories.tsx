@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageSearch> = (
   args: ImageSearchPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageSearch {...args} />
     <ImageSearch {...args} fill="red.500" />
     <ImageSearch {...args} fill="gray.900" />

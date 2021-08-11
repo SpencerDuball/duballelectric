@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sync>;
 
 const Template: ComponentStory<typeof Sync> = (args: SyncPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sync {...args} />
     <Sync {...args} fill="red.500" />
     <Sync {...args} fill="gray.900" />

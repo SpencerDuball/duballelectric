@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShoppingBag> = (
   args: ShoppingBagPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShoppingBag {...args} />
     <ShoppingBag {...args} fill="red.500" />
     <ShoppingBag {...args} fill="gray.900" />

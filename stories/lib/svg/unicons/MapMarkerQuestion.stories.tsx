@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MapMarkerQuestion> = (
   args: MapMarkerQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarkerQuestion {...args} />
     <MapMarkerQuestion {...args} fill="red.500" />
     <MapMarkerQuestion {...args} fill="gray.900" />

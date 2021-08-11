@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LightbulbAlt> = (
   args: LightbulbAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LightbulbAlt {...args} />
     <LightbulbAlt {...args} fill="red.500" />
     <LightbulbAlt {...args} fill="gray.900" />

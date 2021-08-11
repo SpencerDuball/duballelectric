@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeCheck> = (
   args: EnvelopeCheckPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeCheck {...args} />
     <EnvelopeCheck {...args} fill="red.500" />
     <EnvelopeCheck {...args} fill="gray.900" />

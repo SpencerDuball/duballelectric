@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileLockAlt> = (
   args: FileLockAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileLockAlt {...args} />
     <FileLockAlt {...args} fill="red.500" />
     <FileLockAlt {...args} fill="gray.900" />

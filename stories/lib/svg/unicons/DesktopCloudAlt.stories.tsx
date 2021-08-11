@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DesktopCloudAlt> = (
   args: DesktopCloudAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DesktopCloudAlt {...args} />
     <DesktopCloudAlt {...args} fill="red.500" />
     <DesktopCloudAlt {...args} fill="gray.900" />

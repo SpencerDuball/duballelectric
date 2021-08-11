@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudTimes> = (
   args: CloudTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudTimes {...args} />
     <CloudTimes {...args} fill="red.500" />
     <CloudTimes {...args} fill="gray.900" />

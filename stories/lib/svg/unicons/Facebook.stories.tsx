@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Facebook>;
 
 const Template: ComponentStory<typeof Facebook> = (args: FacebookPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Facebook {...args} />
     <Facebook {...args} fill="red.500" />
     <Facebook {...args} fill="gray.900" />

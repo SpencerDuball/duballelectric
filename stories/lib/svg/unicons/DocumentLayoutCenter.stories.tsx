@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof DocumentLayoutCenter> = (
   args: DocumentLayoutCenterPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DocumentLayoutCenter {...args} />
     <DocumentLayoutCenter {...args} fill="red.500" />
     <DocumentLayoutCenter {...args} fill="gray.900" />

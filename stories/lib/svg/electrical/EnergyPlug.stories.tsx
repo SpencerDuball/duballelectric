@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnergyPlug> = (
   args: EnergyPlugPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnergyPlug {...args} />
     <EnergyPlug {...args} fill="red.500" />
     <EnergyPlug {...args} fill="gray.900" />

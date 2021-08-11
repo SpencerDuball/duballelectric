@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Boomtruck>;
 
 const Template: ComponentStory<typeof Boomtruck> = (args: BoomtruckPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Boomtruck {...args} />
     <Boomtruck {...args} fill="red.500" />
     <Boomtruck {...args} fill="gray.900" />

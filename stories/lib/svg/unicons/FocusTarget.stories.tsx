@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FocusTarget> = (
   args: FocusTargetPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FocusTarget {...args} />
     <FocusTarget {...args} fill="red.500" />
     <FocusTarget {...args} fill="gray.900" />

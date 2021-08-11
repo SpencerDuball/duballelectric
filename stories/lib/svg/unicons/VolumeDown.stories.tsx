@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VolumeDown> = (
   args: VolumeDownPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VolumeDown {...args} />
     <VolumeDown {...args} fill="red.500" />
     <VolumeDown {...args} fill="gray.900" />

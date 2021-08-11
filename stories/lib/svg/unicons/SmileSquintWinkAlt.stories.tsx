@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SmileSquintWinkAlt> = (
   args: SmileSquintWinkAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SmileSquintWinkAlt {...args} />
     <SmileSquintWinkAlt {...args} fill="red.500" />
     <SmileSquintWinkAlt {...args} fill="gray.900" />

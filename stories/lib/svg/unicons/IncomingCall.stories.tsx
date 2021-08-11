@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof IncomingCall> = (
   args: IncomingCallPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <IncomingCall {...args} />
     <IncomingCall {...args} fill="red.500" />
     <IncomingCall {...args} fill="gray.900" />

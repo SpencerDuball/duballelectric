@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CalendarAlt> = (
   args: CalendarAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CalendarAlt {...args} />
     <CalendarAlt {...args} fill="red.500" />
     <CalendarAlt {...args} fill="gray.900" />

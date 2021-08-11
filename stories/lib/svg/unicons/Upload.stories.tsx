@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Upload>;
 
 const Template: ComponentStory<typeof Upload> = (args: UploadPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Upload {...args} />
     <Upload {...args} fill="red.500" />
     <Upload {...args} fill="gray.900" />

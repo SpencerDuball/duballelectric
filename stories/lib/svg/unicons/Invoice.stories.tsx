@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Invoice>;
 
 const Template: ComponentStory<typeof Invoice> = (args: InvoicePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Invoice {...args} />
     <Invoice {...args} fill="red.500" />
     <Invoice {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Percentage> = (
   args: PercentagePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Percentage {...args} />
     <Percentage {...args} fill="red.500" />
     <Percentage {...args} fill="gray.900" />

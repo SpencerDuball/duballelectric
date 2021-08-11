@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Film>;
 
 const Template: ComponentStory<typeof Film> = (args: FilmPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Film {...args} />
     <Film {...args} fill="red.500" />
     <Film {...args} fill="gray.900" />

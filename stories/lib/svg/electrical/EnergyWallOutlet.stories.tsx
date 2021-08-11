@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnergyWallOutlet> = (
   args: EnergyWallOutletPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnergyWallOutlet {...args} />
     <EnergyWallOutlet {...args} fill="red.500" />
     <EnergyWallOutlet {...args} fill="gray.900" />

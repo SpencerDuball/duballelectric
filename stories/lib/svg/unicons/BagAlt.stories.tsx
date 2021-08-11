@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BagAlt>;
 
 const Template: ComponentStory<typeof BagAlt> = (args: BagAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BagAlt {...args} />
     <BagAlt {...args} fill="red.500" />
     <BagAlt {...args} fill="gray.900" />

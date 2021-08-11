@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudShare> = (
   args: CloudSharePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudShare {...args} />
     <CloudShare {...args} fill="red.500" />
     <CloudShare {...args} fill="gray.900" />

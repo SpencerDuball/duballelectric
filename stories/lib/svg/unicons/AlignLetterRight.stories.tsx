@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AlignLetterRight> = (
   args: AlignLetterRightPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AlignLetterRight {...args} />
     <AlignLetterRight {...args} fill="red.500" />
     <AlignLetterRight {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Scroll>;
 
 const Template: ComponentStory<typeof Scroll> = (args: ScrollPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Scroll {...args} />
     <Scroll {...args} fill="red.500" />
     <Scroll {...args} fill="gray.900" />

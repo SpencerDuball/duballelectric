@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof GithubAlt>;
 
 const Template: ComponentStory<typeof GithubAlt> = (args: GithubAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GithubAlt {...args} />
     <GithubAlt {...args} fill="red.500" />
     <GithubAlt {...args} fill="gray.900" />

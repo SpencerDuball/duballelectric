@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MedicalDrip> = (
   args: MedicalDripPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MedicalDrip {...args} />
     <MedicalDrip {...args} fill="red.500" />
     <MedicalDrip {...args} fill="gray.900" />

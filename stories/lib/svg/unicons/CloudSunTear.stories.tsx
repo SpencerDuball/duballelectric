@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudSunTear> = (
   args: CloudSunTearPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudSunTear {...args} />
     <CloudSunTear {...args} fill="red.500" />
     <CloudSunTear {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FlipVAlt>;
 
 const Template: ComponentStory<typeof FlipVAlt> = (args: FlipVAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FlipVAlt {...args} />
     <FlipVAlt {...args} fill="red.500" />
     <FlipVAlt {...args} fill="gray.900" />

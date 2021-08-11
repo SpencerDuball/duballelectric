@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Smile>;
 
 const Template: ComponentStory<typeof Smile> = (args: SmilePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Smile {...args} />
     <Smile {...args} fill="red.500" />
     <Smile {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltShield> = (
   args: CommentAltShieldPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltShield {...args} />
     <CommentAltShield {...args} fill="red.500" />
     <CommentAltShield {...args} fill="gray.900" />

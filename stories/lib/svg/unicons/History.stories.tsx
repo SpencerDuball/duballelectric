@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof History>;
 
 const Template: ComponentStory<typeof History> = (args: HistoryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <History {...args} />
     <History {...args} fill="red.500" />
     <History {...args} fill="gray.900" />

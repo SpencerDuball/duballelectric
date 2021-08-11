@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BluetoothB> = (
   args: BluetoothBPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BluetoothB {...args} />
     <BluetoothB {...args} fill="red.500" />
     <BluetoothB {...args} fill="gray.900" />

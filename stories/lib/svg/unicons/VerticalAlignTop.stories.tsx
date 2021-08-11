@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof VerticalAlignTop> = (
   args: VerticalAlignTopPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VerticalAlignTop {...args} />
     <VerticalAlignTop {...args} fill="red.500" />
     <VerticalAlignTop {...args} fill="gray.900" />

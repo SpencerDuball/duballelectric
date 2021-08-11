@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BatteryEmpty> = (
   args: BatteryEmptyPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BatteryEmpty {...args} />
     <BatteryEmpty {...args} fill="red.500" />
     <BatteryEmpty {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DesktopAltSlash> = (
   args: DesktopAltSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DesktopAltSlash {...args} />
     <DesktopAltSlash {...args} fill="red.500" />
     <DesktopAltSlash {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CreativeCommonsPd> = (
   args: CreativeCommonsPdPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CreativeCommonsPd {...args} />
     <CreativeCommonsPd {...args} fill="red.500" />
     <CreativeCommonsPd {...args} fill="gray.900" />

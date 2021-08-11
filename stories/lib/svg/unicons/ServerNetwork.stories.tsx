@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ServerNetwork> = (
   args: ServerNetworkPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ServerNetwork {...args} />
     <ServerNetwork {...args} fill="red.500" />
     <ServerNetwork {...args} fill="gray.900" />

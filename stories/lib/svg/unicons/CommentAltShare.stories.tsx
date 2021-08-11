@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentAltShare> = (
   args: CommentAltSharePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentAltShare {...args} />
     <CommentAltShare {...args} fill="red.500" />
     <CommentAltShare {...args} fill="gray.900" />

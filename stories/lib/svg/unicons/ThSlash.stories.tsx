@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ThSlash>;
 
 const Template: ComponentStory<typeof ThSlash> = (args: ThSlashPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ThSlash {...args} />
     <ThSlash {...args} fill="red.500" />
     <ThSlash {...args} fill="gray.900" />

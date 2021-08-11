@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ArrowsH>;
 
 const Template: ComponentStory<typeof ArrowsH> = (args: ArrowsHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ArrowsH {...args} />
     <ArrowsH {...args} fill="red.500" />
     <ArrowsH {...args} fill="gray.900" />

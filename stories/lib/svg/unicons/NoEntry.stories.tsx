@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof NoEntry>;
 
 const Template: ComponentStory<typeof NoEntry> = (args: NoEntryPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <NoEntry {...args} />
     <NoEntry {...args} fill="red.500" />
     <NoEntry {...args} fill="gray.900" />

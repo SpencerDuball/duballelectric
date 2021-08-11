@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WindowGrid> = (
   args: WindowGridPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WindowGrid {...args} />
     <WindowGrid {...args} fill="red.500" />
     <WindowGrid {...args} fill="gray.900" />

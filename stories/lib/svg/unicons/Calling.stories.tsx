@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Calling>;
 
 const Template: ComponentStory<typeof Calling> = (args: CallingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Calling {...args} />
     <Calling {...args} fill="red.500" />
     <Calling {...args} fill="gray.900" />

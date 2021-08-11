@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Webcam>;
 
 const Template: ComponentStory<typeof Webcam> = (args: WebcamPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Webcam {...args} />
     <Webcam {...args} fill="red.500" />
     <Webcam {...args} fill="gray.900" />

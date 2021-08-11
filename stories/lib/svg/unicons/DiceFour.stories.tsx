@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof DiceFour>;
 
 const Template: ComponentStory<typeof DiceFour> = (args: DiceFourPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DiceFour {...args} />
     <DiceFour {...args} fill="red.500" />
     <DiceFour {...args} fill="gray.900" />

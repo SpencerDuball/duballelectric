@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Video>;
 
 const Template: ComponentStory<typeof Video> = (args: VideoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Video {...args} />
     <Video {...args} fill="red.500" />
     <Video {...args} fill="gray.900" />

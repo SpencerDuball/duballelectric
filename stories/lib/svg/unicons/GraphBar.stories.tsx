@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof GraphBar>;
 
 const Template: ComponentStory<typeof GraphBar> = (args: GraphBarPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GraphBar {...args} />
     <GraphBar {...args} fill="red.500" />
     <GraphBar {...args} fill="gray.900" />

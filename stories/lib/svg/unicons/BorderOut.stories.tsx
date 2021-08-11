@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BorderOut>;
 
 const Template: ComponentStory<typeof BorderOut> = (args: BorderOutPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BorderOut {...args} />
     <BorderOut {...args} fill="red.500" />
     <BorderOut {...args} fill="gray.900" />

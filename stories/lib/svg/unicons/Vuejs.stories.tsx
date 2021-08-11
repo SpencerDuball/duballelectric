@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Vuejs>;
 
 const Template: ComponentStory<typeof Vuejs> = (args: VuejsPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Vuejs {...args} />
     <Vuejs {...args} fill="red.500" />
     <Vuejs {...args} fill="gray.900" />

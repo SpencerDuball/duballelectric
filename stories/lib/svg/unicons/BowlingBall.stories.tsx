@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BowlingBall> = (
   args: BowlingBallPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BowlingBall {...args} />
     <BowlingBall {...args} fill="red.500" />
     <BowlingBall {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Umbrella>;
 
 const Template: ComponentStory<typeof Umbrella> = (args: UmbrellaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Umbrella {...args} />
     <Umbrella {...args} fill="red.500" />
     <Umbrella {...args} fill="gray.900" />

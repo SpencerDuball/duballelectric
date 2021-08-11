@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TruckLoading> = (
   args: TruckLoadingPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TruckLoading {...args} />
     <TruckLoading {...args} fill="red.500" />
     <TruckLoading {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WebGridAlt> = (
   args: WebGridAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WebGridAlt {...args} />
     <WebGridAlt {...args} fill="red.500" />
     <WebGridAlt {...args} fill="gray.900" />

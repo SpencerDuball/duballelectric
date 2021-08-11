@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof XAdd>;
 
 const Template: ComponentStory<typeof XAdd> = (args: XAddPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <XAdd {...args} />
     <XAdd {...args} fill="red.500" />
     <XAdd {...args} fill="gray.900" />

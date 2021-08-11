@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Package>;
 
 const Template: ComponentStory<typeof Package> = (args: PackagePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Package {...args} />
     <Package {...args} fill="red.500" />
     <Package {...args} fill="gray.900" />

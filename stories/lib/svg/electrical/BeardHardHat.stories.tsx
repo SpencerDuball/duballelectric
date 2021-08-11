@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BeardHardHat> = (
   args: BeardHardHatPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BeardHardHat {...args} />
     <BeardHardHat {...args} fill="red.500" />
     <BeardHardHat {...args} fill="gray.900" />

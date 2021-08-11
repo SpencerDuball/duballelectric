@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudHeart> = (
   args: CloudHeartPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudHeart {...args} />
     <CloudHeart {...args} fill="red.500" />
     <CloudHeart {...args} fill="gray.900" />

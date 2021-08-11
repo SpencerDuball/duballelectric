@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Direction>;
 
 const Template: ComponentStory<typeof Direction> = (args: DirectionPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Direction {...args} />
     <Direction {...args} fill="red.500" />
     <Direction {...args} fill="gray.900" />

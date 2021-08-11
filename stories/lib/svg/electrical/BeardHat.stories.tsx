@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof BeardHat>;
 
 const Template: ComponentStory<typeof BeardHat> = (args: BeardHatPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BeardHat {...args} />
     <BeardHat {...args} fill="red.500" />
     <BeardHat {...args} fill="gray.900" />

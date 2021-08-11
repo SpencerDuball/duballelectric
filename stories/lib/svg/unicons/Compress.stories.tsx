@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Compress>;
 
 const Template: ComponentStory<typeof Compress> = (args: CompressPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Compress {...args} />
     <Compress {...args} fill="red.500" />
     <Compress {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FootballAmerican> = (
   args: FootballAmericanPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FootballAmerican {...args} />
     <FootballAmerican {...args} fill="red.500" />
     <FootballAmerican {...args} fill="gray.900" />

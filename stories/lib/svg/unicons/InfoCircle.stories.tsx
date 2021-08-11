@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof InfoCircle> = (
   args: InfoCirclePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <InfoCircle {...args} />
     <InfoCircle {...args} fill="red.500" />
     <InfoCircle {...args} fill="gray.900" />

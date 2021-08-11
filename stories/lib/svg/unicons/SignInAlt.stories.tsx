@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SignInAlt>;
 
 const Template: ComponentStory<typeof SignInAlt> = (args: SignInAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SignInAlt {...args} />
     <SignInAlt {...args} fill="red.500" />
     <SignInAlt {...args} fill="gray.900" />

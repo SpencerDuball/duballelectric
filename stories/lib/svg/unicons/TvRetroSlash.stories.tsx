@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TvRetroSlash> = (
   args: TvRetroSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TvRetroSlash {...args} />
     <TvRetroSlash {...args} fill="red.500" />
     <TvRetroSlash {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CommentSlash> = (
   args: CommentSlashPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CommentSlash {...args} />
     <CommentSlash {...args} fill="red.500" />
     <CommentSlash {...args} fill="gray.900" />

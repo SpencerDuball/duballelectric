@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof SortAmountDown> = (
   args: SortAmountDownPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <SortAmountDown {...args} />
     <SortAmountDown {...args} fill="red.500" />
     <SortAmountDown {...args} fill="gray.900" />

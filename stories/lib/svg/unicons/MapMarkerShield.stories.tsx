@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MapMarkerShield> = (
   args: MapMarkerShieldPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarkerShield {...args} />
     <MapMarkerShield {...args} fill="red.500" />
     <MapMarkerShield {...args} fill="gray.900" />

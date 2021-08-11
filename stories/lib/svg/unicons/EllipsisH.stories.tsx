@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof EllipsisH>;
 
 const Template: ComponentStory<typeof EllipsisH> = (args: EllipsisHPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EllipsisH {...args} />
     <EllipsisH {...args} fill="red.500" />
     <EllipsisH {...args} fill="gray.900" />

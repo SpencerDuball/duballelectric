@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BabyCarriage> = (
   args: BabyCarriagePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BabyCarriage {...args} />
     <BabyCarriage {...args} fill="red.500" />
     <BabyCarriage {...args} fill="gray.900" />

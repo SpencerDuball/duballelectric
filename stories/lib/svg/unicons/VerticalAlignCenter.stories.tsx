@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof VerticalAlignCenter> = (
   args: VerticalAlignCenterPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VerticalAlignCenter {...args} />
     <VerticalAlignCenter {...args} fill="red.500" />
     <VerticalAlignCenter {...args} fill="gray.900" />

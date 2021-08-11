@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HighVoltage> = (
   args: HighVoltagePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HighVoltage {...args} />
     <HighVoltage {...args} fill="red.500" />
     <HighVoltage {...args} fill="gray.900" />

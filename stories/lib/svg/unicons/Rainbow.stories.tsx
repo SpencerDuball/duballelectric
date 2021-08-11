@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Rainbow>;
 
 const Template: ComponentStory<typeof Rainbow> = (args: RainbowPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Rainbow {...args} />
     <Rainbow {...args} fill="red.500" />
     <Rainbow {...args} fill="gray.900" />

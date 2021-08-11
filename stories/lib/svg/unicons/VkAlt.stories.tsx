@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof VkAlt>;
 
 const Template: ComponentStory<typeof VkAlt> = (args: VkAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <VkAlt {...args} />
     <VkAlt {...args} fill="red.500" />
     <VkAlt {...args} fill="gray.900" />

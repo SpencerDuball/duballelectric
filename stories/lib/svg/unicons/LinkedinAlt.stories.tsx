@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof LinkedinAlt> = (
   args: LinkedinAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LinkedinAlt {...args} />
     <LinkedinAlt {...args} fill="red.500" />
     <LinkedinAlt {...args} fill="gray.900" />

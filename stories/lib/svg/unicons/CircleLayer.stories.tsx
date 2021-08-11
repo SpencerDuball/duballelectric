@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CircleLayer> = (
   args: CircleLayerPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CircleLayer {...args} />
     <CircleLayer {...args} fill="red.500" />
     <CircleLayer {...args} fill="gray.900" />

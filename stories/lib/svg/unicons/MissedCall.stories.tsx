@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MissedCall> = (
   args: MissedCallPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MissedCall {...args} />
     <MissedCall {...args} fill="red.500" />
     <MissedCall {...args} fill="gray.900" />

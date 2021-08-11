@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MoneyBill>;
 
 const Template: ComponentStory<typeof MoneyBill> = (args: MoneyBillPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MoneyBill {...args} />
     <MoneyBill {...args} fill="red.500" />
     <MoneyBill {...args} fill="gray.900" />

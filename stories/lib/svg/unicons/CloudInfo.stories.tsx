@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudInfo>;
 
 const Template: ComponentStory<typeof CloudInfo> = (args: CloudInfoPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudInfo {...args} />
     <CloudInfo {...args} fill="red.500" />
     <CloudInfo {...args} fill="gray.900" />

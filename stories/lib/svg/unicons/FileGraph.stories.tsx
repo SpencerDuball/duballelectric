@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof FileGraph>;
 
 const Template: ComponentStory<typeof FileGraph> = (args: FileGraphPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileGraph {...args} />
     <FileGraph {...args} fill="red.500" />
     <FileGraph {...args} fill="gray.900" />

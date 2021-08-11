@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof HeartSign>;
 
 const Template: ComponentStory<typeof HeartSign> = (args: HeartSignPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeartSign {...args} />
     <HeartSign {...args} fill="red.500" />
     <HeartSign {...args} fill="gray.900" />

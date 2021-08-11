@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Toolbox>;
 
 const Template: ComponentStory<typeof Toolbox> = (args: ToolboxPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Toolbox {...args} />
     <Toolbox {...args} fill="red.500" />
     <Toolbox {...args} fill="gray.900" />

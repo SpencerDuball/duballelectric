@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Images>;
 
 const Template: ComponentStory<typeof Images> = (args: ImagesPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Images {...args} />
     <Images {...args} fill="red.500" />
     <Images {...args} fill="gray.900" />

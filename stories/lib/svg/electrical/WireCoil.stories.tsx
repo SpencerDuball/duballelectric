@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof WireCoil>;
 
 const Template: ComponentStory<typeof WireCoil> = (args: WireCoilPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WireCoil {...args} />
     <WireCoil {...args} fill="red.500" />
     <WireCoil {...args} fill="gray.900" />

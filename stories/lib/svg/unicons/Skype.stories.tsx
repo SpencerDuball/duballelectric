@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Skype>;
 
 const Template: ComponentStory<typeof Skype> = (args: SkypePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Skype {...args} />
     <Skype {...args} fill="red.500" />
     <Skype {...args} fill="gray.900" />

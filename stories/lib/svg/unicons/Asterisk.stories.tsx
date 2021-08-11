@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Asterisk>;
 
 const Template: ComponentStory<typeof Asterisk> = (args: AsteriskPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Asterisk {...args} />
     <Asterisk {...args} fill="red.500" />
     <Asterisk {...args} fill="gray.900" />

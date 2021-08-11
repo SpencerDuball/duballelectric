@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Screw>;
 
 const Template: ComponentStory<typeof Screw> = (args: ScrewPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Screw {...args} />
     <Screw {...args} fill="red.500" />
     <Screw {...args} fill="gray.900" />

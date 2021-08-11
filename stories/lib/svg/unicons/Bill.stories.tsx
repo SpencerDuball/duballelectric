@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Bill>;
 
 const Template: ComponentStory<typeof Bill> = (args: BillPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Bill {...args} />
     <Bill {...args} fill="red.500" />
     <Bill {...args} fill="gray.900" />

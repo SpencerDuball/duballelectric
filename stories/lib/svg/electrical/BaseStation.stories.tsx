@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BaseStation> = (
   args: BaseStationPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BaseStation {...args} />
     <BaseStation {...args} fill="red.500" />
     <BaseStation {...args} fill="gray.900" />

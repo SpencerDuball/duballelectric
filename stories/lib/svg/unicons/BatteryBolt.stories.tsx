@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BatteryBolt> = (
   args: BatteryBoltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BatteryBolt {...args} />
     <BatteryBolt {...args} fill="red.500" />
     <BatteryBolt {...args} fill="gray.900" />

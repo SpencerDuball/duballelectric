@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof HeartBreak> = (
   args: HeartBreakPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <HeartBreak {...args} />
     <HeartBreak {...args} fill="red.500" />
     <HeartBreak {...args} fill="gray.900" />

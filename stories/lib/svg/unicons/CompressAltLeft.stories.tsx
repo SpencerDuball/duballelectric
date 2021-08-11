@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CompressAltLeft> = (
   args: CompressAltLeftPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CompressAltLeft {...args} />
     <CompressAltLeft {...args} fill="red.500" />
     <CompressAltLeft {...args} fill="gray.900" />

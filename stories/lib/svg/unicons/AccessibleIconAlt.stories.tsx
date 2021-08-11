@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof AccessibleIconAlt> = (
   args: AccessibleIconAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AccessibleIconAlt {...args} />
     <AccessibleIconAlt {...args} fill="red.500" />
     <AccessibleIconAlt {...args} fill="gray.900" />

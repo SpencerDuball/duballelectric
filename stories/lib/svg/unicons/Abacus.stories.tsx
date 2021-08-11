@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Abacus>;
 
 const Template: ComponentStory<typeof Abacus> = (args: AbacusPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Abacus {...args} />
     <Abacus {...args} fill="red.500" />
     <Abacus {...args} fill="gray.900" />

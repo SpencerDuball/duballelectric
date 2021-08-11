@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileMedical> = (
   args: FileMedicalPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileMedical {...args} />
     <FileMedical {...args} fill="red.500" />
     <FileMedical {...args} fill="gray.900" />

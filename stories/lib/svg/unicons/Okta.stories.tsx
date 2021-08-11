@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Okta>;
 
 const Template: ComponentStory<typeof Okta> = (args: OktaPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Okta {...args} />
     <Okta {...args} fill="red.500" />
     <Okta {...args} fill="gray.900" />

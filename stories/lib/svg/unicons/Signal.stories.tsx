@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Signal>;
 
 const Template: ComponentStory<typeof Signal> = (args: SignalPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Signal {...args} />
     <Signal {...args} fill="red.500" />
     <Signal {...args} fill="gray.900" />

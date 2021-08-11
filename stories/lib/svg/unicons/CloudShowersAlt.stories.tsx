@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudShowersAlt> = (
   args: CloudShowersAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudShowersAlt {...args} />
     <CloudShowersAlt {...args} fill="red.500" />
     <CloudShowersAlt {...args} fill="gray.900" />

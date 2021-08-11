@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof CloudRain>;
 
 const Template: ComponentStory<typeof CloudRain> = (args: CloudRainPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudRain {...args} />
     <CloudRain {...args} fill="red.500" />
     <CloudRain {...args} fill="gray.900" />

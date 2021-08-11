@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Boombox>;
 
 const Template: ComponentStory<typeof Boombox> = (args: BoomboxPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Boombox {...args} />
     <Boombox {...args} fill="red.500" />
     <Boombox {...args} fill="gray.900" />

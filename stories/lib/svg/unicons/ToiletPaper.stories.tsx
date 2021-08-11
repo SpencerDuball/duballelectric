@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ToiletPaper> = (
   args: ToiletPaperPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ToiletPaper {...args} />
     <ToiletPaper {...args} fill="red.500" />
     <ToiletPaper {...args} fill="gray.900" />

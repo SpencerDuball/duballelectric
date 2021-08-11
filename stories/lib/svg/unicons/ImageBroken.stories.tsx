@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ImageBroken> = (
   args: ImageBrokenPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageBroken {...args} />
     <ImageBroken {...args} fill="red.500" />
     <ImageBroken {...args} fill="gray.900" />

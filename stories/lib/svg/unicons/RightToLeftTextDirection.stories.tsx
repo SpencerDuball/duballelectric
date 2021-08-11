@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof RightToLeftTextDirection> = (
   args: RightToLeftTextDirectionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <RightToLeftTextDirection {...args} />
     <RightToLeftTextDirection {...args} fill="red.500" />
     <RightToLeftTextDirection {...args} fill="gray.900" />

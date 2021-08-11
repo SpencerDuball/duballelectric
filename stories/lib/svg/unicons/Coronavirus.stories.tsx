@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Coronavirus> = (
   args: CoronavirusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Coronavirus {...args} />
     <Coronavirus {...args} fill="red.500" />
     <Coronavirus {...args} fill="gray.900" />

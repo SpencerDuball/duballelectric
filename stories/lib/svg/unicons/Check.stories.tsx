@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Check>;
 
 const Template: ComponentStory<typeof Check> = (args: CheckPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Check {...args} />
     <Check {...args} fill="red.500" />
     <Check {...args} fill="gray.900" />

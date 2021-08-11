@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ShieldQuestion> = (
   args: ShieldQuestionPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ShieldQuestion {...args} />
     <ShieldQuestion {...args} fill="red.500" />
     <ShieldQuestion {...args} fill="gray.900" />

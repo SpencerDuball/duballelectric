@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof Pathfinder> = (
   args: PathfinderPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pathfinder {...args} />
     <Pathfinder {...args} fill="red.500" />
     <Pathfinder {...args} fill="gray.900" />

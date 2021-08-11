@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof WaterGlass> = (
   args: WaterGlassPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <WaterGlass {...args} />
     <WaterGlass {...args} fill="red.500" />
     <WaterGlass {...args} fill="gray.900" />

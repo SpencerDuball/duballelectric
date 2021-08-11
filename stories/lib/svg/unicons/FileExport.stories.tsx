@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof FileExport> = (
   args: FileExportPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FileExport {...args} />
     <FileExport {...args} fill="red.500" />
     <FileExport {...args} fill="gray.900" />

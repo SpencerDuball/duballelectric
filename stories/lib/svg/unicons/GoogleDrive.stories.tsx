@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GoogleDrive> = (
   args: GoogleDrivePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GoogleDrive {...args} />
     <GoogleDrive {...args} fill="red.500" />
     <GoogleDrive {...args} fill="gray.900" />

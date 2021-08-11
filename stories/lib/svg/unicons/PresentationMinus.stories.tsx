@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof PresentationMinus> = (
   args: PresentationMinusPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <PresentationMinus {...args} />
     <PresentationMinus {...args} fill="red.500" />
     <PresentationMinus {...args} fill="gray.900" />

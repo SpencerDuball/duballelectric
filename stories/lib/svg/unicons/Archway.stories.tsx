@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Archway>;
 
 const Template: ComponentStory<typeof Archway> = (args: ArchwayPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Archway {...args} />
     <Archway {...args} fill="red.500" />
     <Archway {...args} fill="gray.900" />

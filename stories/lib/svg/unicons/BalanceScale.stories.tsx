@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof BalanceScale> = (
   args: BalanceScalePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <BalanceScale {...args} />
     <BalanceScale {...args} fill="red.500" />
     <BalanceScale {...args} fill="gray.900" />

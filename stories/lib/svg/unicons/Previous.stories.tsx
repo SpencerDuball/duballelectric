@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Previous>;
 
 const Template: ComponentStory<typeof Previous> = (args: PreviousPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Previous {...args} />
     <Previous {...args} fill="red.500" />
     <Previous {...args} fill="gray.900" />

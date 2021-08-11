@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LifeRing>;
 
 const Template: ComponentStory<typeof LifeRing> = (args: LifeRingPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LifeRing {...args} />
     <LifeRing {...args} fill="red.500" />
     <LifeRing {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ThumbsDown> = (
   args: ThumbsDownPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ThumbsDown {...args} />
     <ThumbsDown {...args} fill="red.500" />
     <ThumbsDown {...args} fill="gray.900" />

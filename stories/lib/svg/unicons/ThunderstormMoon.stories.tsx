@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ThunderstormMoon> = (
   args: ThunderstormMoonPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ThunderstormMoon {...args} />
     <ThunderstormMoon {...args} fill="red.500" />
     <ThunderstormMoon {...args} fill="gray.900" />

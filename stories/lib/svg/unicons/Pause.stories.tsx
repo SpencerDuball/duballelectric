@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Pause>;
 
 const Template: ComponentStory<typeof Pause> = (args: PausePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Pause {...args} />
     <Pause {...args} fill="red.500" />
     <Pause {...args} fill="gray.900" />

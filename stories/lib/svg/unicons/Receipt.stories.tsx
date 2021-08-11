@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Receipt>;
 
 const Template: ComponentStory<typeof Receipt> = (args: ReceiptPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Receipt {...args} />
     <Receipt {...args} fill="red.500" />
     <Receipt {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof AdobeAlt>;
 
 const Template: ComponentStory<typeof AdobeAlt> = (args: AdobeAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <AdobeAlt {...args} />
     <AdobeAlt {...args} fill="red.500" />
     <AdobeAlt {...args} fill="gray.900" />

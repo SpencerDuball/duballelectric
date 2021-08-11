@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof CloudSunHail> = (
   args: CloudSunHailPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <CloudSunHail {...args} />
     <CloudSunHail {...args} fill="red.500" />
     <CloudSunHail {...args} fill="gray.900" />

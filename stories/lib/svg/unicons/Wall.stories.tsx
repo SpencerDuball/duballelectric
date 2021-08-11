@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Wall>;
 
 const Template: ComponentStory<typeof Wall> = (args: WallPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Wall {...args} />
     <Wall {...args} fill="red.500" />
     <Wall {...args} fill="gray.900" />

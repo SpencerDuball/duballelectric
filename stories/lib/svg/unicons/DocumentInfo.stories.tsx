@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof DocumentInfo> = (
   args: DocumentInfoPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <DocumentInfo {...args} />
     <DocumentInfo {...args} fill="red.500" />
     <DocumentInfo {...args} fill="gray.900" />

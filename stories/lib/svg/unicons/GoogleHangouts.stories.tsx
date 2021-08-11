@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof GoogleHangouts> = (
   args: GoogleHangoutsPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <GoogleHangouts {...args} />
     <GoogleHangouts {...args} fill="red.500" />
     <GoogleHangouts {...args} fill="gray.900" />

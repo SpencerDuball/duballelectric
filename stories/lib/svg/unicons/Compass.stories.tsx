@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Compass>;
 
 const Template: ComponentStory<typeof Compass> = (args: CompassPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Compass {...args} />
     <Compass {...args} fill="red.500" />
     <Compass {...args} fill="gray.900" />

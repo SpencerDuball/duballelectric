@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Sanitizer>;
 
 const Template: ComponentStory<typeof Sanitizer> = (args: SanitizerPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Sanitizer {...args} />
     <Sanitizer {...args} fill="red.500" />
     <Sanitizer {...args} fill="gray.900" />

@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MapMarkerEdit> = (
   args: MapMarkerEditPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MapMarkerEdit {...args} />
     <MapMarkerEdit {...args} fill="red.500" />
     <MapMarkerEdit {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LiraSign>;
 
 const Template: ComponentStory<typeof LiraSign> = (args: LiraSignPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LiraSign {...args} />
     <LiraSign {...args} fill="red.500" />
     <LiraSign {...args} fill="gray.900" />

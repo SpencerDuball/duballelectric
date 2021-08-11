@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof EnvelopeTimes> = (
   args: EnvelopeTimesPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <EnvelopeTimes {...args} />
     <EnvelopeTimes {...args} fill="red.500" />
     <EnvelopeTimes {...args} fill="gray.900" />

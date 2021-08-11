@@ -15,7 +15,7 @@ export default {
 const Template: ComponentStory<typeof FacebookMessengerAlt> = (
   args: FacebookMessengerAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <FacebookMessengerAlt {...args} />
     <FacebookMessengerAlt {...args} fill="red.500" />
     <FacebookMessengerAlt {...args} fill="gray.900" />

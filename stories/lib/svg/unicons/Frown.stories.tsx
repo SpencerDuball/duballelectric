@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Frown>;
 
 const Template: ComponentStory<typeof Frown> = (args: FrownPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <Frown {...args} />
     <Frown {...args} fill="red.500" />
     <Frown {...args} fill="gray.900" />

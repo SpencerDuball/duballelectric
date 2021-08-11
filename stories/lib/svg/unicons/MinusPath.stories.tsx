@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MinusPath>;
 
 const Template: ComponentStory<typeof MinusPath> = (args: MinusPathPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MinusPath {...args} />
     <MinusPath {...args} fill="red.500" />
     <MinusPath {...args} fill="gray.900" />

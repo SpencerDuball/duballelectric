@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ImageEdit>;
 
 const Template: ComponentStory<typeof ImageEdit> = (args: ImageEditPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ImageEdit {...args} />
     <ImageEdit {...args} fill="red.500" />
     <ImageEdit {...args} fill="gray.900" />

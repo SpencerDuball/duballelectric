@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof TachometerFastAlt> = (
   args: TachometerFastAltPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TachometerFastAlt {...args} />
     <TachometerFastAlt {...args} fill="red.500" />
     <TachometerFastAlt {...args} fill="gray.900" />

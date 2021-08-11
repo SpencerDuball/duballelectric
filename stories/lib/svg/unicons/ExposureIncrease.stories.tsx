@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof ExposureIncrease> = (
   args: ExposureIncreasePropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ExposureIncrease {...args} />
     <ExposureIncrease {...args} fill="red.500" />
     <ExposureIncrease {...args} fill="gray.900" />

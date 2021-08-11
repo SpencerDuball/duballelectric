@@ -12,7 +12,7 @@ export default {
 const Template: ComponentStory<typeof MeetingBoard> = (
   args: MeetingBoardPropsI
 ) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MeetingBoard {...args} />
     <MeetingBoard {...args} fill="red.500" />
     <MeetingBoard {...args} fill="gray.900" />

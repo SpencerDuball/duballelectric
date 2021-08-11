@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof TextSize>;
 
 const Template: ComponentStory<typeof TextSize> = (args: TextSizePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <TextSize {...args} />
     <TextSize {...args} fill="red.500" />
     <TextSize {...args} fill="gray.900" />

@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof ManInBoom>;
 
 const Template: ComponentStory<typeof ManInBoom> = (args: ManInBoomPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <ManInBoom {...args} />
     <ManInBoom {...args} fill="red.500" />
     <ManInBoom {...args} fill="gray.900" />

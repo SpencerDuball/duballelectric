@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof MusicNote>;
 
 const Template: ComponentStory<typeof MusicNote> = (args: MusicNotePropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <MusicNote {...args} />
     <MusicNote {...args} fill="red.500" />
     <MusicNote {...args} fill="gray.900" />

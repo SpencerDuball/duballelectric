@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof LabelAlt>;
 
 const Template: ComponentStory<typeof LabelAlt> = (args: LabelAltPropsI) => (
-  <Box display="flex" gap="20px">
+  <Box display="flex" gridColumnGap="20px">
     <LabelAlt {...args} />
     <LabelAlt {...args} fill="red.500" />
     <LabelAlt {...args} fill="gray.900" />
