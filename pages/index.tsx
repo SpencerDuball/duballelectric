@@ -1,10 +1,8 @@
 import Head from "next/head";
 import { x } from "@xstyled/emotion";
-import { Button, useColorMode } from "@chakra-ui/react";
+import { Header } from "lib/ui";
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <>
       <Head>
@@ -13,10 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <x.main>
-        <x.h1 color="orange.400">Welcome to the index.tsx page!</x.h1>
-        <Button onClick={toggleColorMode}>
-          Toggle {colorMode === "light" ? "Dark" : "Light"}
-        </Button>
+        <Header />
       </x.main>
     </>
   );
