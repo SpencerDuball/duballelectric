@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Tablets, TabletsPropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Tablets>;
 
 const Template: ComponentStory<typeof Tablets> = (args: TabletsPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Tablets {...args} />
     <Tablets {...args} fill="red.500" />
     <Tablets {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

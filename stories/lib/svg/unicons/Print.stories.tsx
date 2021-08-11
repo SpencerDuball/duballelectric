@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Print, PrintPropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Print>;
 
 const Template: ComponentStory<typeof Print> = (args: PrintPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Print {...args} />
     <Print {...args} fill="red.500" />
     <Print {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { MobileAndroidAlt, MobileAndroidAltPropsI } from "lib/svg/unicons";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof MobileAndroidAlt> = (
   args: MobileAndroidAltPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <MobileAndroidAlt {...args} />
     <MobileAndroidAlt {...args} fill="red.500" />
     <MobileAndroidAlt {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

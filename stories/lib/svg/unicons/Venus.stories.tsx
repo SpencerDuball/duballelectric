@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Venus, VenusPropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Venus>;
 
 const Template: ComponentStory<typeof Venus> = (args: VenusPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Venus {...args} />
     <Venus {...args} fill="red.500" />
     <Venus {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { AlignRightJustify, AlignRightJustifyPropsI } from "lib/svg/unicons";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof AlignRightJustify> = (
   args: AlignRightJustifyPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <AlignRightJustify {...args} />
     <AlignRightJustify {...args} fill="red.500" />
     <AlignRightJustify {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

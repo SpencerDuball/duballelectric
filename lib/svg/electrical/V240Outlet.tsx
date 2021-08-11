@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface V240OutletPropsI extends SystemProps {}
+export interface V240OutletPropsI extends BoxProps {}
 
 export const V240Outlet = (props: V240OutletPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -16,5 +16,5 @@ export const V240Outlet = (props: V240OutletPropsI) => (
     <path d="M142.2 139C136.5 142.5 134.5 150.1 137.7 156.7C139.8 161.3 144.4 164 149.8 164C155.5 164 159.6 161.5 162 156.5C164.4 151.5 164.5 150.2 162.4 145C159.4 137.5 149.5 134.6 142.2 139Z" />
     <path d="M113.1 145.6C110.3 149.1 110.5 152.5 113.5 155.5C118.5 160.6 126.4 157.5 126.4 150.5C126.4 143.4 117.4 140.1 113.1 145.6Z" />
     <path d="M175.5 145.5C172.5 148.5 172.3 151.9 175.1 155.4C178.4 159.7 185 158.9 187.6 153.9C191.6 146 181.8 139.1 175.5 145.5Z" />
-  </XSvg>
+  </Box>
 );

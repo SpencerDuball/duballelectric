@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface EnergyWallOutletPropsI extends SystemProps {}
+export interface EnergyWallOutletPropsI extends BoxProps {}
 
 export const EnergyWallOutlet = (props: EnergyWallOutletPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -16,5 +16,5 @@ export const EnergyWallOutlet = (props: EnergyWallOutletPropsI) => (
     <path d="M156.2 86.2C154.5 87.9 154.5 140.1 156.2 141.8C157 142.6 160.9 143 167.2 143C175.8 143 177 142.8 178 141.1C178.6 139.9 179 129.4 179 114C179 98.6 178.6 88.1 178 86.9C177 85.2 175.8 85 167.2 85C160.9 85 157 85.4 156.2 86.2Z" />
     <path d="M216.4 152.1C179.3 181.2 176.6 183.9 180.2 186.7C180.9 187.2 187 189.8 193.7 192.4L205.9 197.1L188.9 222.4C175.3 242.4 171.9 248.2 172.5 249.9C173.9 254.5 177.5 252.6 206.4 231.8C221.9 220.7 242.2 206.1 251.6 199.4C261 192.6 269.3 186.4 269.9 185.6C271.6 183.6 270.5 180.5 267.7 179.3C266.5 178.8 259.8 176.6 252.8 174.5C245.7 172.3 240 170.2 240 169.8C240 169.3 244.3 159.8 249.5 148.5C254.7 137.3 259 127.5 259 126.8C259 124.9 256.9 123 254.9 123C254 123 236.7 136.1 216.4 152.1Z" />
     <path d="M129.8 163C122.1 165.3 117.1 172.4 116.3 182.1C115.8 187 115.4 187.9 113.6 188.2C111.9 188.4 111.5 189.2 111.5 192.5V196.5L135.3 196.8L159 197V192.5C159 188.4 158.8 188 156.5 188C154.1 188 154 187.7 154 182.5C154 168.9 142.1 159.3 129.8 163Z" />
-  </XSvg>
+  </Box>
 );

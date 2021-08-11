@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { FolderQuestion, FolderQuestionPropsI } from "lib/svg/unicons";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof FolderQuestion> = (
   args: FolderQuestionPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <FolderQuestion {...args} />
     <FolderQuestion {...args} fill="red.500" />
     <FolderQuestion {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

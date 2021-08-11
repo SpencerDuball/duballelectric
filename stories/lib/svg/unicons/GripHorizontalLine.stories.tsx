@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { GripHorizontalLine, GripHorizontalLinePropsI } from "lib/svg/unicons";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof GripHorizontalLine> = (
   args: GripHorizontalLinePropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <GripHorizontalLine {...args} />
     <GripHorizontalLine {...args} fill="red.500" />
     <GripHorizontalLine {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

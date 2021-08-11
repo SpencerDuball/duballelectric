@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { FolderMinus, FolderMinusPropsI } from "lib/svg/unicons";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof FolderMinus> = (
   args: FolderMinusPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <FolderMinus {...args} />
     <FolderMinus {...args} fill="red.500" />
     <FolderMinus {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import {
   VerticalDistributeBottom,
@@ -15,11 +15,11 @@ export default {
 const Template: ComponentStory<typeof VerticalDistributeBottom> = (
   args: VerticalDistributeBottomPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <VerticalDistributeBottom {...args} />
     <VerticalDistributeBottom {...args} fill="red.500" />
     <VerticalDistributeBottom {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

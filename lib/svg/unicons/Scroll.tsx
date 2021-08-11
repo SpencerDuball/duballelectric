@@ -1,16 +1,16 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface ScrollPropsI extends SystemProps {}
+export interface ScrollPropsI extends BoxProps {}
 
 export const Scroll = (props: ScrollPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="black"
     {...props}
   >
     <path d="M11.29,9.71a1,1,0,0,0,1.42,0l5-5a1,1,0,1,0-1.42-1.42L12,7.59,7.71,3.29A1,1,0,0,0,6.29,4.71Zm1.42,4.58a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,1.42,1.42L12,16.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
-  </XSvg>
+  </Box>
 );

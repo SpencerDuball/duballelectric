@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { BagAlt, BagAltPropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof BagAlt>;
 
 const Template: ComponentStory<typeof BagAlt> = (args: BagAltPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <BagAlt {...args} />
     <BagAlt {...args} fill="red.500" />
     <BagAlt {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

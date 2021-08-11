@@ -1,21 +1,17 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import {
-  XSvg,
-  UseColorPalettePropsI,
-  useColorPalette,
-  filterProps,
-} from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
+import { UseColorPalettePropsI, useColorPalette, filterProps } from "utility";
 
 export interface DuballElectricSquarePropsI
-  extends SystemProps,
+  extends BoxProps,
     UseColorPalettePropsI {}
 
 export const DuballElectricSquare = (props: DuballElectricSquarePropsI) => {
   const colorPalette = useColorPalette(3, props);
 
   return (
-    <XSvg
+    <Box
+      as="svg"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 361 361"
       fill="black"
@@ -118,6 +114,6 @@ export const DuballElectricSquare = (props: DuballElectricSquarePropsI) => {
         d="M54.2558 115.647L36.5109 162.647C36.2639 163.301 36.7473 164 37.4464 164H52.9775C53.697 164 54.181 164.737 53.8952 165.397L40.6048 196.103C40.319 196.763 40.803 197.5 41.5225 197.5H50.5381C51.2415 197.5 51.7251 198.207 51.4701 198.862L39.6968 229.137C39.3059 230.142 40.5639 230.969 41.3314 230.211L75.7665 196.212C76.4026 195.583 75.9578 194.5 75.0639 194.5H63.2534C62.4789 194.5 61.9984 193.657 62.3927 192.991L81.6073 160.509C82.0016 159.843 81.5211 159 80.7466 159H67.1345C66.3872 159 65.9039 158.21 66.2442 157.545L87.2558 116.455C87.5961 115.79 87.1128 115 86.3655 115H55.1913C54.7753 115 54.4027 115.258 54.2558 115.647Z"
         fill={colorPalette[2] ? colorPalette[2] : "#F13A3A"}
       />
-    </XSvg>
+    </Box>
   );
 };

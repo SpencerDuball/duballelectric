@@ -1,21 +1,15 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import {
-  XSvg,
-  UseColorPalettePropsI,
-  useColorPalette,
-  filterProps,
-} from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
+import { UseColorPalettePropsI, useColorPalette, filterProps } from "utility";
 
-export interface FreeEstimatesPropsI
-  extends SystemProps,
-    UseColorPalettePropsI {}
+export interface FreeEstimatesPropsI extends BoxProps, UseColorPalettePropsI {}
 
 export const FreeEstimates = (props: FreeEstimatesPropsI) => {
   const colorPalette = useColorPalette(2, props);
 
   return (
-    <XSvg
+    <Box
+      as="svg"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 980 980"
       fill="black"
@@ -97,6 +91,6 @@ export const FreeEstimates = (props: FreeEstimatesPropsI) => {
         d="M860.446 602.187C860.344 609.551 854.156 615.483 847.15 615.483C839.787 615.483 833.753 609.551 833.855 602.187C833.753 594.926 839.787 589.045 847.15 589.045C854.156 589.045 860.344 594.926 860.446 602.187Z"
         fill={colorPalette[1] ? colorPalette[1] : "white"}
       />
-    </XSvg>
+    </Box>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Van, VanPropsI } from "lib/svg/electrical";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Van>;
 
 const Template: ComponentStory<typeof Van> = (args: VanPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Van {...args} />
     <Van {...args} fill="red.500" />
     <Van {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

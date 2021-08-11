@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface MeterPropsI extends SystemProps {}
+export interface MeterPropsI extends BoxProps {}
 
 export const Meter = (props: MeterPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -20,5 +20,5 @@ export const Meter = (props: MeterPropsI) => (
     <path d="M174.8 180.5L174.5 187H178.3C181.7 187 182 186.8 182 184C182 181.5 182.4 181 184.5 181C186.6 181 187 181.5 187 184C187 186.8 187.3 187 190.5 187H194V180.5V174H184.6H175.2L174.8 180.5Z" />
     <path d="M164 195.7C164 198.6 163.7 199 161.5 199C159.1 199 158.7 198.4 158.7 194.7C158.7 193.4 157.9 193 154.8 193H150.9L151.2 199.2L151.5 205.5L161.3 205.8L171 206.1V199.6V193.2L167.5 192.8C164.1 192.4 164 192.5 164 195.7Z" />
     <path d="M175 199.5V206H184.5H194V199.5V193H190.5C187.3 193 187 193.2 187 196C187 198.5 186.6 199 184.5 199C182.4 199 182 198.5 182 196C182 193.2 181.7 193 178.5 193H175V199.5Z" />
-  </XSvg>
+  </Box>
 );

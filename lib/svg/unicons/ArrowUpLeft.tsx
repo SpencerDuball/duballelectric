@@ -1,16 +1,16 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface ArrowUpLeftPropsI extends SystemProps {}
+export interface ArrowUpLeftPropsI extends BoxProps {}
 
 export const ArrowUpLeft = (props: ArrowUpLeftPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="black"
     {...props}
   >
     <path d="M9.41,8H17a1,1,0,0,0,0-2H7a1,1,0,0,0-.38.08,1,1,0,0,0-.54.54A1,1,0,0,0,6,7V17a1,1,0,0,0,2,0V9.41l8.29,8.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
-  </XSvg>
+  </Box>
 );

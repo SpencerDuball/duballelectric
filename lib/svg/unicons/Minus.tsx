@@ -1,16 +1,16 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface MinusPropsI extends SystemProps {}
+export interface MinusPropsI extends BoxProps {}
 
 export const Minus = (props: MinusPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="black"
     {...props}
   >
     <path d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z" />
-  </XSvg>
+  </Box>
 );

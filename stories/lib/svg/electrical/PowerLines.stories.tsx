@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { PowerLines, PowerLinesPropsI } from "lib/svg/electrical";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof PowerLines> = (
   args: PowerLinesPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <PowerLines {...args} />
     <PowerLines {...args} fill="red.500" />
     <PowerLines {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

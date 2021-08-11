@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { SafetyVest, SafetyVestPropsI } from "lib/svg/electrical";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof SafetyVest> = (
   args: SafetyVestPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <SafetyVest {...args} />
     <SafetyVest {...args} fill="red.500" />
     <SafetyVest {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

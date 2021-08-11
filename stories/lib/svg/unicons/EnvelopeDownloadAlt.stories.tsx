@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import {
   EnvelopeDownloadAlt,
@@ -15,11 +15,11 @@ export default {
 const Template: ComponentStory<typeof EnvelopeDownloadAlt> = (
   args: EnvelopeDownloadAltPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <EnvelopeDownloadAlt {...args} />
     <EnvelopeDownloadAlt {...args} fill="red.500" />
     <EnvelopeDownloadAlt {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

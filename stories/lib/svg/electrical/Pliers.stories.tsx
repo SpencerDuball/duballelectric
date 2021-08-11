@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Pliers, PliersPropsI } from "lib/svg/electrical";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Pliers>;
 
 const Template: ComponentStory<typeof Pliers> = (args: PliersPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Pliers {...args} />
     <Pliers {...args} fill="red.500" />
     <Pliers {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

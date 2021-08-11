@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface SwitchPropsI extends SystemProps {}
+export interface SwitchPropsI extends BoxProps {}
 
 export const Switch = (props: SwitchPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -15,5 +15,5 @@ export const Switch = (props: SwitchPropsI) => (
     <path d="M146.4 61C145.2 61.4 143.3 63.1 142 64.7C135.6 72.8 147.1 83.4 155.3 77C160.8 72.7 159.2 63.3 152.7 61C149.3 59.8 149.2 59.8 146.4 61Z" />
     <path d="M112.2 87.2C110.5 88.9 110.5 212.1 112.2 213.8C113.9 215.5 185.1 215.5 186.8 213.8C188.5 212.1 188.5 88.9 186.8 87.2C185.1 85.5 113.9 85.5 112.2 87.2ZM153.8 157.9L174 158V179V199.9L150.5 200.2C137.6 200.4 126.5 200.3 126 200.2C125 199.8 124.5 158.8 125.5 157.9C125.7 157.6 127.6 157.5 129.7 157.6C131.8 157.7 142.6 157.8 153.8 157.9Z" />
     <path d="M145.4 223.4C136.7 227.2 139.9 241 149.5 241C159.5 241 162.3 226.4 152.9 223.1C149 221.8 149.2 221.8 145.4 223.4Z" />
-  </XSvg>
+  </Box>
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Toolbox, ToolboxPropsI } from "lib/svg/electrical";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Toolbox>;
 
 const Template: ComponentStory<typeof Toolbox> = (args: ToolboxPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Toolbox {...args} />
     <Toolbox {...args} fill="red.500" />
     <Toolbox {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

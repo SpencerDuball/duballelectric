@@ -1,20 +1,20 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
-import { Box, BoxPropsI } from "lib/svg/unicons";
+import { BoxIcon, BoxIconPropsI } from "lib/svg/unicons";
 
 export default {
   title: "lib/svg/unicons/Box",
-  component: Box,
-} as ComponentMeta<typeof Box>;
+  component: BoxIcon,
+} as ComponentMeta<typeof BoxIcon>;
 
-const Template: ComponentStory<typeof Box> = (args: BoxPropsI) => (
-  <x.div display="flex" gap="20px">
-    <Box {...args} />
-    <Box {...args} fill="red.500" />
-    <Box {...args} fill="gray.900" />
-  </x.div>
+const Template: ComponentStory<typeof BoxIcon> = (args: BoxIconPropsI) => (
+  <Box display="flex" gap="20px">
+    <BoxIcon {...args} />
+    <BoxIcon {...args} fill="red.500" />
+    <BoxIcon {...args} fill="gray.900" />
+  </Box>
 );
 
 export const Primary = Template.bind({});

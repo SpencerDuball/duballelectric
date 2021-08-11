@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { DiceFive, DiceFivePropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof DiceFive>;
 
 const Template: ComponentStory<typeof DiceFive> = (args: DiceFivePropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <DiceFive {...args} />
     <DiceFive {...args} fill="red.500" />
     <DiceFive {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

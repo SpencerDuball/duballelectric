@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface BatteriesPropsI extends SystemProps {}
+export interface BatteriesPropsI extends BoxProps {}
 
 export const Batteries = (props: BatteriesPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -20,5 +20,5 @@ export const Batteries = (props: BatteriesPropsI) => (
     <path d="M132.5 135.4C131.6 138.3 129.2 147 127.1 154.6L123.3 168.5L141.3 168.8C151.2 168.9 159.7 168.7 160.1 168.3C160.7 167.6 171 131.9 171 130.5C171 130.2 162.7 130 152.5 130H134.1L132.5 135.4Z" />
     <path d="M76.2002 192.2C75.5002 192.9 75.0002 194.7 75.0002 196.2C75.0002 198 74.5002 199 73.5002 199C71.3002 199 71.2002 243.5 73.4002 244.3C74.2002 244.6 75.0002 246.1 75.2002 247.7C75.8002 253 75.1002 253 146.2 253C186.5 253 212.9 252.6 214.4 252C216.9 251.1 217 250.8 217 242.1V233.2L222.8 232.4L228.5 231.5L228.8 221.8C229.1 210.9 229.9 212 220.8 210.5L217 209.9V201.1C217 193.9 216.7 192.1 215.4 191.6C214.5 191.3 183.1 191 145.6 191C93.9002 191 77.1002 191.3 76.2002 192.2ZM212 221.5V247H146.6H81.1002L80.8002 223.2C80.6002 210.2 80.7002 198.7 80.9002 197.7C81.2002 196.1 85.2002 196 146.6 196H212V221.5Z" />
     <path d="M87 221.5V241.1L102.2 240.8L117.5 240.5L122.1 224C124.6 214.9 127 206.3 127.4 204.7L128 202H107.5H87V221.5Z" />
-  </XSvg>
+  </Box>
 );

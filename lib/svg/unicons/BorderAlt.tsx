@@ -1,16 +1,16 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface BorderAltPropsI extends SystemProps {}
+export interface BorderAltPropsI extends BoxProps {}
 
 export const BorderAlt = (props: BorderAltPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="black"
     {...props}
   >
     <path d="M11.5,18.5a1,1,0,1,0,1,1A1,1,0,0,0,11.5,18.5Zm9-15a1,1,0,0,0-1-1H3.5a1,1,0,0,0-1,1v16a1,1,0,0,0,2,0V4.5h15A1,1,0,0,0,20.5,3.5Zm-5,15a1,1,0,1,0,1,1A1,1,0,0,0,15.5,18.5Zm-8,0a1,1,0,1,0,1,1A1,1,0,0,0,7.5,18.5Zm12-12a1,1,0,1,0,1,1A1,1,0,0,0,19.5,6.5Zm0,4a1,1,0,1,0,1,1A1,1,0,0,0,19.5,10.5Zm0,4a1,1,0,1,0,1,1A1,1,0,0,0,19.5,14.5Zm0,4a1,1,0,1,0,1,1A1,1,0,0,0,19.5,18.5Z" />
-  </XSvg>
+  </Box>
 );

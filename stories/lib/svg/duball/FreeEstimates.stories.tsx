@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { FreeEstimates, FreeEstimatesPropsI } from "lib/svg/duball";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof FreeEstimates> = (
   args: FreeEstimatesPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <FreeEstimates {...args} />
     <FreeEstimates {...args} colorPalette={["red.500", "gray.50"]} />
     <FreeEstimates {...args} colorPalette={["blue.400", "gray.50"]} />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

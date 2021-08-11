@@ -179,7 +179,7 @@ import { BorderRight, BorderRightPropsI } from "./BorderRight";
 import { BorderTop, BorderTopPropsI } from "./BorderTop";
 import { BorderVertical, BorderVerticalPropsI } from "./BorderVertical";
 import { BowlingBall, BowlingBallPropsI } from "./BowlingBall";
-import { Box, BoxPropsI } from "./Box";
+import { BoxIcon, BoxIconPropsI } from "./BoxIcon";
 import { BracketsCurly, BracketsCurlyPropsI } from "./BracketsCurly";
 import { Brain, BrainPropsI } from "./Brain";
 import { BriefcaseAlt, BriefcaseAltPropsI } from "./BriefcaseAlt";
@@ -1605,7 +1605,7 @@ export {
   BorderTop,
   BorderVertical,
   BowlingBall,
-  Box,
+  BoxIcon,
   BracketsCurly,
   Brain,
   BriefcaseAlt,
@@ -2813,7 +2813,7 @@ export type {
   BorderTopPropsI,
   BorderVerticalPropsI,
   BowlingBallPropsI,
-  BoxPropsI,
+  BoxIconPropsI,
   BracketsCurlyPropsI,
   BrainPropsI,
   BriefcaseAltPropsI,

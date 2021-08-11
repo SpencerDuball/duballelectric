@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface BoomtruckPropsI extends SystemProps {}
+export interface BoomtruckPropsI extends BoxProps {}
 
 export const Boomtruck = (props: BoomtruckPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -18,5 +18,5 @@ export const Boomtruck = (props: BoomtruckPropsI) => (
     <path d="M51.0004 165.9C44.3004 169.4 41.8004 177.9 45.4004 184.9C47.7004 189.2 54.5004 192.4 59.5004 191.4C73.1004 188.9 75.0004 170.8 62.3004 165.4C57.9004 163.5 55.1004 163.6 51.0004 165.9Z" />
     <path d="M77.3004 212C58.7004 216.4 51.9004 239.8 65.4004 253.2C77.2004 265 97.7004 261.5 104.6 246.5C109.1 236.8 107.3 226.3 99.9004 218.8C93.5004 212.4 85.6004 210 77.3004 212ZM88.7004 227C95.6004 231.2 95.0004 242.1 87.7004 245.6C80.2004 249.2 72.0004 244 72.0004 235.8C72.0004 232.6 72.7004 231.1 75.4004 228.4C79.4004 224.4 83.7004 223.9 88.7004 227Z" />
     <path d="M202.001 212.5C187.101 217.3 180.401 235.4 188.601 248.6C196.601 261.6 215.601 264 226.301 253.4C235.501 244.2 236.401 231 228.701 220.8C222.701 213 211.401 209.5 202.001 212.5ZM215.001 226.7C219.901 229.6 221.601 237.2 218.401 241.8C214.301 247.7 206.501 248.3 201.501 243C193.001 234.1 204.301 220.4 215.001 226.7Z" />
-  </XSvg>
+  </Box>
 );

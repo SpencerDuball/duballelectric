@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { HeartRate, HeartRatePropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof HeartRate>;
 
 const Template: ComponentStory<typeof HeartRate> = (args: HeartRatePropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <HeartRate {...args} />
     <HeartRate {...args} fill="red.500" />
     <HeartRate {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import {
   DuballElectricSquare,
@@ -15,14 +15,14 @@ export default {
 const Template: ComponentStory<typeof DuballElectricSquare> = (
   args: DuballElectricSquarePropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <DuballElectricSquare {...args} />
     <DuballElectricSquare
       {...args}
       colorPalette={["blue.500", "red.500", "green.500"]}
     />
     <DuballElectricSquare {...args} />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

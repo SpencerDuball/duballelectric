@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface TransformerPropsI extends SystemProps {}
+export interface TransformerPropsI extends BoxProps {}
 
 export const Transformer = (props: TransformerPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -21,5 +21,5 @@ export const Transformer = (props: TransformerPropsI) => (
     <path d="M153.2 194.2L153.5 217.5H163H172.5L172.8 194.2L173 171H163H153L153.2 194.2Z" />
     <path d="M179.2 194.2L179.5 217.5H189H198.5L198.8 194.2L199 171H189H179L179.2 194.2Z" />
     <path d="M70.6 241.3C69.3 242.3 68.9 243.7 69.2 247L69.5 251.5L149 251.8C192.7 251.9 229.6 251.8 230.9 251.5C233 251 233.2 250.5 232.7 246.7C232.4 244.4 231.3 242 230.4 241.3C227.8 239.4 73.2 239.4 70.6 241.3Z" />
-  </XSvg>
+  </Box>
 );

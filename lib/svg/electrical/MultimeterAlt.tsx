@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface MultimeterAltPropsI extends SystemProps {}
+export interface MultimeterAltPropsI extends BoxProps {}
 
 export const MultimeterAlt = (props: MultimeterAltPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -22,5 +22,5 @@ export const MultimeterAlt = (props: MultimeterAltPropsI) => (
     <path d="M84.7 139.6C84.3 140 84 145.8 84 152.4V164.5H88.5H93.1L92.8 152L92.5 139.5L89 139.2C87 139 85.1 139.2 84.7 139.6Z" />
     <path d="M68.7001 145.6C68.3001 146 68.0001 150.3 68.0001 155.2C68.0001 164.5 67.9001 164.2 73.0001 164.2C78.3001 164.2 78.1001 164.6 77.8001 154.7L77.5001 145.5L73.5001 145.2C71.2001 145 69.1001 145.2 68.7001 145.6Z" />
     <path d="M96.5003 194.5C91.7003 196.4 86.5003 201.2 83.9003 206.2C81.6003 210.8 81.4003 219.6 83.6003 224.8C87.9003 235.1 99.8003 240.8 110.3 237.6C117 235.6 121.4 231.9 124.4 225.8C131.7 211.2 122.2 194.7 105.6 193.4C102.5 193.2 98.9003 193.6 96.5003 194.5ZM117 207.1C117 210.9 116.4 211.8 106.5 221.7L95.9003 232.4L91.9003 228.4L87.9003 224.5L98.8003 213.8C108.6 204 110 203 113.3 203C117 203 117 203.1 117 207.1Z" />
-  </XSvg>
+  </Box>
 );

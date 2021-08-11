@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { Meter, MeterPropsI } from "lib/svg/electrical";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof Meter>;
 
 const Template: ComponentStory<typeof Meter> = (args: MeterPropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <Meter {...args} />
     <Meter {...args} fill="red.500" />
     <Meter {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

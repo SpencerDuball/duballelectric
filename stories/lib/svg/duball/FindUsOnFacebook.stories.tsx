@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { FindUsOnFacebook, FindUsOnFacebookPropsI } from "lib/svg/duball";
 
@@ -12,11 +12,11 @@ export default {
 const Template: ComponentStory<typeof FindUsOnFacebook> = (
   args: FindUsOnFacebookPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <FindUsOnFacebook {...args} />
     <FindUsOnFacebook {...args} fill="red.500" />
     <FindUsOnFacebook {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

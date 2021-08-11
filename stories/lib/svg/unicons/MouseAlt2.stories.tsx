@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { MouseAlt2, MouseAlt2PropsI } from "lib/svg/unicons";
 
@@ -10,11 +10,11 @@ export default {
 } as ComponentMeta<typeof MouseAlt2>;
 
 const Template: ComponentStory<typeof MouseAlt2> = (args: MouseAlt2PropsI) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <MouseAlt2 {...args} />
     <MouseAlt2 {...args} fill="red.500" />
     <MouseAlt2 {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

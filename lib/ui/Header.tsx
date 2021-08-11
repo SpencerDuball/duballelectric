@@ -6,7 +6,6 @@ import {
   Box,
   BoxProps,
 } from "@chakra-ui/react";
-import { SystemProps } from "@xstyled/emotion";
 import { filterProps, MotionBox } from "utility";
 import { AngleDown, Home, Building, Jackhammer } from "lib/svg/unicons";
 import { DuballElectric } from "lib/svg/duball";
@@ -14,7 +13,7 @@ import { AnimateSharedLayout } from "framer-motion";
 import Link from "next/link";
 
 interface ServicePageLinkPropsI extends BoxProps {
-  icon: (props: SystemProps) => JSX.Element;
+  icon: (props: BoxProps) => JSX.Element;
   linkTitle: string;
   linkDescription: string;
 }
@@ -100,7 +99,7 @@ const NavButton = forwardRef<ButtonProps, "button">((props, ref) => (
   </Button>
 ));
 
-export interface HeaderPropsI extends SystemProps {}
+export interface HeaderPropsI extends BoxProps {}
 
 export const Header = (props: HeaderPropsI) => {
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
@@ -141,7 +140,7 @@ export const Header = (props: HeaderPropsI) => {
               </Link>
               <NavButton
                 ref={servicesButtonRef}
-                rightIcon={<AngleDown h="1em" w="1em" />}
+                rightIcon={<AngleDown height="1em" width="1em" />}
                 onClick={() => {
                   setAreServicesDisplayed(!areServicesDisplayed);
                   if (areServicesDisplayed) setAreServicesVisible(false);

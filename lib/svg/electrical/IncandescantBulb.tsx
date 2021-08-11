@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface IncandescantBulbPropsI extends SystemProps {}
+export interface IncandescantBulbPropsI extends BoxProps {}
 
 export const IncandescantBulb = (props: IncandescantBulbPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -17,5 +17,5 @@ export const IncandescantBulb = (props: IncandescantBulbPropsI) => (
     <path d="M120.2 229.7L120.5 235.5H150H179.5L179.8 229.7L180.1 224H150H119.9L120.2 229.7Z" />
     <path d="M122 245.5C122 247.4 129.5 255.7 131.8 256.5C132.8 256.8 134.3 258.4 135.2 260C137.5 264 142.4 266 150 266C157.4 266 162.5 264 164.6 260.3C165.5 258.8 168 256.4 170.2 255C174 252.6 178 247.5 178 245.1C178 244.3 170.2 244 150 244C125.6 244 122 244.2 122 245.5Z" />
     <path d="M130.5 35.9C126.2 38.5 122.3 43.4 121 47.8C120.4 50.1 120 70.4 120 102.2V153H131H142V105V57H150H158V105V153H169H180V101.7V50.5L177.6 45.5C175 39.9 171.9 36.7 167.7 35.1C166.1 34.5 157.9 34 149.2 34C135.7 34 133.1 34.3 130.5 35.9Z" />
-  </XSvg>
+  </Box>
 );

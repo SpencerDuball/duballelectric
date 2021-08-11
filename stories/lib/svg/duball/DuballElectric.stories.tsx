@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import { DuballElectric, DuballElectricPropsI } from "lib/svg/duball";
 
@@ -12,14 +12,14 @@ export default {
 const Template: ComponentStory<typeof DuballElectric> = (
   args: DuballElectricPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <DuballElectric {...args} />
     <DuballElectric
       {...args}
       colorPalette={["blue.500", "red.500", "green.500"]}
     />
     <DuballElectric {...args} />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

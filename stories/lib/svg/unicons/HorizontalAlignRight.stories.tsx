@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { x } from "@xstyled/emotion";
+import { Box } from "@chakra-ui/react";
 
 import {
   HorizontalAlignRight,
@@ -15,11 +15,11 @@ export default {
 const Template: ComponentStory<typeof HorizontalAlignRight> = (
   args: HorizontalAlignRightPropsI
 ) => (
-  <x.div display="flex" gap="20px">
+  <Box display="flex" gap="20px">
     <HorizontalAlignRight {...args} />
     <HorizontalAlignRight {...args} fill="red.500" />
     <HorizontalAlignRight {...args} fill="gray.900" />
-  </x.div>
+  </Box>
 );
 
 export const Primary = Template.bind({});

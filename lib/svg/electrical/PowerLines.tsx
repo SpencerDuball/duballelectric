@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface PowerLinesPropsI extends SystemProps {}
+export interface PowerLinesPropsI extends BoxProps {}
 
 export const PowerLines = (props: PowerLinesPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -16,5 +16,5 @@ export const PowerLines = (props: PowerLinesPropsI) => (
     <path d="M272.1 107.1C262.7 111.4 241.2 119.3 226.4 123.8L213.5 127.8L217.5 128.8C219.7 129.4 225.8 130.9 231 132.1L240.5 134.4L251.5 130.5C268.7 124.5 285.9 117 287 115C289.7 110 286.5 103.9 281.3 104.1C279.7 104.1 275.6 105.5 272.1 107.1Z" />
     <path d="M31.2 113.5C22.7 115.8 15.2 118.4 14.5 119.1C11.9 121.8 11.7 125.4 14.1 128.4C16.1 131 16.7 131.2 20.9 130.7C23.4 130.3 30.9 128.6 37.5 126.8L49.5 123.5L49.8 116.2C50.1 109.8 49.9 109 48.3 109.1C47.3 109.2 39.6 111.1 31.2 113.5Z" />
     <path d="M105 153.1C100.7 154.1 45.7 163.4 34 165C24.8 166.3 21.5 167.8 20.5 171C19.5 174.2 21.8 178.9 24.9 179.7C30.6 181.1 118.5 166.4 120.2 163.7C121.2 162.1 121.2 156.9 120.2 155.2C119.3 153.8 113.5 151.9 110.5 152.1C109.4 152.2 106.9 152.6 105 153.1Z" />
-  </XSvg>
+  </Box>
 );

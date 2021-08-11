@@ -1,11 +1,11 @@
 import React from "react";
-import { SystemProps } from "@xstyled/emotion";
-import { XSvg } from "utility";
+import { Box, BoxProps } from "@chakra-ui/react";
 
-export interface RubberglovesPropsI extends SystemProps {}
+export interface RubberglovesPropsI extends BoxProps {}
 
 export const Rubbergloves = (props: RubberglovesPropsI) => (
-  <XSvg
+  <Box
+    as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="black"
@@ -18,5 +18,5 @@ export const Rubbergloves = (props: RubberglovesPropsI) => (
     <path d="M157.2 27.2998C153.9 30.7998 153.1 34.6998 152.4 50.5998L151.7 64.8998L155.3 63.7998C159.9 62.3998 165.5 63.8998 170 67.6998L173.2 70.2998L172.6 64.8998C172.3 61.8998 171.8 54.5998 171.5 48.6998C171.1 42.7998 170.2 35.6998 169.4 32.9998C167.1 25.2998 161.5 22.6998 157.2 27.2998Z" />
     <path d="M131.7 33.2C129.7 34.8 127 41.1 127 44.4C127 46.8 127.1 46.8 129.8 45.4C133.5 43.5 136.9 43.6 141.5 46C143.7 47.1 145.5 48 145.6 48C145.7 48 145.4 46.1 144.8 43.7C142.8 34.4 136.7 29.5 131.7 33.2Z" />
     <path d="M181.1 45.9002C178.6 48.4002 175.2 71.8002 175.1 88.0002C175.1 94.9002 174.8 103.1 174.4 106.3L173.8 112.2L177.9 109.4C180.5 107.7 183.9 106.5 186.9 106.2L191.8 105.8L192.3 100.1C193.8 86.2002 195.2 55.8002 194.6 52.5002C193.2 45.2002 185.6 41.4002 181.1 45.9002Z" />
-  </XSvg>
+  </Box>
 );
