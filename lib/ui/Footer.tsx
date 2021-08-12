@@ -49,6 +49,7 @@ export const Footer = (props: FooterPropsI) => (
       gridAutoColumns="max-content"
       justifyContent="space-between"
       alignItems="center"
+      px={{ base: "0.625em", lg: "1em" }}
     >
       {/* left aligned content */}
       <Box as="div" display="grid" gridAutoFlow="column" gridColumnGap="6em">

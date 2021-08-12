@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
-import { Header } from "lib/ui";
+import { Header, Footer } from "lib/ui";
 
 export default function Home() {
   return (
@@ -11,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box as="main" display="grid">
-        <Header />
+        <Header position="fixed" />
+        <Box as="div" h="50vh" bg="red.50" />
+        <Footer />
       </Box>
     </>
   );
