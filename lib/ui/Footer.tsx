@@ -45,15 +45,25 @@ export const Footer = (props: FooterPropsI) => (
       py="1.875em"
       display="grid"
       position="relative"
-      gridAutoFlow="column"
-      gridAutoColumns="max-content"
-      justifyContent="space-between"
+      gridTemplateColumns="max-content max-content"
+      gridTemplateRows="max-content max-content max-content"
+      justifyContent={{ base: "center", xl: "space-between" }}
       alignItems="center"
       px={{ base: "0.625em", lg: "1em" }}
-      fontSize={{ base: "0.80em", xl: "0.80em", "2xl": "0.90em" }}
+      fontSize={{ base: "0.90em", xl: "0.80em", "2xl": "0.90em" }}
+      gridRowGap="1.5em"
     >
       {/* left aligned content */}
-      <Box as="div" display="grid" gridAutoFlow="column" gridColumnGap="6em">
+      <Box
+        as="div"
+        display="grid"
+        gridAutoFlow="column"
+        gridAutoColumns={{ base: "1fr", xl: "max-content" }}
+        gridColumnGap={{ base: "2em", xl: "6em" }}
+        gridColumn={{ base: "1 / span 2", xl: "1 / span 1" }}
+        gridRow={{ base: "2 / span 1", xl: "1 / span 3" }}
+        justifyItems={{ base: "center", xl: "start" }}
+      >
         <Box as="div" display="grid" gridRowGap="1.25em" maxW="12.5em">
           <FooterListTitle>SITEMAP</FooterListTitle>
           <Box as="ul" display="grid" gridRowGap="0.625em">
@@ -116,14 +126,17 @@ export const Footer = (props: FooterPropsI) => (
       {/* center aligned content */}
       <Box
         as="div"
-        position="absolute"
+        position={{ base: "relative", xl: "absolute" }}
         left="50%"
         transform="translateX(-50%)"
         display="grid"
         alignContent="space-between"
         justifyItems="center"
         h="100%"
-        py="1.875em"
+        py={{ base: "0em", xl: "1.875em" }}
+        gridColumn={{ base: "1 / span 2", xl: "none" }}
+        gridRow={{ base: "1 / span 1", xl: "none" }}
+        gridRowGap="0.625em"
       >
         <Link href="/" passHref>
           <Box as="a">
@@ -158,8 +171,11 @@ export const Footer = (props: FooterPropsI) => (
         as="div"
         display="grid"
         alignContent="space-between"
-        justifyItems="end"
+        justifyItems={{ base: "center", xl: "end" }}
         h="100%"
+        gridColumn={{ base: "1 / span 2", xl: "2 / span 1" }}
+        gridRow={{ base: "3 / span 1", xl: "1 / span 3" }}
+        gridRowGap="0.625em"
       >
         <Link href="https://facebook.com/duballelectric" passHref>
           <Box as="a">
