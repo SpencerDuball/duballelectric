@@ -5,6 +5,7 @@ import {
   forwardRef,
   Box,
   BoxProps,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { filterProps, MotionBox } from "utility";
 import { AngleDown, Home, Building, Jackhammer } from "lib/svg/unicons";
@@ -17,10 +18,11 @@ interface ServicePageLinkPropsI extends BoxProps {
   linkTitle: string;
   linkDescription: string;
 }
-const ServicePageLink = (props: ServicePageLinkPropsI) => {
+const ServicePageLink = forwardRef<ServicePageLinkPropsI, "a">((props, ref) => {
   return (
     <Box
       as="a"
+      ref={ref}
       w="18.75em"
       display="grid"
       gridTemplateColumns="max-content 1fr"
@@ -32,6 +34,7 @@ const ServicePageLink = (props: ServicePageLinkPropsI) => {
       _hover={{ bg: "whiteAlpha.200" }}
       _active={{ bg: "whiteAlpha.300" }}
       transition="background-color 250ms linear"
+      fontSize={{ base: "0.75em", sm: "0.85em", md: "1em" }}
       {...filterProps({
         props,
         filterOut: ["icon", "linkTitle", "linkDescription"],
@@ -72,7 +75,7 @@ const ServicePageLink = (props: ServicePageLinkPropsI) => {
       </Box>
     </Box>
   );
-};
+});
 
 const NavButton = forwardRef<ButtonProps, "button">((props, ref) => (
   <Button
@@ -105,6 +108,7 @@ export const Header = (props: HeaderPropsI) => {
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const [areServicesDisplayed, setAreServicesDisplayed] = useState(false);
   const [areServicesVisible, setAreServicesVisible] = useState(false);
+  const buttonSize = useBreakpointValue({ base: "xs", sm: "sm", lg: "md" });
 
   return (
     <AnimateSharedLayout>
@@ -112,6 +116,7 @@ export const Header = (props: HeaderPropsI) => {
         as="header"
         w="100%"
         bg="gray.700"
+        px={{ base: "0.625em", lg: "1em" }}
         boxShadow="lg"
         display="grid"
         justifyItems="center"
@@ -136,11 +141,17 @@ export const Header = (props: HeaderPropsI) => {
           >
             <Box as="nav" display="grid" gridAutoFlow="column" w="max-content">
               <Link href="/" passHref>
-                <NavButton>Home</NavButton>
+                <NavButton
+                  display={{ base: "none", md: "block" }}
+                  size={buttonSize}
+                >
+                  Home
+                </NavButton>
               </Link>
               <NavButton
                 ref={servicesButtonRef}
                 rightIcon={<AngleDown height="1em" width="1em" />}
+                size={buttonSize}
                 onClick={() => {
                   setAreServicesDisplayed(!areServicesDisplayed);
                   if (areServicesDisplayed) setAreServicesVisible(false);
@@ -155,13 +166,14 @@ export const Header = (props: HeaderPropsI) => {
                 position="absolute"
                 left="50%"
                 transform="translateX(-50%)"
-                h="calc(100% - 0.625em)"
+                h={{ base: "2.25em", sm: "2.5em", lg: "calc(100% - 0.625em)" }}
               >
                 <DuballElectric h="100%" colorPalette={["none", "gray.200"]} />
               </Box>
             </Link>
             <Link href="#contact" passHref>
               <Button
+                size={buttonSize}
                 variant="outline"
                 color="gray.200"
                 borderColor="gray.200"
@@ -184,7 +196,7 @@ export const Header = (props: HeaderPropsI) => {
               w="100%"
               layoutId="header_row_2"
               display="grid"
-              gridAutoFlow="column"
+              gridAutoFlow={{ base: "row", xl: "column" }}
               gridAutoColumns="1fr"
               gridGap="1em"
               paddingBottom="1em"
