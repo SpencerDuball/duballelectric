@@ -50,6 +50,7 @@ export const Footer = (props: FooterPropsI) => (
       justifyContent="space-between"
       alignItems="center"
       px={{ base: "0.625em", lg: "1em" }}
+      fontSize={{ base: "0.80em", xl: "0.80em", "2xl": "0.90em" }}
     >
       {/* left aligned content */}
       <Box as="div" display="grid" gridAutoFlow="column" gridColumnGap="6em">
