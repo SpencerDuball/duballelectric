@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Box as="main" display="grid">
         <Header position="fixed" />
-        <Box as="div" h="50vh" bg="red.50" />
+        <Box as="div" h="100vh" bg="red.50" />
         <Footer />
       </Box>
     </>

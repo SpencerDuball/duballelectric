@@ -51,7 +51,7 @@ export const Footer = (props: FooterPropsI) => (
       alignItems="center"
       px={{ base: "0.625em", lg: "1em" }}
       fontSize={{ base: "0.90em", xl: "0.80em", "2xl": "0.90em" }}
-      gridRowGap="1.5em"
+      gridRowGap="2em"
     >
       {/* left aligned content */}
       <Box
@@ -175,7 +175,7 @@ export const Footer = (props: FooterPropsI) => (
         h="100%"
         gridColumn={{ base: "1 / span 2", xl: "2 / span 1" }}
         gridRow={{ base: "3 / span 1", xl: "1 / span 3" }}
-        gridRowGap="0.625em"
+        gridRowGap="1em"
       >
         <Link href="https://facebook.com/duballelectric" passHref>
           <Box as="a">
