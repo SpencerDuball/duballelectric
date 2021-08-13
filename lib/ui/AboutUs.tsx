@@ -153,6 +153,7 @@ export const AboutUs = (props: AboutUsPropsI) => (
         alignSelf="center"
         colorPalette={["red.500"]}
         display={{ base: "none", xl: "block" }}
+        justifySelf="center"
       />
     </Box>
     <Box
