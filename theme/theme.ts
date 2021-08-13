@@ -12,6 +12,7 @@ const breakpoints = createBreakpoints({
   lg: "37.5em", // 600px
   xl: "53.125em", // 850px
   "2xl": "68.75em", // 1100px
+  "3xl": "75em", // 1200px
 });
 
 export const theme = extendTheme({ config, breakpoints });

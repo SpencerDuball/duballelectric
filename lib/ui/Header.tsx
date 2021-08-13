@@ -102,13 +102,17 @@ const NavButton = forwardRef<ButtonProps, "button">((props, ref) => (
   </Button>
 ));
 
+// Header Component
+////////////////////////////////////////////////////////////////
+export const DefaultHeaderHeight = "3.75em";
+
 export interface HeaderPropsI extends BoxProps {}
 
 export const Header = (props: HeaderPropsI) => {
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const [areServicesDisplayed, setAreServicesDisplayed] = useState(false);
   const [areServicesVisible, setAreServicesVisible] = useState(false);
-  const buttonSize = useBreakpointValue({ base: "xs", sm: "sm", lg: "md" });
+  const buttonSize = useBreakpointValue({ base: "sm", lg: "md" });
 
   return (
     <AnimateSharedLayout>
@@ -131,7 +135,7 @@ export const Header = (props: HeaderPropsI) => {
           {/* Header Row 1 */}
           <MotionBox
             as="div"
-            h="3.75em"
+            h={DefaultHeaderHeight}
             display="grid"
             gridAutoFlow="column"
             justifyContent="space-between"
@@ -205,7 +209,7 @@ export const Header = (props: HeaderPropsI) => {
                 <ServicePageLink
                   icon={Home}
                   linkTitle="Residential"
-                  linkDescription="For all your home electrical needs"
+                  linkDescription="For all your home electrical needs."
                   w="100%"
                 />
               </Link>

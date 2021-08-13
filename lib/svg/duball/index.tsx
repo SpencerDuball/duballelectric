@@ -8,6 +8,10 @@ import { FreeEstimates, FreeEstimatesPropsI } from "./FreeEstimates";
 import { Discover, DiscoverPropsI } from "./Discover";
 import { Visa, VisaPropsI } from "./Visa";
 import { Mastercard, MastercardPropsI } from "./Mastercard";
+import {
+  HeroTransitionArch,
+  HeroTransitionArchPropsI,
+} from "./HeroTransitionArch";
 
 export {
   DuballElectricSquare,
@@ -17,6 +21,7 @@ export {
   Discover,
   Visa,
   Mastercard,
+  HeroTransitionArch,
 };
 
 export type {
@@ -27,4 +32,5 @@ export type {
   DiscoverPropsI,
   VisaPropsI,
   MastercardPropsI,
+  HeroTransitionArchPropsI,
 };
