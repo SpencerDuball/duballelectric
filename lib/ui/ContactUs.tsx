@@ -1,11 +1,14 @@
 import { useState } from "react";
 import {
   Box,
+  Button,
+  InputProps,
   IconButton,
   Tooltip,
   BoxProps,
   useClipboard,
   useBreakpointValue,
+  useToken,
 } from "@chakra-ui/react";
 import {
   Phone,
@@ -22,13 +25,14 @@ import { useFormik } from "formik";
 interface InputWithIconsPropsI extends BoxProps {
   leftIcon: (props: BoxProps) => JSX.Element;
   rightIcon: (props: BoxProps) => JSX.Element;
-  inputProps?: BoxProps;
+  inputProps?: InputProps;
 }
 
 const InputWithIcons = (props: InputWithIconsPropsI) => {
   const [isTooltipOpen, setIsTooltipOpen] = useState(false);
   const iconSize = useBreakpointValue({ base: "17.5px", md: "20px" });
   const iconPadding = useBreakpointValue({ base: "32px", md: "40px" });
+  const [gray100] = useToken("colors", ["gray.100"]);
 
   return (
     <Box
@@ -62,6 +66,10 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
         bg="gray.100"
         color="gray.700"
         fontSize="16px"
+        boxShadow={`0 0 0 30px ${gray100} inset`}
+        sx={{
+          WebkitBoxShadow: `0 0 0 30px ${gray100} inset !important`,
+        }}
         {...props.inputProps}
       />
       <Tooltip
@@ -121,18 +129,53 @@ const ContactForm = (props: ContactFormPropsI) => {
       <InputWithIcons
         leftIcon={User}
         rightIcon={ExclamationTriangle}
-        inputProps={{ placeholder: "Name" }}
+        inputProps={{
+          placeholder: "Name",
+          autoComplete: "name",
+          onChange: formik.handleChange,
+          value: formik.values.name,
+          name: "name",
+          id: "name",
+        }}
       />
       <InputWithIcons
         leftIcon={Phone}
         rightIcon={ExclamationTriangle}
-        inputProps={{ placeholder: "Phone" }}
+        inputProps={{
+          placeholder: "Phone",
+          autoComplete: "tel",
+          onChange: formik.handleChange,
+          value: formik.values.phone,
+          name: "phone",
+          id: "phone",
+        }}
       />
       <InputWithIcons
         leftIcon={Envelope}
         rightIcon={ExclamationTriangle}
-        inputProps={{ placeholder: "Email" }}
+        inputProps={{
+          placeholder: "Email",
+          autoComplete: "email",
+          onChange: formik.handleChange,
+          value: formik.values.email,
+          name: "email",
+          id: "email",
+        }}
       />
+      <Button
+        type="submit"
+        size="lg"
+        variant="solid"
+        bg="gray.500"
+        _hover={{ bg: "gray.600" }}
+        _active={{ bg: "gray.700" }}
+        color="white"
+        w="max-content"
+        justifySelf="center"
+        onClick={(e: any) => formik.handleSubmit(e)}
+      >
+        Submit
+      </Button>
     </Box>
   );
 };
