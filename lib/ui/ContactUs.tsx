@@ -1,4 +1,12 @@
-import { Box, IconButton, BoxProps, useClipboard } from "@chakra-ui/react";
+import { useState } from "react";
+import {
+  Box,
+  IconButton,
+  Tooltip,
+  BoxProps,
+  useClipboard,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import {
   Phone,
   ClipboardNotes,
@@ -6,8 +14,128 @@ import {
   User,
   Envelope,
   CommentLines,
+  ExclamationTriangle,
 } from "lib/svg/unicons";
-import Link from "next/link";
+import { filterProps } from "utility";
+import { useFormik } from "formik";
+
+interface InputWithIconsPropsI extends BoxProps {
+  leftIcon: (props: BoxProps) => JSX.Element;
+  rightIcon: (props: BoxProps) => JSX.Element;
+  inputProps?: BoxProps;
+}
+
+const InputWithIcons = (props: InputWithIconsPropsI) => {
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
+  const iconSize = useBreakpointValue({ base: "17.5px", md: "20px" });
+  const iconPadding = useBreakpointValue({ base: "32px", md: "40px" });
+
+  return (
+    <Box
+      as="div"
+      display="grid"
+      gridAutoFlow="column"
+      gridTemplateColumns="max-content 1fr max-content"
+      bg="gray.100"
+      px="0.5em"
+      borderRadius="0.375em"
+      gridColumnGap="1em"
+      {...filterProps({
+        props,
+        filterOut: ["leftIcon", "rightIcon", "inputProps"],
+      })}
+    >
+      <Box
+        as="div"
+        h={iconPadding}
+        w={iconPadding}
+        display="grid"
+        justifyContent="center"
+        alignContent="center"
+      >
+        <props.leftIcon w={iconSize} h={iconSize} fill="gray.700" />
+      </Box>
+      <Box
+        as="input"
+        type="text"
+        outline="none"
+        bg="gray.100"
+        color="gray.700"
+        fontSize="16px"
+        {...props.inputProps}
+      />
+      <Tooltip
+        label="Input invalid"
+        aria-label="Invalid input"
+        hasArrow
+        placement="top-end"
+        isOpen={isTooltipOpen}
+      >
+        <Box
+          as="div"
+          h={iconPadding}
+          w={iconPadding}
+          display="grid"
+          justifyContent="center"
+          alignContent="center"
+          onMouseLeave={() => setIsTooltipOpen(false)}
+          onMouseEnter={() => setIsTooltipOpen(true)}
+          onClick={() => setIsTooltipOpen(!isTooltipOpen)}
+        >
+          <props.rightIcon w={iconSize} h={iconSize} fill="red.500" />
+        </Box>
+      </Tooltip>
+    </Box>
+  );
+};
+
+// ContactForm
+interface ContactFormPropsI extends BoxProps {}
+
+const ContactForm = (props: ContactFormPropsI) => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    },
+    onSubmit: (value) => {
+      alert(JSON.stringify(value, null, 2));
+    },
+  });
+
+  return (
+    <Box
+      as="form"
+      p="0.75em"
+      w={{ base: "100%", lg: "35em" }}
+      borderWidth="0.0625em"
+      borderColor="gray.100"
+      boxShadow="lg"
+      borderRadius="0.375em"
+      display="grid"
+      gridRowGap="0.75em"
+      {...props}
+    >
+      <InputWithIcons
+        leftIcon={User}
+        rightIcon={ExclamationTriangle}
+        inputProps={{ placeholder: "Name" }}
+      />
+      <InputWithIcons
+        leftIcon={Phone}
+        rightIcon={ExclamationTriangle}
+        inputProps={{ placeholder: "Phone" }}
+      />
+      <InputWithIcons
+        leftIcon={Envelope}
+        rightIcon={ExclamationTriangle}
+        inputProps={{ placeholder: "Email" }}
+      />
+    </Box>
+  );
+};
 
 // QuickContact
 interface QuickContact extends BoxProps {
@@ -25,11 +153,12 @@ interface QuickContact extends BoxProps {
 
 const QuickContact = (props: QuickContact) => {
   const { hasCopied, onCopy } = useClipboard(props.contactInfo);
+  const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
 
   return (
     <Box
       as="div"
-      w="37.5em"
+      w={{ base: "100%", lg: "35em" }}
       p="0.75em"
       borderWidth="0.0625em"
       borderColor="gray.100"
@@ -40,16 +169,16 @@ const QuickContact = (props: QuickContact) => {
       gridColumnGap="0.75em"
       gridTemplateColumns="max-content 1fr max-content"
     >
-      <Link
-        href={
-          props.type === "phone"
-            ? `tel:${props.contactInfo}`
-            : `mailto:${props.contactInfo}`
+      <Tooltip
+        label={props.type === "phone" ? "Start call" : "Open email"}
+        aria-label={
+          props.type === "phone" ? "Start call tooltip" : "Open email tooltip"
         }
-        passHref
+        hasArrow
+        placement="top-start"
       >
         <IconButton
-          size="md"
+          size={buttonSize}
           variant="solid"
           bg="gray.100"
           _hover={{ bg: "gray.200" }}
@@ -58,8 +187,15 @@ const QuickContact = (props: QuickContact) => {
             <props.leftButton.icon color="gray.700" h="1.25em" w="1.25em" />
           }
           aria-label={props.leftButton.ariaLabel}
+          onClick={() =>
+            (location.href = `${
+              props.type === "phone"
+                ? `tel:${props.contactInfo}`
+                : `mailto:${props.contactInfo}`
+            }`)
+          }
         />
-      </Link>
+      </Tooltip>
       <Box
         as="div"
         bg="gray.100"
@@ -68,20 +204,29 @@ const QuickContact = (props: QuickContact) => {
         justifyContent="center"
         alignContent="center"
       >
-        <Box as="p" fontWeight="800" fontSize="1.25em" lineHeight="1.4em">
+        <Box as="p" fontWeight="800" lineHeight="1.4em" fontSize="1.25em">
           {props.contactInfo}
         </Box>
       </Box>
-      <IconButton
-        size="md"
-        variant="solid"
-        bg="gray.100"
-        _hover={{ bg: "gray.200" }}
-        _active={{ bg: "gray.300" }}
-        icon={<props.rightButton.icon color="gray.700" h="1.25em" w="1.25em" />}
-        aria-label={props.rightButton.ariaLabel}
-        onClick={onCopy}
-      />
+      <Tooltip
+        label="Copy to clipboard"
+        aria-label="Copy to clipboard tooltip"
+        hasArrow
+        placement="top-end"
+      >
+        <IconButton
+          size={buttonSize}
+          variant="solid"
+          bg="gray.100"
+          _hover={{ bg: "gray.200" }}
+          _active={{ bg: "gray.300" }}
+          icon={
+            <props.rightButton.icon color="gray.700" h="1.25em" w="1.25em" />
+          }
+          aria-label={props.rightButton.ariaLabel}
+          onClick={onCopy}
+        />
+      </Tooltip>
     </Box>
   );
 };
@@ -93,16 +238,18 @@ export const ContactUs = (props: ContactUsPropsI) => (
   <Box
     as="section"
     px={{ base: "0.625em", lg: "1em" }}
+    fontSize={{ base: "0.6em", sm: "0.70em", "2xl": "0.85em", "3xl": "1em" }}
     py="9.375em"
     display="grid"
-    justifyContent="center"
+    justifyItems="center"
+    gridAutoColumns="100%"
     alignContent="center"
     gridRowGap="3.125em"
     id="contact"
     {...props}
   >
     {/* Contact Us Intro */}
-    <Box as="div" display="grid" gridRowGap="1em" maxW="37.5em">
+    <Box as="div" display="grid" gridRowGap="1em" maxW="35em">
       <Box
         as="h1"
         fontWeight="800"
@@ -125,9 +272,9 @@ export const ContactUs = (props: ContactUsPropsI) => (
         touch.
       </Box>
     </Box>
-    <Box as="div" display="grid" gridRowGap="1.5625em">
+    <Box as="div" display="grid" gridRowGap="1.5625em" w="100%">
       {/* QuickContacts */}
-      <Box as="div" display="grid" gridRowGap="0.625em">
+      <Box as="div" display="grid" gridRowGap="0.625em" justifyItems="center">
         <QuickContact
           leftButton={{ icon: Phone, ariaLabel: "Call" }}
           rightButton={{ icon: ClipboardNotes, ariaLabel: "Copy to clipboard" }}
@@ -152,6 +299,7 @@ export const ContactUs = (props: ContactUsPropsI) => (
         or
       </Box>
       {/* Contact Form */}
+      <ContactForm justifySelf="center" />
     </Box>
   </Box>
 );

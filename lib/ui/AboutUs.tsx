@@ -10,6 +10,7 @@ interface AboutUsCardPropsI extends BoxProps {
   buttonMessage: string;
 }
 const AboutUsCard = (props: AboutUsCardPropsI) => {
+  const buttonSize = useBreakpointValue({ base: "sm", xl: "xs", "2xl": "sm" });
   return (
     <Box
       as="div"
@@ -66,7 +67,7 @@ const AboutUsCard = (props: AboutUsCardPropsI) => {
         </Box>
       </Box>
       <Button
-        size="sm"
+        size={buttonSize}
         colorScheme="gray"
         variant="solid"
         color="white"
