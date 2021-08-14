@@ -272,7 +272,13 @@ export const ContactUs = (props: ContactUsPropsI) => (
         touch.
       </Box>
     </Box>
-    <Box as="div" display="grid" gridRowGap="1.5625em" w="100%">
+    <Box
+      as="div"
+      display="grid"
+      justifySelf="center"
+      gridRowGap="1.5625em"
+      w={{ base: "100%", sm: "90%", lg: "100%" }}
+    >
       {/* QuickContacts */}
       <Box as="div" display="grid" gridRowGap="0.625em" justifyItems="center">
         <QuickContact

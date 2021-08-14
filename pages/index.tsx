@@ -16,7 +16,7 @@ export default function Home() {
         <AboutUs />
         <Box as="div" w="80%" h="0.125em" bg="gray.100" justifySelf="center" />
         <ContactUs />
-        <Footer display="none" />
+        <Footer />
       </Box>
     </>
   );

@@ -63,6 +63,7 @@ export const Footer = (props: FooterPropsI) => (
         gridColumn={{ base: "1 / span 2", xl: "1 / span 1" }}
         gridRow={{ base: "2 / span 1", xl: "1 / span 3" }}
         justifyItems={{ base: "center", xl: "start" }}
+        fontSize={{ base: "0.75em", sm: "0.8em", md: "1em" }}
       >
         <Box as="div" display="grid" gridRowGap="1.25em" maxW="12.5em">
           <FooterListTitle>SITEMAP</FooterListTitle>
