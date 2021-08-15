@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Box,
   Button,
@@ -23,6 +23,7 @@ import {
 import { filterProps } from "utility";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 // TextareaWithIcons
 interface TextareaWithIconsPropsI extends BoxProps {
@@ -72,6 +73,7 @@ const TextareaWithIcons = (props: TextareaWithIconsPropsI) => {
       </Box>
       <Box
         as="textarea"
+        resize="none"
         outline="none"
         bg="gray.100"
         color="gray.700"
@@ -207,12 +209,14 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 interface ContactFormPropsI extends BoxProps {}
 
 const ContactForm = (props: ContactFormPropsI) => {
+  const captchaRef = useRef<HCaptcha>(null!);
   const formik = useFormik({
     initialValues: {
       name: "",
       phone: "",
       email: "",
       message: "",
+      token: "",
     },
     validationSchema: Yup.object().shape({
       name: Yup.string()
@@ -222,7 +226,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         .required("Required")
         .min(10, "Please provide a valid phone number")
         .matches(
-          /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\s+$/,
+          /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\s*$/,
           "Please provide a valid phone number"
         ),
       email: Yup.string()
@@ -231,9 +235,10 @@ const ContactForm = (props: ContactFormPropsI) => {
       message: Yup.string()
         .required("Required")
         .min(20, "Tell us more about your project."),
+      token: Yup.string().required(),
     }),
     onSubmit: (value) => {
-      alert(JSON.stringify(value, null, 2));
+      console.log(JSON.stringify({ ...value }, null, 2));
     },
   });
 
@@ -315,6 +320,26 @@ const ContactForm = (props: ContactFormPropsI) => {
         isError={formik.touched.message && formik.errors.message ? true : false}
         errorMessage={formik.errors.message}
       />
+      <Box as="div" w="max-content" justifySelf="center">
+        <HCaptcha
+          sitekey="6caa8945-e0af-4ff0-b97b-d381d5368cf3"
+          reCaptchaCompat={false}
+          onError={(e) => {
+            console.log(`hCaptcha Error: ${e}`);
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onExpire={() => {
+            console.log(`hCaptcha Token Expired`);
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onVerify={(token: string) =>
+            formik.setValues({ ...formik.values, token })
+          }
+          ref={captchaRef}
+        />
+      </Box>
       <Button
         type="submit"
         size="lg"
