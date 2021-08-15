@@ -43,6 +43,7 @@ export const Hero = (props: HeroPropsI) => (
     h="100vh"
     display="grid"
     gridTemplateRows="1fr max-content"
+    position="relative"
     {...props}
   >
     {/* Content Section */}
@@ -113,7 +114,7 @@ export const Hero = (props: HeroPropsI) => (
             maxW="28.125em"
             textAlign={{ base: "center", xl: "start" }}
           >
-            Duball Electric, Inc. ia a family-owned business providing
+            Duball Electric, Inc. is a family-owned business providing
             electrical services for more than 30 years in the Cedar Rapids and
             surrounding areas.
           </Box>
@@ -124,10 +125,19 @@ export const Hero = (props: HeroPropsI) => (
           </Link>
         </Box>
         {/* Image */}
-        <HeroImage display={{ base: "none", xl: "block" }} />
+        <HeroImage
+          display={{
+            base: "none",
+            xl: "block",
+          }}
+        />
       </Box>
     </Box>
     {/* Arch Section Transition */}
-    <HeroTransitionArch w="100%" fill="gray.100" />
+    <HeroTransitionArch
+      w="100%"
+      fill="gray.100"
+      transform="translateY(-0.0625em)"
+    />
   </Box>
 );

@@ -141,11 +141,10 @@ export const AboutUs = (props: AboutUsPropsI) => (
           textAlign={{ base: "center", xl: "start" }}
         >
           Duball Electric, Inc. is a family-owned business serving the Cedar
-          Rapids and surrounding Iowa areas since 1987. Our philosopy has always
-          been to provide the best work possible using only high quality
-          products. We are a fully licensed and insured company dedicated to
-          providing fair and trusted electrical services. Our name is on the
-          work and we do not cut corners &mdash; our product is guaranteed.
+          Rapids and surrounding Iowa areas since 1987. We are a fully licensed
+          and insured company dedicated to providing fair and trusted electrical
+          services. Our name is on the work and we do not cut corners &mdash;
+          our product is guaranteed.
         </Box>
       </Box>
       <FreeEstimates
@@ -177,8 +176,8 @@ export const AboutUs = (props: AboutUsPropsI) => (
       <AboutUsCard
         cardTitle="Commercial"
         cardDescription={
-          "We have the experience and equipment to get your business " +
-          "projects done efficiently. Plus 24/7 service to ensure your " +
+          "We have the experience & equipment to get your projects done " +
+          "efficiently. Plus 24/7 emergency service to ensure your " +
           "business gets the help it needs."
         }
         buttonMessage="View Commercial"

@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   InputProps,
+  TextareaProps,
   IconButton,
   Tooltip,
   BoxProps,
@@ -21,11 +22,106 @@ import {
 } from "lib/svg/unicons";
 import { filterProps } from "utility";
 import { useFormik } from "formik";
+import * as Yup from "yup";
 
+// TextareaWithIcons
+interface TextareaWithIconsPropsI extends BoxProps {
+  leftIcon: (props: BoxProps) => JSX.Element;
+  rightIcon: (props: BoxProps) => JSX.Element;
+  textareaProps?: TextareaProps;
+  isError: boolean;
+  errorMessage?: string;
+}
+
+const TextareaWithIcons = (props: TextareaWithIconsPropsI) => {
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
+  const iconSize = useBreakpointValue({ base: "17.5px", md: "20px" });
+  const iconPadding = useBreakpointValue({ base: "32px", md: "40px" });
+  const [gray100] = useToken("colors", ["gray.100"]);
+
+  return (
+    <Box
+      as="div"
+      display="grid"
+      gridAutoFlow="column"
+      gridTemplateColumns="max-content 1fr max-content"
+      bg="gray.100"
+      px="0.5em"
+      borderRadius="0.375em"
+      gridColumnGap="1em"
+      {...filterProps({
+        props,
+        filterOut: [
+          "leftIcon",
+          "rightIcon",
+          "textareaProps",
+          "isError",
+          "errorMessage",
+        ],
+      })}
+    >
+      <Box
+        as="div"
+        h={iconPadding}
+        w={iconPadding}
+        display="grid"
+        justifyContent="center"
+        alignContent="center"
+      >
+        <props.leftIcon w={iconSize} h={iconSize} fill="gray.700" />
+      </Box>
+      <Box
+        as="textarea"
+        outline="none"
+        bg="gray.100"
+        color="gray.700"
+        fontSize="16px"
+        py={`calc((${iconPadding} - ${iconSize}) / 2)`}
+        boxShadow={`0 0 0 30px ${gray100} inset`}
+        sx={{
+          WebkitBoxShadow: `0 0 0 30px ${gray100} inset !important`,
+        }}
+        {...filterProps({
+          props: props.textareaProps ? props.textareaProps! : {},
+          filterOut: ["onCopy"],
+        })}
+      />
+      {props.isError ? (
+        <Tooltip
+          label={props.errorMessage}
+          aria-label="Invalid input message"
+          hasArrow
+          placement="top-end"
+          isOpen={isTooltipOpen}
+        >
+          <Box
+            as="div"
+            h={iconPadding}
+            w={iconPadding}
+            display="grid"
+            justifyContent="center"
+            alignContent="center"
+            onMouseLeave={() => setIsTooltipOpen(false)}
+            onMouseEnter={() => setIsTooltipOpen(true)}
+            onClick={() => setIsTooltipOpen(!isTooltipOpen)}
+          >
+            <props.rightIcon w={iconSize} h={iconSize} fill="red.500" />
+          </Box>
+        </Tooltip>
+      ) : (
+        <Box as="div" h={iconPadding} w={iconPadding} />
+      )}
+    </Box>
+  );
+};
+
+// InputWithIcons
 interface InputWithIconsPropsI extends BoxProps {
   leftIcon: (props: BoxProps) => JSX.Element;
   rightIcon: (props: BoxProps) => JSX.Element;
   inputProps?: InputProps;
+  isError: boolean;
+  errorMessage?: string;
 }
 
 const InputWithIcons = (props: InputWithIconsPropsI) => {
@@ -46,7 +142,13 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
       gridColumnGap="1em"
       {...filterProps({
         props,
-        filterOut: ["leftIcon", "rightIcon", "inputProps"],
+        filterOut: [
+          "leftIcon",
+          "rightIcon",
+          "inputProps",
+          "isError",
+          "errorMessage",
+        ],
       })}
     >
       <Box
@@ -72,27 +174,31 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
         }}
         {...props.inputProps}
       />
-      <Tooltip
-        label="Input invalid"
-        aria-label="Invalid input"
-        hasArrow
-        placement="top-end"
-        isOpen={isTooltipOpen}
-      >
-        <Box
-          as="div"
-          h={iconPadding}
-          w={iconPadding}
-          display="grid"
-          justifyContent="center"
-          alignContent="center"
-          onMouseLeave={() => setIsTooltipOpen(false)}
-          onMouseEnter={() => setIsTooltipOpen(true)}
-          onClick={() => setIsTooltipOpen(!isTooltipOpen)}
+      {props.isError ? (
+        <Tooltip
+          label={props.errorMessage}
+          aria-label="Invalid input message"
+          hasArrow
+          placement="top-end"
+          isOpen={isTooltipOpen}
         >
-          <props.rightIcon w={iconSize} h={iconSize} fill="red.500" />
-        </Box>
-      </Tooltip>
+          <Box
+            as="div"
+            h={iconPadding}
+            w={iconPadding}
+            display="grid"
+            justifyContent="center"
+            alignContent="center"
+            onMouseLeave={() => setIsTooltipOpen(false)}
+            onMouseEnter={() => setIsTooltipOpen(true)}
+            onClick={() => setIsTooltipOpen(!isTooltipOpen)}
+          >
+            <props.rightIcon w={iconSize} h={iconSize} fill="red.500" />
+          </Box>
+        </Tooltip>
+      ) : (
+        <Box as="div" h={iconPadding} w={iconPadding} />
+      )}
     </Box>
   );
 };
@@ -108,6 +214,24 @@ const ContactForm = (props: ContactFormPropsI) => {
       email: "",
       message: "",
     },
+    validationSchema: Yup.object().shape({
+      name: Yup.string()
+        .required("Required")
+        .min(2, "Please provide full name"),
+      phone: Yup.string()
+        .required("Required")
+        .min(10, "Please provide a valid phone number")
+        .matches(
+          /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\s+$/,
+          "Please provide a valid phone number"
+        ),
+      email: Yup.string()
+        .required("Required")
+        .email("Please provide a valid email"),
+      message: Yup.string()
+        .required("Required")
+        .min(20, "Tell us more about your project."),
+    }),
     onSubmit: (value) => {
       alert(JSON.stringify(value, null, 2));
     },
@@ -133,10 +257,13 @@ const ContactForm = (props: ContactFormPropsI) => {
           placeholder: "Name",
           autoComplete: "name",
           onChange: formik.handleChange,
+          onBlur: formik.handleBlur,
           value: formik.values.name,
           name: "name",
           id: "name",
         }}
+        isError={formik.touched.name && formik.errors.name ? true : false}
+        errorMessage={formik.errors.name}
       />
       <InputWithIcons
         leftIcon={Phone}
@@ -145,10 +272,14 @@ const ContactForm = (props: ContactFormPropsI) => {
           placeholder: "Phone",
           autoComplete: "tel",
           onChange: formik.handleChange,
+          onBlur: formik.handleBlur,
           value: formik.values.phone,
+          type: "tel",
           name: "phone",
           id: "phone",
         }}
+        isError={formik.touched.phone && formik.errors.phone ? true : false}
+        errorMessage={formik.errors.phone}
       />
       <InputWithIcons
         leftIcon={Envelope}
@@ -157,10 +288,32 @@ const ContactForm = (props: ContactFormPropsI) => {
           placeholder: "Email",
           autoComplete: "email",
           onChange: formik.handleChange,
+          onBlur: formik.handleBlur,
           value: formik.values.email,
+          type: "email",
           name: "email",
           id: "email",
         }}
+        isError={formik.touched.email && formik.errors.email ? true : false}
+        errorMessage={formik.errors.email}
+      />
+      <TextareaWithIcons
+        leftIcon={EnvelopeEdit}
+        rightIcon={ExclamationTriangle}
+        textareaProps={{
+          placeholder:
+            "Tell us about your project... \n\nI am remodeling my kitchen and would " +
+            "like to add some more outlets and additional ceiling lighting. " +
+            "I would be interested to talk more about my project.",
+          onChange: formik.handleChange,
+          onBlur: formik.handleBlur,
+          value: formik.values.message,
+          name: "message",
+          id: "message",
+          rows: 10,
+        }}
+        isError={formik.touched.message && formik.errors.message ? true : false}
+        errorMessage={formik.errors.message}
       />
       <Button
         type="submit"
@@ -195,7 +348,7 @@ interface QuickContact extends BoxProps {
 }
 
 const QuickContact = (props: QuickContact) => {
-  const { hasCopied, onCopy } = useClipboard(props.contactInfo);
+  const { onCopy } = useClipboard(props.contactInfo);
   const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
 
   return (
