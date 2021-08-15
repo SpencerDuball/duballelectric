@@ -208,7 +208,6 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 // ContactForm
 interface ContactFormPropsI extends BoxProps {}
 
-const siteKey = process.env.HCAPTCHA_SITKEY;
 const ContactForm = (props: ContactFormPropsI) => {
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
@@ -239,7 +238,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         .min(20, "Tell us more about your project."),
       token: Yup.string().required(),
     }),
-    onSubmit: (value) => {
+    onSubmit: async (value) => {
       console.log(JSON.stringify({ ...value }, null, 2));
     },
   });
@@ -255,7 +254,7 @@ const ContactForm = (props: ContactFormPropsI) => {
       borderRadius="0.375em"
       display="grid"
       gridRowGap="0.75em"
-      {...props}
+      {...filterProps({ props, filterOut: ["siteKey"] })}
     >
       <InputWithIcons
         leftIcon={User}
@@ -323,28 +322,27 @@ const ContactForm = (props: ContactFormPropsI) => {
         errorMessage={formik.errors.message}
       />
       <Box as="div" w="max-content" justifySelf="center">
-        {siteKey ? (
-          <HCaptcha
-            sitekey={siteKey}
-            reCaptchaCompat={false}
-            onError={(e) => {
-              console.log(`hCaptcha Error: ${e}`);
-              formik.setValues({ ...formik.values, token: "" });
-              captchaRef.current && captchaRef.current.resetCaptcha();
-            }}
-            onExpire={() => {
-              console.log(`hCaptcha Token Expired`);
-              formik.setValues({ ...formik.values, token: "" });
-              captchaRef.current && captchaRef.current.resetCaptcha();
-            }}
-            onVerify={(token: string) =>
-              formik.setValues({ ...formik.values, token })
-            }
-            ref={captchaRef}
-          />
-        ) : (
-          "process.env.HCAPTCHA_SITEKEY is missing! Pull .env from Vercel."
-        )}
+        <HCaptcha
+          // Note: If environment variables are not loaded this will throw an error.
+          // This is what we want. If there are no .env variables, then we want this to
+          // fail at build time.
+          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
+          reCaptchaCompat={false}
+          onError={(e) => {
+            console.log(`hCaptcha Error: ${e}`);
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onExpire={() => {
+            console.log(`hCaptcha Token Expired`);
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onVerify={(token: string) =>
+            formik.setValues({ ...formik.values, token })
+          }
+          ref={captchaRef}
+        />
       </Box>
       <Button
         type="submit"
