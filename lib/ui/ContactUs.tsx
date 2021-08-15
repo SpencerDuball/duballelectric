@@ -24,6 +24,7 @@ import { filterProps } from "utility";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import axios from "axios";
 
 // TextareaWithIcons
 interface TextareaWithIconsPropsI extends BoxProps {
@@ -239,7 +240,16 @@ const ContactForm = (props: ContactFormPropsI) => {
       token: Yup.string().required(),
     }),
     onSubmit: async (value) => {
-      console.log(JSON.stringify({ ...value }, null, 2));
+      const response = await axios
+        .post("/api/contact", { formData: value })
+        .catch((e) => console.log(e));
+
+      console.log(response);
+      if (response.status === 200) {
+        console.log("Yay, success!");
+      } else {
+        console.log("Big oof, you suck!");
+      }
     },
   });
 
@@ -304,7 +314,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         errorMessage={formik.errors.email}
       />
       <TextareaWithIcons
-        leftIcon={EnvelopeEdit}
+        leftIcon={CommentLines}
         rightIcon={ExclamationTriangle}
         textareaProps={{
           placeholder:
