@@ -208,7 +208,9 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 // ContactForm
 interface ContactFormPropsI extends BoxProps {}
 
+const siteKey = process.env.HCAPTCHA_SITKEY;
 const ContactForm = (props: ContactFormPropsI) => {
+  const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
   const formik = useFormik({
     initialValues: {
@@ -321,28 +323,32 @@ const ContactForm = (props: ContactFormPropsI) => {
         errorMessage={formik.errors.message}
       />
       <Box as="div" w="max-content" justifySelf="center">
-        <HCaptcha
-          sitekey="6caa8945-e0af-4ff0-b97b-d381d5368cf3"
-          reCaptchaCompat={false}
-          onError={(e) => {
-            console.log(`hCaptcha Error: ${e}`);
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onExpire={() => {
-            console.log(`hCaptcha Token Expired`);
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onVerify={(token: string) =>
-            formik.setValues({ ...formik.values, token })
-          }
-          ref={captchaRef}
-        />
+        {siteKey ? (
+          <HCaptcha
+            sitekey={siteKey}
+            reCaptchaCompat={false}
+            onError={(e) => {
+              console.log(`hCaptcha Error: ${e}`);
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onExpire={() => {
+              console.log(`hCaptcha Token Expired`);
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onVerify={(token: string) =>
+              formik.setValues({ ...formik.values, token })
+            }
+            ref={captchaRef}
+          />
+        ) : (
+          "process.env.HCAPTCHA_SITEKEY is missing! Pull .env from Vercel."
+        )}
       </Box>
       <Button
         type="submit"
-        size="lg"
+        size={buttonSize}
         variant="solid"
         bg="gray.500"
         _hover={{ bg: "gray.600" }}
