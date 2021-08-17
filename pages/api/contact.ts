@@ -3,6 +3,58 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import * as Yup from "yup";
 import axios from "axios";
 import url from "url";
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+
+// AWS Simple Email Service
+//////////////////////////////////////////////////////////////////////////////////////
+const client = new SESClient({
+  // this will not be null, we check for this in the handler
+  region: process.env.DUBALL_AWS_REGION!,
+  credentials: {
+    accessKeyId: process.env.DUBALL_AWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.DUBALL_AWS_SECRET_ACCESS_KEY!,
+  },
+});
+
+// constants
+const FROM_EMAIL = "spencerduball@gmail.com";
+const TO_EMAIL = "spencer@jeepfenderextender.com";
+async function sendEmail(formData: {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+}) {
+  return client.send(
+    new SendEmailCommand({
+      Source: FROM_EMAIL,
+      Destination: { ToAddresses: [TO_EMAIL] },
+      Message: {
+        Subject: { Data: `New Inquiry | ${formData.name}` },
+        Body: {
+          Text: {
+            Data:
+              `Name: ${formData.name}\n` +
+              `Phone: ${formData.phone}\n` +
+              `Email: ${formData.email}\n` +
+              `Message:\n` +
+              formData.message,
+          },
+          Html: {
+            Data:
+              `<h2>Name:</h2><p>${formData.name}</p><br/>` +
+              `<h2>Phone:</h2><p>${formData.phone}</p><br/>` +
+              `<h2>Email:</h2><p>${formData.email}</p><br/>` +
+              `<h2>Message:</h2><p>${formData.message}</p><br/>`,
+          },
+        },
+      },
+    })
+  );
+}
+
+// /api/contact
+//////////////////////////////////////////////////////////////////////////////////////
 
 // define interfaces
 interface HCaptchaResponse {
@@ -28,6 +80,29 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  // if the required environment variables are not included, throw error
+  // and suggest to send an email directly
+  const environmentVariables = [
+    "DUBALL_AWS_REGION",
+    "DUBALL_AWS_ACCESS_KEY_ID",
+    "DUBALL_AWS_SECRET_ACCESS_KEY",
+    "HCAPTCHA_SECRET",
+    "NEXT_PUBLIC_HCAPTCHA_SITEKEY",
+  ];
+  if (
+    !environmentVariables.every((value) => (process.env[value] ? true : false))
+  ) {
+    console.error(
+      "There was an issue with your environment variables" +
+        ", please re-pull the environment variables and try again."
+    );
+    res.statusMessage =
+      "Oops! There was an error on our end, please send " +
+      "us an email directly at tammy@duballelectric.com.";
+    res.status(500).json({});
+    return;
+  }
+
   if (req.body.formData) {
     // process valid formData input
     if (await schema.isValid(req.body.formData)) {
@@ -43,7 +118,16 @@ export default async function handler(
 
       // respond with success or failure
       if (hCaptchaResponse && hCaptchaResponse.data.success) {
-        res.status(200).json({});
+        try {
+          await sendEmail(req.body.formData);
+          res.status(200).json({});
+        } catch (e) {
+          console.error(e);
+          res.statusMessage =
+            "Oops! There was an error on our end, please send " +
+            "us an email directly at tammy@duballelectric.com.";
+          res.status(500).json({});
+        }
       } else {
         res.statusMessage = "The hCaptcha failed, begone bot!";
         res.status(400).json({});
