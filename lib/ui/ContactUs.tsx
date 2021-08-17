@@ -1,4 +1,8 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import {
+  NotificationSystemContext,
+  addNotification,
+} from "context/notification-system";
 import {
   Box,
   Button,
@@ -24,6 +28,7 @@ import { filterProps } from "utility";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import axios from "axios";
 
 // TextareaWithIcons
 interface TextareaWithIconsPropsI extends BoxProps {
@@ -209,6 +214,7 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 interface ContactFormPropsI extends BoxProps {}
 
 const ContactForm = (props: ContactFormPropsI) => {
+  const { dispatch } = useContext(NotificationSystemContext);
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
   const formik = useFormik({
@@ -239,7 +245,42 @@ const ContactForm = (props: ContactFormPropsI) => {
       token: Yup.string().required(),
     }),
     onSubmit: async (value) => {
-      console.log(JSON.stringify({ ...value }, null, 2));
+      try {
+        const response = await axios.post("/api/contact", { formData: value });
+
+        if (response.status === 200) {
+          // reset the form
+          formik.resetForm();
+          captchaRef.current && captchaRef.current.resetCaptcha();
+
+          // send a success notification
+          addNotification(dispatch, {
+            type: "SUCCESS",
+            title: "Successfully submitted!",
+            description:
+              "We have received your message and will respond " +
+              "as soon as available.",
+          });
+        } else {
+          // display error notification
+          addNotification(dispatch, {
+            type: "ERROR",
+            title: "Error",
+            description: response.statusText,
+          });
+          console.error(response);
+        }
+      } catch (e) {
+        // display error notification
+        addNotification(dispatch, {
+          type: "ERROR",
+          title: "Oops!",
+          description:
+            "It looks like there was an error on our end, " +
+            "please send us an email directly at: tammy@duballelectric.com.",
+        });
+        console.error(e);
+      }
     },
   });
 
@@ -304,7 +345,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         errorMessage={formik.errors.email}
       />
       <TextareaWithIcons
-        leftIcon={EnvelopeEdit}
+        leftIcon={CommentLines}
         rightIcon={ExclamationTriangle}
         textareaProps={{
           placeholder:
@@ -363,7 +404,7 @@ const ContactForm = (props: ContactFormPropsI) => {
 };
 
 // QuickContact
-interface QuickContact extends BoxProps {
+interface QuickContactPropsI extends BoxProps {
   leftButton: {
     icon: (props: BoxProps) => JSX.Element;
     ariaLabel: string;
@@ -376,7 +417,7 @@ interface QuickContact extends BoxProps {
   type: "phone" | "email";
 }
 
-const QuickContact = (props: QuickContact) => {
+const QuickContact = (props: QuickContactPropsI) => {
   const { onCopy } = useClipboard(props.contactInfo);
   const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
 

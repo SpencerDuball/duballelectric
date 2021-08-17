@@ -60,8 +60,10 @@ export const Hero = (props: HeroPropsI) => (
         as="div"
         position="absolute"
         bottom="0"
+        left="0"
         w="100%"
         h="100%"
+        pointerEvents="none"
         backgroundImage={{
           base: "none",
           sm: "url(/images/icons_background_xs.svg)",
