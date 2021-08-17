@@ -115,12 +115,17 @@ export const Footer = (props: FooterPropsI) => (
                 tammy@duballelectric.com
               </FooterListItem>
             </Box>
-            <FooterListItem>
-              <Box as="span" textDecoration="underline">
-                Address:
-              </Box>{" "}
-              901 2nd Ave SW, Cedar Rapids IA 52404
-            </FooterListItem>
+            <Box
+              as="a"
+              href="https://maps.apple.com/?q=address=901,2nd+Ave+SW,Cedar+Rapids,Iowa"
+            >
+              <FooterListItem>
+                <Box as="span" textDecoration="underline">
+                  Address:
+                </Box>{" "}
+                901 2nd Ave SW, Cedar Rapids IA 52404
+              </FooterListItem>
+            </Box>
           </Box>
         </Box>
       </Box>

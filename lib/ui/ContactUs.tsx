@@ -1,4 +1,8 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import {
+  NotificationSystemContext,
+  addNotification,
+} from "context/notification-system";
 import {
   Box,
   Button,
@@ -210,6 +214,7 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 interface ContactFormPropsI extends BoxProps {}
 
 const ContactForm = (props: ContactFormPropsI) => {
+  const { dispatch } = useContext(NotificationSystemContext);
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
   const formik = useFormik({
@@ -248,16 +253,33 @@ const ContactForm = (props: ContactFormPropsI) => {
           formik.resetForm();
           captchaRef.current && captchaRef.current.resetCaptcha();
 
-          // display success message
-          console.log("You, success!");
+          // send a success notification
+          addNotification(dispatch, {
+            type: "SUCCESS",
+            title: "Successfully submitted!",
+            description:
+              "We have received your message and will respond " +
+              "as soon as available.",
+          });
         } else {
-          // display error message
-          console.log("There was an error of some sort.");
+          // display error notification
+          addNotification(dispatch, {
+            type: "ERROR",
+            title: "Error",
+            description: response.statusText,
+          });
+          console.error(response);
         }
       } catch (e) {
-        // display error message
-        console.log("There was an error getting a response from the server.");
-        console.log(e);
+        // display error notification
+        addNotification(dispatch, {
+          type: "ERROR",
+          title: "Oops!",
+          description:
+            "It looks like there was an error on our end, " +
+            "please send us an email directly at: tammy@duballelectric.com.",
+        });
+        console.error(e);
       }
     },
   });

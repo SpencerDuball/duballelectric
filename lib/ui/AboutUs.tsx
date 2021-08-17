@@ -2,12 +2,14 @@ import { Box, Button, BoxProps, useBreakpointValue } from "@chakra-ui/react";
 import { FreeEstimates } from "lib/svg/duball";
 import { filterProps } from "utility";
 import { AngleRight } from "lib/svg/unicons";
+import Link from "next/link";
 
 // AboutUsCard
 interface AboutUsCardPropsI extends BoxProps {
   cardTitle: string;
   cardDescription: string;
   buttonMessage: string;
+  buttonHref: string;
 }
 const AboutUsCard = (props: AboutUsCardPropsI) => {
   const buttonSize = useBreakpointValue({ base: "sm", xl: "xs", "2xl": "sm" });
@@ -27,7 +29,12 @@ const AboutUsCard = (props: AboutUsCardPropsI) => {
       fontSize={{ base: "1.25em", md: "1.5em", xl: "1em" }}
       {...filterProps({
         props,
-        filterOut: ["cardTitle", "cardDescription", "buttonMessage"],
+        filterOut: [
+          "cardTitle",
+          "cardDescription",
+          "buttonMessage",
+          "buttonHref",
+        ],
       })}
     >
       {/* image */}
@@ -66,19 +73,21 @@ const AboutUsCard = (props: AboutUsCardPropsI) => {
           {props.cardDescription}
         </Box>
       </Box>
-      <Button
-        size={buttonSize}
-        colorScheme="gray"
-        variant="solid"
-        color="white"
-        bg="gray.500"
-        w="max-content"
-        _hover={{ bg: "gray.600" }}
-        _active={{ bg: "gray.700" }}
-        rightIcon={<AngleRight fill="white" h="1em" w="1em" />}
-      >
-        {props.buttonMessage}
-      </Button>
+      <Link href={props.buttonHref} passHref>
+        <Button
+          size={buttonSize}
+          colorScheme="gray"
+          variant="solid"
+          color="white"
+          bg="gray.500"
+          w="max-content"
+          _hover={{ bg: "gray.600" }}
+          _active={{ bg: "gray.700" }}
+          rightIcon={<AngleRight fill="white" h="1em" w="1em" />}
+        >
+          {props.buttonMessage}
+        </Button>
+      </Link>
     </Box>
   );
 };
@@ -172,6 +181,7 @@ export const AboutUs = (props: AboutUsPropsI) => (
           " we can get the job done right."
         }
         buttonMessage="View Residential"
+        buttonHref="/residential"
       />
       <AboutUsCard
         cardTitle="Commercial"
@@ -181,6 +191,7 @@ export const AboutUs = (props: AboutUsPropsI) => (
           "business gets the help it needs."
         }
         buttonMessage="View Commercial"
+        buttonHref="/commercial"
       />
       <AboutUsCard
         cardTitle="And More..."
@@ -189,6 +200,7 @@ export const AboutUs = (props: AboutUsPropsI) => (
           "and more - if it's electrical, we can help!"
         }
         buttonMessage="View More"
+        buttonHref="/more"
       />
     </Box>
   </Box>

@@ -108,7 +108,7 @@ export const DefaultHeaderHeight = "3.75em";
 
 export interface HeaderPropsI extends BoxProps {}
 
-export const Header = (props: HeaderPropsI) => {
+export const Header = forwardRef<HeaderPropsI, "header">((props, ref) => {
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const [areServicesDisplayed, setAreServicesDisplayed] = useState(false);
   const [areServicesVisible, setAreServicesVisible] = useState(false);
@@ -117,6 +117,7 @@ export const Header = (props: HeaderPropsI) => {
   return (
     <AnimateSharedLayout>
       <MotionBox
+        ref={ref}
         as="header"
         w="100%"
         bg="gray.700"
@@ -235,4 +236,4 @@ export const Header = (props: HeaderPropsI) => {
       </MotionBox>
     </AnimateSharedLayout>
   );
-};
+});
