@@ -240,15 +240,24 @@ const ContactForm = (props: ContactFormPropsI) => {
       token: Yup.string().required(),
     }),
     onSubmit: async (value) => {
-      const response = await axios
-        .post("/api/contact", { formData: value })
-        .catch((e) => console.log(e));
+      try {
+        const response = await axios.post("/api/contact", { formData: value });
 
-      console.log(response);
-      if (response.status === 200) {
-        console.log("Yay, success!");
-      } else {
-        console.log("Big oof, you suck!");
+        if (response.status === 200) {
+          // reset the form
+          formik.resetForm();
+          captchaRef.current && captchaRef.current.resetCaptcha();
+
+          // display success message
+          console.log("You, success!");
+        } else {
+          // display error message
+          console.log("There was an error of some sort.");
+        }
+      } catch (e) {
+        // display error message
+        console.log("There was an error getting a response from the server.");
+        console.log(e);
       }
     },
   });
@@ -373,7 +382,7 @@ const ContactForm = (props: ContactFormPropsI) => {
 };
 
 // QuickContact
-interface QuickContact extends BoxProps {
+interface QuickContactPropsI extends BoxProps {
   leftButton: {
     icon: (props: BoxProps) => JSX.Element;
     ariaLabel: string;
@@ -386,7 +395,7 @@ interface QuickContact extends BoxProps {
   type: "phone" | "email";
 }
 
-const QuickContact = (props: QuickContact) => {
+const QuickContact = (props: QuickContactPropsI) => {
   const { onCopy } = useClipboard(props.contactInfo);
   const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
 

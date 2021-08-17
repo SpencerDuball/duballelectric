@@ -40,7 +40,6 @@ export default async function handler(
       const hCaptchaResponse = await axios
         .post<HCaptchaResponse>(HCAPTCHA_SITEVERIFY_URL, params.toString())
         .catch((e) => console.log(e));
-      console.log(hCaptchaResponse);
 
       // respond with success or failure
       if (hCaptchaResponse && hCaptchaResponse.data.success) {
