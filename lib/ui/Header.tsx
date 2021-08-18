@@ -176,7 +176,7 @@ export const Header = forwardRef<HeaderPropsI, "header">((props, ref) => {
                 <DuballElectric h="100%" colorPalette={["none", "gray.200"]} />
               </Box>
             </Link>
-            <Link href="#contact" passHref>
+            <Link href="/#contact" passHref>
               <Button
                 size={buttonSize}
                 variant="outline"
