@@ -15,4 +15,12 @@ const breakpoints = createBreakpoints({
   "3xl": "75em", // 1200px
 });
 
-export const theme = extendTheme({ config, breakpoints });
+const styles = {
+  global: {
+    "html, body": {
+      fontFamily: '"Inter", sans-serif',
+    },
+  },
+};
+
+export const theme = extendTheme({ styles, config, breakpoints });
