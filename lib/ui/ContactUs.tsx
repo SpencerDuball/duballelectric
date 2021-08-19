@@ -504,7 +504,7 @@ export const ContactUs = (props: ContactUsPropsI) => (
   <Box
     as="section"
     px={{ base: "0.625em", lg: "1em" }}
-    fontSize={{ base: "0.6em", sm: "0.70em", "2xl": "0.85em", "3xl": "1em" }}
+    fontSize={{ base: "0.6em", sm: "0.70em", lg: "1em" }}
     py="9.375em"
     display="grid"
     justifyItems="center"
