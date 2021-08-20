@@ -171,7 +171,14 @@ export const AboutUs = (props: AboutUsPropsI) => (
       gridAutoFlow={{ base: "row", lg: "column" }}
       gridColumnGap={{ base: "2.5em", xl: "2em", "2xl": "3.125em" }}
       gridRowGap="3em"
-      fontSize={{ base: "1em", lg: "0.5em", xl: "0.75em", "2xl": "0.9em" }}
+      fontSize={{
+        base: "1em",
+        sm: "1.2em",
+        md: "1.5em",
+        lg: "0.5em",
+        xl: "0.75em",
+        "2xl": "0.9em",
+      }}
     >
       <AboutUsCard
         cardTitle="Residential"
