@@ -368,27 +368,29 @@ const ContactForm = (props: ContactFormPropsI) => {
         errorMessage={formik.errors.message}
       />
       <Box as="div" w="max-content" justifySelf="center">
-        <HCaptcha
-          // Note: If environment variables are not loaded this will throw an error.
-          // This is what we want. If there are no .env variables, then we want this to
-          // fail at build time.
-          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
-          reCaptchaCompat={false}
-          onError={(e) => {
-            console.log(`hCaptcha Error: ${e}`);
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onExpire={() => {
-            console.log(`hCaptcha Token Expired`);
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onVerify={(token: string) =>
-            formik.setValues({ ...formik.values, token })
-          }
-          ref={captchaRef}
-        />
+        {false ? (
+          <HCaptcha
+            // Note: If environment variables are not loaded this will throw an error.
+            // This is what we want. If there are no .env variables, then we want this to
+            // fail at build time.
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
+            reCaptchaCompat={false}
+            onError={(e) => {
+              console.log(`hCaptcha Error: ${e}`);
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onExpire={() => {
+              console.log(`hCaptcha Token Expired`);
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onVerify={(token: string) =>
+              formik.setValues({ ...formik.values, token })
+            }
+            ref={captchaRef}
+          />
+        ) : null}
       </Box>
       <Button
         type="submit"
