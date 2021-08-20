@@ -2,7 +2,7 @@ import { Box, Button, BoxProps } from "@chakra-ui/react";
 import { HeroTransitionArch } from "lib/svg/duball";
 import Link from "next/link";
 import Image from "next/image";
-import duballBoomtruck from "../../public/images/duball_boomtruck.png";
+import duballBoomtruck from "../../../public/images/duball_boomtruck.png";
 
 const HeroImage = (props: BoxProps) => (
   <Box
@@ -53,7 +53,7 @@ export const Hero = (props: HeroPropsI) => (
       bg="gray.100"
       position="relative"
       overflow="hidden"
-      fontSize={{ base: "0.6em", sm: "0.70em", lg: "1em" }}
+      fontSize={{ base: "0.6em", sm: "0.70em", md: "0.85em", lg: "1em" }}
       px={{ base: "0.625em", lg: "1em" }}
     >
       <Box
