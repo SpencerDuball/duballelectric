@@ -1,8 +1,7 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import { Box, ChakraProvider } from "@chakra-ui/react";
-import { NotificationSystemProvider } from "context/notification-system";
-import { Header, Footer, NotificationSystem } from "lib/ui";
+import { Header, Footer } from "lib/ui";
 import { theme } from "../theme/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -44,14 +43,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ChakraProvider theme={theme}>
-        <NotificationSystemProvider>
-          <NotificationSystem placement="top-end" />
-          <Box as="main" display="grid">
-            <Header position="fixed" zIndex="banner" />
-            <Component {...pageProps} />
-            <Footer />
-          </Box>
-        </NotificationSystemProvider>
+        <Box as="main" display="grid">
+          <Header position="fixed" zIndex="banner" />
+          <Component {...pageProps} />
+          <Footer />
+        </Box>
       </ChakraProvider>
     </>
   );

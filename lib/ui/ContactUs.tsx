@@ -1,8 +1,4 @@
-import { useState, useRef, useContext } from "react";
-import {
-  NotificationSystemContext,
-  addNotification,
-} from "context/notification-system";
+import { useState, useRef } from "react";
 import {
   Box,
   Button,
@@ -14,6 +10,7 @@ import {
   useClipboard,
   useBreakpointValue,
   useToken,
+  useToast,
 } from "@chakra-ui/react";
 import {
   Phone,
@@ -214,9 +211,9 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 interface ContactFormPropsI extends BoxProps {}
 
 const ContactForm = (props: ContactFormPropsI) => {
-  const { dispatch } = useContext(NotificationSystemContext);
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
+  const toast = useToast();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -254,30 +251,38 @@ const ContactForm = (props: ContactFormPropsI) => {
           captchaRef.current && captchaRef.current.resetCaptcha();
 
           // send a success notification
-          addNotification(dispatch, {
-            type: "SUCCESS",
-            title: "Successfully submitted!",
+          toast({
+            title: "Successfully submitted",
             description:
-              "We have received your message and will respond " +
-              "as soon as available.",
+              "We have received your message " + "and will be in contact soon.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+            position: "bottom-right",
           });
         } else {
           // display error notification
-          addNotification(dispatch, {
-            type: "ERROR",
+          toast({
             title: "Error",
             description: response.statusText,
+            status: "error",
+            duration: 9000,
+            isClosable: true,
+            position: "bottom-right",
           });
           console.error(response);
         }
       } catch (e) {
         // display error notification
-        addNotification(dispatch, {
-          type: "ERROR",
+        toast({
           title: "Oops!",
           description:
             "It looks like there was an error on our end, " +
             "please send us an email directly at: tammy@duballelectric.com.",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+          position: "bottom-right",
         });
         console.error(e);
       }
