@@ -12,7 +12,7 @@ interface AboutUsCardPropsI extends BoxProps {
   buttonHref: string;
 }
 const AboutUsCard = (props: AboutUsCardPropsI) => {
-  const buttonSize = useBreakpointValue({ base: "sm", xl: "xs", "2xl": "sm" });
+  const buttonSize = useBreakpointValue({ base: "xs", xl: "sm" });
   return (
     <Box
       as="div"
@@ -26,7 +26,6 @@ const AboutUsCard = (props: AboutUsCardPropsI) => {
       boxShadow="lg"
       borderWidth="0.0625em"
       borderColor="gray.100"
-      fontSize={{ base: "1.25em", md: "1.5em", xl: "1em" }}
       {...filterProps({
         props,
         filterOut: [
@@ -104,7 +103,7 @@ export const AboutUs = (props: AboutUsPropsI) => (
     gridRowGap="6.25em"
     justifyContent="center"
     alignContent="center"
-    fontSize={{ base: "0.6em", sm: "0.70em", "2xl": "0.85em", "3xl": "1em" }}
+    fontSize={{ base: "0.6em", sm: "0.70em", lg: "1em" }}
     {...props}
   >
     <Box
@@ -168,10 +167,11 @@ export const AboutUs = (props: AboutUsPropsI) => (
     <Box
       as="div"
       display="grid"
-      justifyContent={{ base: "center", xl: "start" }}
-      gridAutoFlow={{ base: "row", xl: "column" }}
-      gridColumnGap={{ base: "2.5em", "2xl": "3.125em" }}
+      justifyContent={{ base: "center" }}
+      gridAutoFlow={{ base: "row", lg: "column" }}
+      gridColumnGap={{ base: "2.5em", xl: "2em", "2xl": "3.125em" }}
       gridRowGap="3em"
+      fontSize={{ base: "1em", lg: "0.5em", xl: "0.75em", "2xl": "0.9em" }}
     >
       <AboutUsCard
         cardTitle="Residential"

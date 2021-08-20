@@ -53,7 +53,7 @@ export const Hero = (props: HeroPropsI) => (
       bg="gray.100"
       position="relative"
       overflow="hidden"
-      fontSize={{ base: "0.6em", sm: "0.70em", "2xl": "0.85em", "3xl": "1em" }}
+      fontSize={{ base: "0.6em", sm: "0.70em", lg: "1em" }}
       px={{ base: "0.625em", lg: "1em" }}
     >
       <Box
@@ -91,7 +91,8 @@ export const Hero = (props: HeroPropsI) => (
           display="grid"
           gridRowGap="1.875em"
           h="max-content"
-          justifyItems={{ base: "center", xl: "start" }}
+          justifyItems={{ base: "center", "2xl": "start" }}
+          textAlign={{ base: "center", "2xl": "start" }}
         >
           <Box
             as="h1"
@@ -100,12 +101,12 @@ export const Hero = (props: HeroPropsI) => (
             lineHeight="1.16666em"
             color="gray.700"
             maxW="9.375em"
-            textAlign={{ base: "center", xl: "start" }}
+            textAlign="inherit"
           >
             Trusted Electrical Services for Over 30 Years
           </Box>
           <HeroImage
-            display={{ base: "block", xl: "none" }}
+            display={{ base: "block", "2xl": "none" }}
             fontSize={{ base: "0.7em", lg: "0.85em" }}
           />
           <Box
@@ -114,7 +115,7 @@ export const Hero = (props: HeroPropsI) => (
             lineHeight="1.5em"
             color="gray.600"
             maxW="28.125em"
-            textAlign={{ base: "center", xl: "start" }}
+            textAlign="inherit"
           >
             Duball Electric, Inc. is a family-owned business providing
             electrical services for more than 30 years in the Cedar Rapids and
@@ -132,6 +133,7 @@ export const Hero = (props: HeroPropsI) => (
             base: "none",
             xl: "block",
           }}
+          fontSize={{ base: "0em", "2xl": "0.75em", "3xl": "1em" }}
         />
       </Box>
     </Box>
