@@ -20,6 +20,7 @@ import {
   Envelope,
   CommentLines,
   ExclamationTriangle,
+  Check,
 } from "lib/svg/unicons";
 import { filterProps } from "utility";
 import { useFormik } from "formik";
@@ -210,7 +211,11 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 // ContactForm
 interface ContactFormPropsI extends BoxProps {}
 
+type CaptchaStatusType = "READY" | "IN_PROGRESS" | "SUCCESS";
 const ContactForm = (props: ContactFormPropsI) => {
+  const [captchaStatus, setCaptchaStatus] = useState<CaptchaStatusType>(
+    "READY"
+  );
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
   const captchaRef = useRef<HCaptcha>(null!);
   const toast = useToast();
@@ -367,45 +372,81 @@ const ContactForm = (props: ContactFormPropsI) => {
         isError={formik.touched.message && formik.errors.message ? true : false}
         errorMessage={formik.errors.message}
       />
-      <Box as="div" w="max-content" justifySelf="center">
-        {false ? (
-          <HCaptcha
-            // Note: If environment variables are not loaded this will throw an error.
-            // This is what we want. If there are no .env variables, then we want this to
-            // fail at build time.
-            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
-            reCaptchaCompat={false}
-            onError={(e) => {
-              console.log(`hCaptcha Error: ${e}`);
-              formik.setValues({ ...formik.values, token: "" });
-              captchaRef.current && captchaRef.current.resetCaptcha();
-            }}
-            onExpire={() => {
-              console.log(`hCaptcha Token Expired`);
-              formik.setValues({ ...formik.values, token: "" });
-              captchaRef.current && captchaRef.current.resetCaptcha();
-            }}
-            onVerify={(token: string) =>
-              formik.setValues({ ...formik.values, token })
-            }
-            ref={captchaRef}
-          />
-        ) : null}
-      </Box>
-      <Button
-        type="submit"
-        size={buttonSize}
-        variant="solid"
-        bg="gray.500"
-        _hover={{ bg: "gray.600" }}
-        _active={{ bg: "gray.700" }}
-        color="white"
-        w="max-content"
-        justifySelf="center"
-        onClick={(e: any) => formik.handleSubmit(e)}
+      <Box
+        as="div"
+        display="grid"
+        gridAutoFlow="column"
+        alignItems="center"
+        justifyContent="space-between"
       >
-        Submit
-      </Button>
+        <Box
+          as="div"
+          display="grid"
+          gridAutoFlow="column"
+          gridAutoColumns="max-content"
+          alignItems="center"
+          gridColumnGap="0.5em"
+          pl="0.5em"
+        >
+          <IconButton
+            aria-label="CAPTCHA challenge trigger"
+            w="min-content"
+            size="sm"
+            icon={
+              <Check
+                h="100%"
+                w="100%"
+                fill={captchaStatus === "SUCCESS" ? "green.500" : "none"}
+              />
+            }
+            variant="outline"
+            onClick={() => {
+              setCaptchaStatus("IN_PROGRESS");
+              const response = captchaRef.current?.execute();
+            }}
+            isLoading={captchaStatus === "IN_PROGRESS" ? true : false}
+          />
+          <Box as="p" fontSize="1em" color="gray.500">
+            I am human
+          </Box>
+        </Box>
+        <HCaptcha
+          // Note: If environment variables are not loaded this will throw an error.
+          // This is what we want. If there are no .env variables, then we want this to
+          // fail at build time.
+          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
+          reCaptchaCompat={false}
+          onError={(e) => {
+            setCaptchaStatus("READY");
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onExpire={() => {
+            setCaptchaStatus("READY");
+            formik.setValues({ ...formik.values, token: "" });
+            captchaRef.current && captchaRef.current.resetCaptcha();
+          }}
+          onVerify={(token: string) => {
+            setCaptchaStatus("SUCCESS");
+            formik.setValues({ ...formik.values, token });
+          }}
+          ref={captchaRef}
+          size="invisible"
+        />
+        <Button
+          type="submit"
+          size={buttonSize}
+          variant="solid"
+          bg="gray.500"
+          _hover={{ bg: "gray.600" }}
+          _active={{ bg: "gray.700" }}
+          color="white"
+          w="max-content"
+          onClick={(e: any) => formik.handleSubmit(e)}
+        >
+          Submit
+        </Button>
+      </Box>
     </Box>
   );
 };
