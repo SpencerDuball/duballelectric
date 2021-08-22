@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   Box,
   Button,
@@ -294,6 +294,11 @@ const ContactForm = (props: ContactFormPropsI) => {
     },
   });
 
+  const [renderHcaptcha, setRenderHcaptcha] = useState(false);
+  useEffect(() => {
+    setRenderHcaptcha(true);
+  }, []);
+
   return (
     <Box
       as="form"
@@ -410,29 +415,30 @@ const ContactForm = (props: ContactFormPropsI) => {
             I am human
           </Box>
         </Box>
-        <HCaptcha
-          // Note: If environment variables are not loaded this will throw an error.
-          // This is what we want. If there are no .env variables, then we want this to
-          // fail at build time.
-          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
-          reCaptchaCompat={false}
-          onError={(e) => {
-            setCaptchaStatus("READY");
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onExpire={() => {
-            setCaptchaStatus("READY");
-            formik.setValues({ ...formik.values, token: "" });
-            captchaRef.current && captchaRef.current.resetCaptcha();
-          }}
-          onVerify={(token: string) => {
-            setCaptchaStatus("SUCCESS");
-            formik.setValues({ ...formik.values, token });
-          }}
-          ref={captchaRef}
-          size="invisible"
-        />
+        {renderHcaptcha ? (
+          <HCaptcha
+            // Note: If environment variables are not loaded this will throw an error.
+            // This is what we want. If there are no .env variables, then we want this to
+            // fail at build time.
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!}
+            onError={(e) => {
+              setCaptchaStatus("READY");
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onExpire={() => {
+              setCaptchaStatus("READY");
+              formik.setValues({ ...formik.values, token: "" });
+              captchaRef.current && captchaRef.current.resetCaptcha();
+            }}
+            onVerify={(token: string) => {
+              setCaptchaStatus("SUCCESS");
+              formik.setValues({ ...formik.values, token });
+            }}
+            ref={captchaRef}
+            size="invisible"
+          />
+        ) : null}
         <Button
           type="submit"
           size={buttonSize}
