@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import {
   Box,
   Button,
+  Checkbox,
   InputProps,
   TextareaProps,
   IconButton,
@@ -24,8 +25,15 @@ import {
 import { filterProps } from "utility";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
 import axios from "axios";
+import Head from "next/head";
+
+// setup hcaptcha
+declare global {
+  interface Window {
+    hcaptcha: any;
+  }
+}
 
 // TextareaWithIcons
 interface TextareaWithIconsPropsI extends BoxProps {
@@ -208,11 +216,53 @@ const InputWithIcons = (props: InputWithIconsPropsI) => {
 };
 
 // ContactForm
+interface hCaptchaConfig {
+  sitekey: string;
+  theme?: string;
+}
+function hCaptchaAsync(element = "hcaptcha", config: hCaptchaConfig) {
+  if (!config.sitekey) throw new Error("hCaptha requires sitekey");
+
+  let resolve: (value: any) => void;
+  let reject: (value: any) => void;
+
+  const id = window.hcaptcha.render(element, {
+    sitekey: config.sitekey,
+    theme: config.theme || "light",
+    callback: onSuccess,
+    "error-callback": onError,
+    "close-callback": onClose,
+  });
+
+  function onSuccess(response: any) {
+    resolve(response);
+  }
+
+  function onError(message: any) {
+    reject(message);
+  }
+
+  function onClose() {
+    reject(new Error("hCaptcha user closed challenge"));
+  }
+
+  function execute() {
+    const executePromise = new Promise((res, rej) => {
+      resolve = res;
+      reject = rej;
+    });
+    window.hcaptcha.execute(id);
+    return executePromise;
+  }
+
+  return {
+    execute,
+  };
+}
 interface ContactFormPropsI extends BoxProps {}
 
 const ContactForm = (props: ContactFormPropsI) => {
   const buttonSize = useBreakpointValue({ base: "md", "2xl": "lg" });
-  const captchaRef = useRef<HCaptcha>(null!);
   const toast = useToast();
   const formik = useFormik({
     initialValues: {
@@ -248,7 +298,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         if (response.status === 200) {
           // reset the form
           formik.resetForm();
-          captchaRef.current && captchaRef.current.resetCaptcha();
+          // DELETE-ME: captchaRef.current && captchaRef.current.resetCaptcha();
 
           // send a success notification
           toast({
@@ -302,6 +352,13 @@ const ContactForm = (props: ContactFormPropsI) => {
       gridRowGap="0.75em"
       {...filterProps({ props, filterOut: ["siteKey"] })}
     >
+      <Head>
+        <script
+          src="https://js.hcaptcha.com/1/api.js?onload=yourFunction&render=explicit"
+          async
+          defer
+        ></script>
+      </Head>
       <InputWithIcons
         leftIcon={User}
         rightIcon={ExclamationTriangle}
@@ -367,7 +424,7 @@ const ContactForm = (props: ContactFormPropsI) => {
         isError={formik.touched.message && formik.errors.message ? true : false}
         errorMessage={formik.errors.message}
       />
-      <Box as="div" w="max-content" justifySelf="center">
+      {/* <Box as="div" w="max-content" justifySelf="center">
         {false ? (
           <HCaptcha
             // Note: If environment variables are not loaded this will throw an error.
@@ -389,23 +446,45 @@ const ContactForm = (props: ContactFormPropsI) => {
               formik.setValues({ ...formik.values, token })
             }
             ref={captchaRef}
+            data-size="invisible"
           />
-        ) : null}
-      </Box>
-      <Button
-        type="submit"
-        size={buttonSize}
-        variant="solid"
-        bg="gray.500"
-        _hover={{ bg: "gray.600" }}
-        _active={{ bg: "gray.700" }}
-        color="white"
-        w="max-content"
-        justifySelf="center"
-        onClick={(e: any) => formik.handleSubmit(e)}
+        ) : (
+          <Button size="sm">Hello</Button>
+        )}
+      </Box> */}
+      <Box
+        as="div"
+        display="grid"
+        justifyContent="space-between"
+        gridAutoFlow="column"
       >
-        Submit
-      </Button>
+        <Checkbox
+          id="hcaptcha"
+          size="lg"
+          onChange={async () => {
+            console.log("Execute");
+            const captcha = hCaptchaAsync("hcaptcha", {
+              sitekey: process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY!,
+            });
+            const token = await captcha.execute();
+            console.log(token);
+          }}
+        />
+        <Button
+          type="submit"
+          size={buttonSize}
+          variant="solid"
+          bg="gray.500"
+          _hover={{ bg: "gray.600" }}
+          _active={{ bg: "gray.700" }}
+          color="white"
+          w="max-content"
+          justifySelf="center"
+          onClick={(e: any) => formik.handleSubmit(e)}
+        >
+          Submit
+        </Button>
+      </Box>
     </Box>
   );
 };
